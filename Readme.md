@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Маргарита Белявцева](https://up.htmlacademy.ru/adaptive/17/user/901927).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Григорьева](https://htmlacademy.ru/profile/arctic_pie).
 
 ---
 
