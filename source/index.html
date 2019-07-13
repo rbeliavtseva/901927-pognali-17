@@ -5,8 +5,376 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+      </a>
+      <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Показать меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+        <div class="main-nav__contact-info contact-info">
+          <p class="contact-info__phone">
+            8 800 555-86-28
+          </p>
+          <p class="contact-info__email">
+            mail@htmlacademy.ru
+          </p>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="main-nav__list contact-list">
+        <li class="contact-list__item">
+          <a href="#">Позвонить</a>
+        </li>
+        <li class="contact-list__item">
+          <a href="#">Написать</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__login" href="login.html">Авторизация</a>
+        </li>
+      </ul>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1>Сервис для поиска попутчиков Погнали</h1>
 
+      <section class="reviews">
+        <h2>Отзывы о нас</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <p class="reviews__text">
+              "Лучшее приложение, что я видел в жизни!"
+            </p>
+            <cite class="reviews__author-name">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="steps">
+        <h2>Как пользоваться сервисом</h2>
+        <table class="steps__list">
+          <tr>
+            <td class="steps__field">
+              Выберите
+              направление
+            </td>
+            <td class="steps__number">
+              1
+            </td>
+          </tr>
+          <tr>
+            <td class="steps__field">
+              Изучите идеи
+              путешественников
+            </td>
+            <td class="steps__number">
+              2
+            </td>
+          </tr>
+          <tr>
+            <td class="steps__field">
+              Находите тех,
+              кто похож на вас
+            </td>
+            <td class="steps__number">
+              3
+            </td>
+          </tr>
+          <tr>
+            <td class="steps__field">
+              Путешествуйте
+              вместе!
+            </td>
+            <td class="steps__number">
+              4
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="about">
+        <h2 class="about__title">О сервисе</h2>
+        <p class="about__text">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <p class="about__text about__text--bold">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
+      </section>
+
+      <section class="destinations">
+        <h2 class="destinations__title">Направления</h2>
+        <p class="destinations__disclaimer">
+          Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
+        <ul class="destinations__list">
+          <li class="destinations__item destination">
+            <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Тайланд">
+            <h3 class="destination__title">Тайланд</h3>
+            <p class="destination__description">
+              Джунгли зовут!
+            </p>
+            <span class="destination__counter">18321</span>
+          </li>
+          <li class="destinations__item destination">
+            <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Франция">
+            <h3 class="destination__title">Франция</h3>
+            <p class="destination__description">
+              Трэ бьен, манифик!
+            </p>
+            <span class="destination__counter">12518</span>
+          </li>
+          <li class="destinations__item destination">
+            <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Чехия">
+            <h3 class="destination__title">Чехия</h3>
+            <p class="destination__description">
+              Закоулки старой Европы
+            </p>
+            <span class="destination__counter">5326</span>
+          </li>
+        </ul>
+        <a class="destinations__to-all button" href="form.html">Показать все</a>
+      </section>
+
+      <section class="companions">
+        <h2 class="companions__title">Попутчики</h2>
+        <p class="companions__text">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="companions__text companions__text--bold">
+          Теперь можно легко найти единомышленников!
+        </p>
+        <ul class="companions__list">
+          <li class="companions__item companion">
+            <h3 class="companion__name">Таня Фирсова</h3>
+            <img class="companion__image" src="http://placehold.it/150x100" width="150" height="100" alt="Таня Фирсова">
+            <span class="companion__level">99 level</span>
+            <ul class="companion__countries-list">
+              <li class="companion__country-item">Шри-Ланка</li>
+              <li class="companion__country-item">Тайланд</li>
+              <li class="companion__country-item">Сейшельские острова</li>
+            </ul>
+            <ul class="companion__tags-list tags-list">
+              <li class="tags-list__tag">#ЗОЖ</li>
+              <li class="tags-list__tag">#ПП</li>
+              <li class="tags-list__tag">#Фитнес</li>
+              <li class="tags-list__tag">#пляж</li>
+              <li class="tags-list__tag">#авокадо</li>
+              <li class="tags-list__tag">#смузи</li>
+            </ul>
+            <ul class="companion__icons-list transport-list">
+              <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--active">Самолет</li>
+              <li class="transport-list__icon-item transport-list__icon-item--bus">Автобус</li>
+              <li class="transport-list__icon-item transport-list__icon-item--cycle">Велосипед</li>
+              <li class="transport-list__icon-item transport-list__icon-item--feet">Пешком</li>
+            </ul>
+          </li>
+
+          <li class="companions__item companion">
+            <h3 class="companion__name">Петя Демин</h3>
+            <img class="companion__image" src="http://placehold.it/150x100" width="150" height="100" alt="Петя Демин">
+            <span class="companion__level">80 level</span>
+            <ul class="companion__countries-list">
+              <li class="companion__country-item">Бельгия</li>
+              <li class="companion__country-item">Чехия</li>
+            </ul>
+            <ul class="companion__tags-list tags-list">
+              <li class="tags-list__tag">#бургер</li>
+              <li class="tags-list__tag">#бар</li>
+              <li class="tags-list__tag">#футбол</li>
+              <li class="tags-list__tag">#концерт</li>
+              <li class="tags-list__tag">#крафт</li>
+            </ul>
+            <ul class="companion__icons-list transport-list">
+              <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--active">Самолет</li>
+              <li class="transport-list__icon-item transport-list__icon-item--bus transport__icon-item--active">Автобус</li>
+              <li class="transport-list__icon-item transport-list__icon-item--cycle">Велосипед</li>
+              <li class="transport-list__icon-item transport-list__icon-item--feet transport-list__icon-item--active">Пешком</li>
+            </ul>
+          </li>
+        </ul>
+        <a class="companions__to-all button" href="catalog.html">Показать всех</a>
+      </section>
+
+      <section class="price">
+        <h2 class="price__title">Добавьте свой профиль</h2>
+        <div class="price__wrap">
+          <table class="price__list">
+            <tr>
+              <td class="price__service">
+                Базовое размещение
+              </td>
+            </tr>
+            <tr>
+              <td class="price__cost">
+                Бесплатно
+              </td>
+            </tr>
+            <tr>
+              <td class="price__service">
+                Вывод на первых позициях
+              </td>
+            </tr>
+            <tr>
+              <td class="price__cost">
+                99 руб./мес
+              </td>
+            </tr>
+            <tr>
+              <td class="price__service">
+                Кастомный цвет карточки
+              </td>
+            </tr>
+            <tr>
+              <td class="price__cost">
+                  59 руб./мес
+              </td>
+            </tr>
+          </table>
+          <button class="price__show-business" href="#" type="button">Показать тарифы для бизнеса</button>
+        </div>
+      </section>
+
+      <section class="business-price">
+        <h2 class="business-price__title">Бизнес-тарифы</h2>
+        <div class="business-price__wrap">
+          <table class="business-price__list">
+            <tr>
+              <td class="business-price__service">
+                Реклама у блоггера
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__cost">
+                300 000 руб./пост
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__service">
+                Накрутка подписчиков
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__cost">
+                от 1 руб./шт.
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__service">
+                Лайки от ботов
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__cost">
+                от 20 коп./лайк
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__service">
+                Ваш продакт-плейсмент
+              </td>
+            </tr>
+            <tr>
+              <td class="business-price__cost">
+                Индивидуально
+              </td>
+            </tr>
+          </table>
+          <button class="business-price__hide-business" href="#" type="button">Закрыть окно</button>
+        </div>
+      </section>
+
+      <section class="sign-up">
+        <h2>Зарегистрироваться и войти</h2>
+        <b class="sign-up__prompt">Заинтересовались?</b>
+        <p class="sign-up__text">
+          Зарегистрируйтесь, это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a class="sign-up__link" href="#">авторизуйтесь</a>.
+        </p>
+        <form class="sign-up__email submit-email" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="submit-email__input" type="email" name="email" value="" placeholder="E-mail">
+          <a class="submit-email__button button" href="#">Регистрация</a>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p class="contacts__text">
+          Остались вопросы? Мы с радостью на них ответим!
+        </p>
+        <div class="contacts__wrap contact-info">
+          <p class="contact-info__phone">
+            8 800 555-86-28
+          </p>
+          <p class="contact-info__email">
+            mail@htmlacademy.ru
+          </p>
+        </div>
+        <p class="contacts__address address">
+          ул. Большая Конюшенная, 19/8
+        </p>
+        <a class="contacts__button button" href="#">Проложить маршрут</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

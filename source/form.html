@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+      </a>
+      <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Показать меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+        <div class="main-nav__contact-info contact-info">
+          <p class="contact-info__phone">
+            8 800 555-86-28
+          </p>
+          <p class="contact-info__email">
+            mail@htmlacademy.ru
+          </p>
+        </div>
+        <div class="main-nav__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title">Направления</h1>
+
+      <section class="profile">
+        <h2 class="visually-hidden">Мой профайл</h2>
+        <div class="profile__level">
+          <span>80 level</span>
+        </div>
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото профайла">
+        <a class="button profile__button" href="#">Сменить фото</a>
+        <div class="profile__tags-wrap">
+          <h3 class="profile__tags-title">Тэги</h3>
+          <ul class="profile__tags-list tags-list">
+            <li class="tags-list__tag">#бургер</li>
+            <li class="tags-list__tag">#бар</li>
+            <li class="tags-list__tag">#футбол</li>
+            <li class="tags-list__tag">#концерт</li>
+            <li class="tags-list__tag">#крафт</li>
+          </ul>
+        </div>
+        <div class="profile__transport-wrap">
+          <h3 class="profile__transport-title">Транспорт</h3>
+          <ul class="profile__transport-list transport-list">
+            <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--active">Самолет</li>
+            <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--active">Автобус</li>
+            <li class="transport-list__icon-item transport-list__icon-item--cycle">Велосипед</li>
+            <li class="transport-list__icon-item transport-list__icon-item--feet transport-list__icon-item--active">Пешком</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="plans">
+        <div class="plans__upcoming upcoming">
+          <h2 class="upcoming__title">Мои планы:</h2>
+          <ol class="upcoming__plans-list">
+            <li class="upcoming__item">
+              <h3 class="upcoming__title">Франция, Италия</h3>
+              <p class="upcoming__details">
+                3 попутчика
+                26 мар — 29 мар
+              </p>
+              <a class="button upcoming__button" href="#">Изменить</a>
+            </li>
+            <li class="upcoming__item">
+              <h3 class="upcoming__title">Тайланд, Индонезия</h3>
+              <p class="upcoming__details">
+                1 попутчик
+                1 июл — 15 июл
+              </p>
+              <a class="button upcoming__button" href="#">Изменить</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="plans__add create-plan">
+          <h2 class="create-plan__title">Добавить план:</h2>
+          <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="create-plan__step create-plan__step--step-one">
+              <h3 class="create-plan__step-title">Шаг 1. Даты пребывания</h3>
+              <p class="create-plan__description">
+                Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку и ее предполагаемую длительность.
+              </p>
+              <div class="create-plan__field-wrap">
+                <label for="people">Ищу попутчиков:</label>
+                <button class="button create-plan__button create-plan__button--minus" type="button">-</button><input type="text" id="people" name="people" value="2"><button class="button create-plan__button create-plan__button--plus" type="button">+</button>
+              </div>
+              <div class="create-plan__field-wrap">
+                <label for="days">Длительность:</label>
+                <button class="button create-plan__button create-plan__button--minus" type="button">-</button><input type="text" id="days" name="days" value="2"><button class="button create-plan__button create-plan__button--plus" type="button">+</button>
+              </div>
+              <div class="create-plan__field-wrap">
+                <input type="checkbox" name="kids" value="yes" id="kids" checked>
+                <label for="kids">Можно с детьми</label>
+              </div>
+              <div class="create-plan__calendar calendar">
+                <p class="calendar__title">Март 2019</p>
+                <!-- Календарь -->
+              </div>
+              <button class="button create-plan__button create-plan__button--next" type="button">Следующий шаг</button>
+            </div>
+            <div class="create-plan__step create-plan__step--step-two">
+              <h3 class="create-plan__step-title">Шаг 2. Маршрут</h3>
+              <p class="create-plan__description">
+                Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+              </p>
+              <select class="create-plan__country-select">
+                <option disabled>Выберите страну</option>
+                <option value="bosnia and herzegovina" selected>Босния и Герцеговина</option>
+              </select>
+              <select class="create-plan__country-select">
+                <option disabled>Выберите страну</option>
+                <option value="czech republic" selected>Чехия</option>
+              </select>
+              <button class="button create-plan__country-select-button" type="button">Выберите страну</button>
+              <div class="create-plan__alphabet alphabet-filter">
+                <table class="alphabet-filter__letters-table">
+                  <tr>
+                    <td>А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td>
+                  </tr>
+                  <tr>
+                    <td>Е</td><td>Ё</td><td>Ж</td><td>З</td><td>И</td>
+                  </tr>
+                  <tr>
+                    <td>Й</td><td>К</td><td>Л</td><td>М</td><td>Н</td>
+                  </tr>
+                  <tr>
+                    <td>О</td><td>П</td><td>Р</td><td>С</td><td>Т</td>
+                  </tr>
+                  <tr>
+                    <td>У</td><td>Ф</td><td>Х</td><td>Ц</td><td>Ч</td>
+                  </tr>
+                  <tr>
+                    <td>Ш</td><td>Щ</td><td>Э</td><td>Ю</td><td>Я</td>
+                  </tr>
+                </table>
+                <ul class="alphabet-filter__countries-list">
+                  <li class="alphabet-filter__countries-item">Афганистан</li>
+                  <li class="alphabet-filter__countries-item">Албания</li>
+                  <li class="alphabet-filter__countries-item">Алжир</li>
+                  <li class="alphabet-filter__countries-item">Андорра</li>
+                  <li class="alphabet-filter__countries-item">Аргентина</li>
+                  <li class="alphabet-filter__countries-item">Армения</li>
+                  <li class="alphabet-filter__countries-item">Австралия</li>
+                  <li class="alphabet-filter__countries-item">Австрия</li>
+                  <li class="alphabet-filter__countries-item">Азербайджан</li>
+                </ul>
+              </div>
+              <!-- Добавить страну -->
+              <button class="button create-plan__button create-plan__button--next" type="button">Следующий шаг</button>
+              <button class="button create-plan__button create-plan__button--back" type="button">На шаг назад</button>
+            </div>
+            <div class="create-plan__step create-plan__step--step-three">
+              <h3 class="create-plan__step-title">Шаг 3. Развлечения</h3>
+              <p class="create-plan__description">
+                Наконец, расскажите о своих планах времяпровождения.
+                Можно писать в свободной форме и ставить тэги.
+              </p>
+              <div class="create-plan__country-wrap">
+                <label for="country-1">Босния и Герцеговина</label>
+                <textarea id="country-1" rows="10" cols="30" name="country-1" placeholder="План действий"></textarea>
+              </div>
+              <div class="create-plan__country-wrap">
+                <label for="country-2">Чехия</label>
+                <textarea id="country-2" name="country-2" rows="10" cols="30" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </div>
+              <button class="button create-plan__button create-plan__button--send" type="submit">Отправить</button>
+              <button class="button create-plan__button create-plan__button--back" type="button">На шаг назад</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
