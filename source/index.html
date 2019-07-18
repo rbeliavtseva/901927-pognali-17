@@ -6,12 +6,12 @@
   </head>
   <body>
     <header class="header">
-      <a class="page-header__logo logo">
+      <a class="header__logo logo">
         <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
       </a>
       <p class="slogan">В путешествие с крутыми попутчиками!</p>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">Показать меню</button>
+        <button class="button button--navigation-toggle" type="button">Показать меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
             <li class="site-list__item">
@@ -25,7 +25,7 @@
             </li>
           </ul>
         </div>
-        <a class="button login-button" href="login.html">Авторизация</a>
+        <a class="button" href="login.html">Авторизация</a>
         <div class="navigation__contact-info contact-info">
           <a class="contact-info__item contact-info__item--phone" href="tel:8 800 555-86-28">8 800 555-86-28</a>
           <a class="contact-info__item contact-info__item--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -49,11 +49,7 @@
             <a href="#">Написать</a>
           </li>
         </ul>
-        <ul class="navigation__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="login.html">Авторизация</a>
-          </li>
-        </ul>
+        <a class="button" href="login.html">Авторизация</a>
       </nav>
     </header>
 
@@ -222,7 +218,7 @@
               </td>
             </tr>
           </table>
-          <button class="button--show-business" href="#" type="button">Показать тарифы для бизнеса</button>
+          <button class="show-business" href="#" type="button">Показать тарифы для бизнеса</button>
         </div>
 
         <div class="modal">
@@ -270,10 +266,9 @@
                 </td>
               </tr>
             </table>
-            <button class="button--hide-business" href="#" type="button">Закрыть окно</button>
+            <button class="hide-business" href="#" type="button">Закрыть окно</button>
           </div>
         </div>
-
       </section>
 
       <section class="sign-up">
@@ -301,7 +296,7 @@
         <p class="contacts__address address">
           ул. Большая Конюшенная, 19/8
         </p>
-        <a class="button--bordered" href="https://yandex.ru/maps/-/CCw360pk">Проложить маршрут</a>
+        <a class="button button--bordered" href="https://yandex.ru/maps/-/CCw360pk">Проложить маршрут</a>
       </section>
     </main>
 
@@ -325,7 +320,7 @@
         </div>
         <div class="footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
