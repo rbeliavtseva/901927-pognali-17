@@ -1,0 +1,14 @@
+.reviews {
+  background-color: $color-primary;
+
+  &__text {
+    color: $color-white;
+    font-family: "Blogger Sans Light", "Arial", sans-serif;
+  }
+
+  &__author-name {
+    color: $color-white;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-style: normal;
+  }
+}

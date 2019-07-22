@@ -1,0 +1,16 @@
+.site-list {
+  list-style: none;
+  text-align: center;
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  }
+}

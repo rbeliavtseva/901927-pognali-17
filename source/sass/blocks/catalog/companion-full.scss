@@ -1,0 +1,44 @@
+.companion-full {
+
+  &__name {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-primary--light;
+  }
+
+  &__likes {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-text--dark;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-text--light;
+    text-transform: lowercase;
+  }
+
+  &__countries-list {
+    list-style-type: none;
+  }
+
+  &__country-item {
+    font-family: "Blogger Sans Medium", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-primary--light;
+    text-transform: uppercase;
+  }
+
+  &__level {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+    color: $color-primary--light;
+  }
+}

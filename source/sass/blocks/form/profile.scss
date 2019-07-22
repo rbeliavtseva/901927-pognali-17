@@ -1,0 +1,18 @@
+.profile {
+  background-color: $color-lavender--light;
+
+  &__tags-wrap,
+  &__transport-wrap {
+    border: 1px solid $color-grey-2;
+    border-radius: 10px;
+  }
+
+  &__tags-title,
+  &__transport-title {
+    text-transform: uppercase;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-primary--light;
+  }
+}

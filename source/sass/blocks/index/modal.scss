@@ -1,0 +1,13 @@
+.modal {
+  &__wrap {
+    background-color: $color-white;
+    border-radius: 10px;
+  }
+
+  &__title {
+    color: $color-tertiary;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  }
+}

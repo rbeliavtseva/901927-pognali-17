@@ -1,0 +1,19 @@
+.destinations {
+  background-color: $color-lavender--light;
+
+  &__title {
+    color: $color-tertiary;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  }
+
+  &__disclaimer {
+    color: $color-text--light;
+    font-family: "Blogger Sans Light", "Arial", sans-serif;
+  }
+
+  &__list {
+    list-style: none;
+  }
+}

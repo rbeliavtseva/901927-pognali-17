@@ -1,0 +1,12 @@
+.contact-info {
+  &__item {
+    color: $color-primary;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &--main {
+      color: $color-secondary;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.steps {
+  background-color: $color-primary;
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 23px 25px;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 10px;
+    color: $color-text--dark;
+
+    &:first-child {
+      background-color: $color-tertiary;
+    }
+
+    &:nth-child(2) {
+      background-color: $color-tertiary--light;
+    }
+
+    &:nth-child(3) {
+      background-color: $color-secondary--dark;
+    }
+
+    &:last-child {
+      background-color: $color-secondary;
+    }
+  }
+  
+  
+}

@@ -1,0 +1,12 @@
+.contacts {
+  background-color: $color-primary;
+
+  &__text {
+    color: $color-white;
+    font-family: "Blogger Sans Light", "Arial", sans-serif;
+  }
+
+  &__wrap {
+    background-color: $color-secondary;
+  }
+}

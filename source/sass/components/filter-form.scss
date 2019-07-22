@@ -1,0 +1,13 @@
+.filter-form {
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__legend {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: $color-primary--light;
+    line-height: 18px;
+  }
+}

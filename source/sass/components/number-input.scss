@@ -1,0 +1,20 @@
+.number-input {
+  border: 1px solid $color-grey-2;
+  border-radius: 4px;
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 13px;
+  letter-spacing: 1.5;
+  color: $color-primary--light;
+  text-align: center;
+
+  &__label {
+    font-family: "Blogger Sans Medium", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.6;
+    color: $color-primary--light;
+  }
+}
