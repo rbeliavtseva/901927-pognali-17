@@ -1,11 +1,11 @@
 .tags-list {
-  color: $color-text--light;
+  color: $color-grey;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  list-style: none;
+  @include reset-list;
 
-  &--catalog {
+  &--small {
     font-size: 15px;
   }
 }

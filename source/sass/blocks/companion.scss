@@ -2,15 +2,15 @@
   background-color: $color-white;
   text-align: center;
   border-radius: 10px;
+}
 
-  &__name {
-    color: $color-primary--light;
-    font-size: 21px;
-    line-height: 21px;
-    font-family: "Blogger Sans Bold", "Arial", sans-serif;
-  }
+.companion__name {
+  color: $color-primary--light;
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+}
 
-  &__countries-list {
-    list-style: none;
-  }
+.companion__countries-list {
+  @include reset-list;
 }

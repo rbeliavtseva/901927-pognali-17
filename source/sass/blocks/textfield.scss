@@ -1,0 +1,20 @@
+.textfield__textarea {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-grey;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  resize: none;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.textfield__label {
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-primary--light;
+}

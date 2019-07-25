@@ -44,7 +44,7 @@
       </nav>
     </header>
 
-    <main class="main main--form">
+    <main class="main">
       <h1 class="main__title">Направления</h1>
 
       <section class="profile">
@@ -101,22 +101,26 @@
         <div class="plans__add create-plan">
           <h2 class="create-plan__title">Добавить план:</h2>
           <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="create-plan__step create-plan__step--step-one">
+            <div class="create-plan__step create-plan__step--step-one"></div>
               <h3 class="create-plan__step-title">Шаг 1. Даты пребывания</h3>
               <p class="create-plan__description">
                 Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку и ее предполагаемую длительность.
               </p>
-              <div class="create-plan__field-wrap">
+              <div class="create-plan__field-wrap number-input">
                 <label class="number-input__label" for="people">Ищу попутчиков:</label>
-                <button class="create-plan__button count-btn count-btn--minus" type="button">-</button><input class="create-plan__number-input number-input" type="text" id="people" name="people" value="2"><button class="create-plan__button count-btn count-btn--plus" type="button">+</button>
+                <button class="number-input__button count-btn count-btn--minus" type="button">-</button>
+                <input class="number-input__input" type="text" id="people" name="people" value="2">
+                <button class="number-input__button count-btn count-btn--plus" type="button">+</button>
               </div>
-              <div class="create-plan__field-wrap">
+              <div class="create-plan__field-wrap number-input">
                 <label class="number-input__label" for="days">Длительность:</label>
-                <button class="create-plan__button count-btn count-btn--minus" type="button">-</button><input class="create-plan__number-input number-input" type="text" id="days" name="days" value="2"><button class="create-plan__button count-btn count-btn--plus" type="button">+</button>
+                <button class="number-input__button count-btn count-btn--minus" type="button">-</button>
+                <input class="number-input__input" type="text" id="days" name="days" value="2">
+                <button class="number-input__button count-btn count-btn--plus" type="button">+</button>
               </div>
-              <div class="create-plan__field-wrap">
-                <input class="create-plan__checkbox checkbox" type="checkbox" name="kids" value="yes" id="kids" checked>
+              <div class="create-plan__field-wrap checkbox">
+                <input class="checkbox__input" type="checkbox" name="kids" value="yes" id="kids" checked>
                 <label class="checkbox__label" for="kids">Можно с детьми</label>
               </div>
               <div class="create-plan__calendar calendar">
@@ -145,7 +149,7 @@
                   </tr>
                 </table>
               </div>
-              <button class="button create-plan__button button--next" type="button">Следующий шаг</button>
+              <button class="button create-plan__button button--rounder" type="button">Следующий шаг</button>
             </div>
             <div class="create-plan__step create-plan__step--step-two">
               <h3 class="create-plan__step-title">Шаг 2. Маршрут</h3>
@@ -195,8 +199,8 @@
                 </ul>
               </div>
               <button class="create-plan__country-add-button" type="button">Добавить страну</button>
-              <button class="button create-plan__button button--next" type="button">Следующий шаг</button>
-              <button class="button create-plan__button button--back" type="button">На шаг назад</button>
+              <button class="button create-plan__button button--rounder" type="button">Следующий шаг</button>
+              <button class="button create-plan__button button--transparent" type="button">На шаг назад</button>
             </div>
             <div class="create-plan__step create-plan__step--step-three">
               <h3 class="create-plan__step-title">Шаг 3. Развлечения</h3>
@@ -204,16 +208,16 @@
                 Наконец, расскажите о своих планах времяпровождения.
                 Можно писать в свободной форме и ставить тэги.
               </p>
-              <div class="create-plan__country-wrap">
-                <label class="textarea__label" for="country-1">Босния и Герцеговина</label>
-                <textarea class="textarea" id="country-1" rows="10" cols="30" name="country-1" placeholder="План действий"></textarea>
+              <div class="create-plan__country-wrap textfield">
+                <label class="textfield__label" for="country-1">Босния и Герцеговина</label>
+                <textarea class="textfield__textarea" id="country-1" rows="10" cols="30" name="country-1" placeholder="План действий"></textarea>
               </div>
-              <div class="create-plan__country-wrap">
-                <label class="textarea__label" for="country-2">Чехия</label>
-                <textarea class="textarea" id="country-2" name="country-2" rows="10" cols="30" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <div class="create-plan__country-wrap textfield">
+                <label class="textfield__label" for="country-2">Чехия</label>
+                <textarea class="textfield__textarea" id="country-2" name="country-2" rows="10" cols="30" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
-              <button class="button create-plan__button button--send" type="submit">Отправить</button>
-              <button class="button create-plan__button button--back" type="button">На шаг назад</button>
+              <button class="button create-plan__button button--rounder" type="submit">Отправить</button>
+              <button class="button create-plan__button button--transparent" type="button">На шаг назад</button>
             </div>
           </form>
         </div>
@@ -223,7 +227,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo logo" href="index.html">
-          <img class="footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+          <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
         </a>
         <ul class="footer__social social">
           <li class="social__item">

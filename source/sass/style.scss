@@ -1,13 +1,11 @@
-@import "variables.scss";
+@import "color.scss";
 @import "mixins.scss";
 @import "typography.scss";
 @import "normalize.scss";
-@import "visually-hidden.scss";
-
-@import "layout/header.scss";
-@import "layout/main.scss";
-@import "layout/footer.scss";
-
+@import "blocks/visually-hidden.scss";
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/footer.scss";
 @import "blocks/logo.scss";
 @import "blocks/navigation.scss";
 @import "blocks/site-list.scss";
@@ -24,32 +22,29 @@
 @import "blocks/address.scss";
 @import "blocks/copyright.scss";
 @import "blocks/level.scss";
-
-@import "components/button.scss";
-@import "components/modal-btn.scss";
-@import "components/count-btn.scss";
-@import "components/number-input.scss";
-@import "components/checkbox.scss";
-@import "components/alphabet-filter.scss";
-@import "components/textarea.scss";
-@import "components/submit-email.scss";
-@import "components/change-btn.scss";
-@import "components/pagination.scss";
-@import "components/filter-form.scss";
-
-@import "blocks/index/slogan.scss";
-@import "blocks/index/reviews.scss";
-@import "blocks/index/price.scss";
-@import "blocks/index/price-table.scss";
-@import "blocks/index/modal.scss";
-@import "blocks/index/steps.scss";
-@import "blocks/index/about.scss";
-
-@import "blocks/catalog/companions-filter.scss";
-@import "blocks/catalog/country-filter.scss";
-@import "blocks/catalog/companion-full.scss";
-
-@import "blocks/form/upcoming.scss";
-@import "blocks/form/profile.scss";
-@import "blocks/form/plans.scss";
-@import "blocks/form/create-plan.scss";
+@import "blocks/button.scss";
+@import "blocks/modal-btn.scss";
+@import "blocks/count-btn.scss";
+@import "blocks/number-input.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/alphabet-filter.scss";
+@import "blocks/textfield.scss";
+@import "blocks/submit-email.scss";
+@import "blocks/change-btn.scss";
+@import "blocks/pagination.scss";
+@import "blocks/filter-form.scss";
+@import "blocks/slogan.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/price-table.scss";
+@import "blocks/modal.scss";
+@import "blocks/steps.scss";
+@import "blocks/about.scss";
+@import "blocks/companions-filter.scss";
+@import "blocks/country-filter.scss";
+@import "blocks/companion-full.scss";
+@import "blocks/upcoming.scss";
+@import "blocks/profile.scss";
+@import "blocks/plans.scss";
+@import "blocks/create-plan.scss";
+@import "blocks/control-group.scss";
