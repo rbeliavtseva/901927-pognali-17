@@ -1,0 +1,10 @@
+.control-group {
+  border: none;
+}
+
+.control-group__title {
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $color-primary--light;
+  line-height: 18px;
+}

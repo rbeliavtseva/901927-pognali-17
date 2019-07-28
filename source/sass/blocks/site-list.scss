@@ -1,0 +1,13 @@
+.site-list {
+  text-align: center;
+  @include reset-list;
+}
+
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-primary;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+}

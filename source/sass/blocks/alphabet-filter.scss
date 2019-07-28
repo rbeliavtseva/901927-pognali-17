@@ -1,0 +1,11 @@
+.alphabet-filter__countries-list {
+  @include reset-list;
+}
+
+.alphabet-filter__link {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-grey;
+  text-decoration: none;
+}

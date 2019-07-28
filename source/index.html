@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
@@ -11,36 +12,36 @@
       </a>
       <p class="slogan">В путешествие с крутыми попутчиками!</p>
       <nav class="navigation">
-        <button class="button button--navigation-toggle" type="button">Показать меню</button>
+        <button class="navigation-toggle-btn" type="button">Показать меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
             <li class="site-list__item">
-              <a href="#">О сервисе</a>
+              <a class="site-list__link" href="#">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <a class="button button--rounded" href="login.html">Авторизация</a>
+          <div class="navigation__contact-info contact-info">
+            <a class="contact-info__item contact-info__item--phone" href="tel:88005558628">8 800 555-86-28</a>
+            <a class="contact-info__item contact-info__item--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <ul class="navigation__social social">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
             </li>
           </ul>
         </div>
-        <a class="button" href="login.html">Авторизация</a>
-        <div class="navigation__contact-info contact-info">
-          <a class="contact-info__item contact-info__item--phone" href="tel:8 800 555-86-28">8 800 555-86-28</a>
-          <a class="contact-info__item contact-info__item--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <ul class="navigation__social social">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-        </ul>
         <ul class="navigation__list contact-info contact-info--icons">
           <li class="contact-info__item">
             <a href="#">Позвонить</a>
@@ -49,15 +50,15 @@
             <a href="#">Написать</a>
           </li>
         </ul>
-        <a class="button" href="login.html">Авторизация</a>
+        <a class="button button--rounded" href="login.html">Авторизация</a>
       </nav>
     </header>
 
     <main class="main">
-      <h1>Сервис для поиска попутчиков Погнали</h1>
+      <h1 class="visually-hidden">Сервис для поиска попутчиков Погнали</h1>
 
       <section class="reviews">
-        <h2>Отзывы о нас</h2>
+        <h2 class="visually-hidden">Отзывы о нас</h2>
         <blockquote class="reviews__item">
           <p class="reviews__text">
             "Лучшее приложение, что я видел в жизни!"
@@ -67,7 +68,7 @@
       </section>
 
       <section class="steps">
-        <h2>Как пользоваться сервисом</h2>
+        <h2 class="visually-hidden">Как пользоваться сервисом</h2>
         <ol class="steps__list">
           <li class="steps__item">Выберите направление</li>
           <li class="steps__item">Изучите идеи путешественников</li>
@@ -96,27 +97,33 @@
         <ul class="destinations__list">
           <li class="destinations__item destination">
             <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Таиланд">
-            <h3 class="destination__title">Таиланд</h3>
-            <p class="destination__description">
-              Джунгли зовут!
-            </p>
-            <span class="destination__counter">18321</span>
+            <div class="destination__wrapper">
+              <h3 class="destination__title">Таиланд</h3>
+              <p class="destination__description">
+                Джунгли зовут!
+              </p>
+              <span class="destination__counter">18321</span>
+            </div>
           </li>
           <li class="destinations__item destination">
             <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Франция">
-            <h3 class="destination__title">Франция</h3>
-            <p class="destination__description">
-              Трэ бьен, манифик!
-            </p>
-            <span class="destination__counter">12518</span>
+            <div class="destination__wrapper">
+              <h3 class="destination__title">Франция</h3>
+              <p class="destination__description">
+                Трэ бьен, манифик!
+              </p>
+              <span class="destination__counter">12518</span>
+            </div>
           </li>
           <li class="destinations__item destination">
             <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Чехия">
-            <h3 class="destination__title">Чехия</h3>
-            <p class="destination__description">
-              Закоулки старой Европы
-            </p>
-            <span class="destination__counter">5326</span>
+            <div class="destination__wrapper">
+              <h3 class="destination__title">Чехия</h3>
+              <p class="destination__description">
+                Закоулки старой Европы
+              </p>
+              <span class="destination__counter">5326</span>
+            </div>
           </li>
         </ul>
         <a class="button" href="form.html">Показать все</a>
@@ -218,12 +225,12 @@
               </td>
             </tr>
           </table>
-          <button class="show-business" href="#" type="button">Показать тарифы для бизнеса</button>
+          <button class="modal-btn modal-btn--show" type="button">Показать тарифы для бизнеса</button>
         </div>
 
         <div class="modal">
-          <h2 class="modal__title">Бизнес-тарифы</h2>
           <div class="modal__wrap">
+            <h2 class="modal__title">Бизнес-тарифы</h2>
             <table class="modal__table price-table price-table--business">
               <tr>
                 <td class="price-table__service">
@@ -266,13 +273,13 @@
                 </td>
               </tr>
             </table>
-            <button class="hide-business" href="#" type="button">Закрыть окно</button>
+            <button class="modal-btn modal-btn--hide" type="button">Закрыть окно</button>
           </div>
         </div>
       </section>
 
       <section class="sign-up">
-        <h2>Зарегистрироваться и войти</h2>
+        <h2 class="visually-hidden">Зарегистрироваться и войти</h2>
         <b class="sign-up__prompt">Заинтересовались?</b>
         <p class="sign-up__text">
           Зарегистрируйтесь, это быстро и бесплатно!
@@ -285,18 +292,20 @@
       </section>
 
       <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__text">
           Остались вопросы? Мы с радостью на них ответим!
         </p>
-        <div class="contacts__contact-info contact-info contact-info--main">
-          <a class="contact-info__item contact-info__item--phone" href="tel:8 800 555-86-28">8 800 555-86-28</a>
-          <a class="contact-info__item contact-info__item--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="contacts__contact-info contact-info">
+          <a class="contact-info__item contact-info__item--phone contact-info__item--yellow" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contact-info__item contact-info__item--email contact-info__item--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <p class="contacts__address address">
-          ул. Большая Конюшенная, 19/8
-        </p>
-        <a class="button button--bordered" href="https://yandex.ru/maps/-/CCw360pk">Проложить маршрут</a>
+        <div class="contacts__wrap">
+          <p class="contacts__address address">
+            ул. Большая Конюшенная, 19/8
+          </p>
+          <a class="button button--bordered" href="https://yandex.ru/maps/-/CCw360pk">Проложить маршрут</a>
+        </div>
       </section>
     </main>
 
@@ -305,19 +314,17 @@
         <a class="footer__logo logo">
           <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
         </a>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
         <div class="footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>

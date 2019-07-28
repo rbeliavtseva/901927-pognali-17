@@ -1,0 +1,31 @@
+.create-plan {
+  padding: 0 25px;
+  background-color: $background--darken;
+  border-radius: 30px;
+}
+
+.create-plan__title {
+  color: $color-primary--light;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+}
+
+.create-plan__step {
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
+.create-plan__step-title {
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  color: $color-primary--light;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.create-plan__description {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  color: $color-grey;
+  font-size: 16px;
+  line-height: 22px;
+}

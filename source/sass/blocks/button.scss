@@ -1,0 +1,71 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 13px 0 13px 0;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-primary--light;
+  background-color: $color-secondary;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button--bordered {
+  border: 3px solid $color-primary;
+}
+
+.button--rounder {
+  font-size: 17px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: $button-text;
+}
+
+.button--rounded {
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.button--white {
+  background-color: $color-white;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.button--transparent {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 30px;
+  color: $button-text;
+  text-transform: uppercase;
+}
+
+.button--transparent-light {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-primary--light;
+}
+
+.button--blue {
+  background-color: $background--dark;
+  text-transform: uppercase;
+  color: $button-text;
+  font-size: 17px;
+  line-height: 30px;
+  border-radius: 20px;
+}
+
+.button--collapse {
+  background-color: $collapse-button;
+  text-transform: uppercase;
+  color: $button-text;
+  font-size: 17px;
+  line-height: 30px;
+  border-radius: 20px;
+}

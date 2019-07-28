@@ -1,0 +1,26 @@
+.country-filter {
+  background-color: $background;
+  border-radius: 0 0 20px 20px;
+}
+
+.country-filter__title,
+.country-filter__link {
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.country-filter__continent-list {
+  @include reset-list;
+}
+
+.country-filter__link {
+  text-decoration: none;
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,19 @@
+.about {
+  background-color: $color-primary;
+}
+
+.about__title {
+  color: $color-tertiary;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+}
+
+.about__text {
+  font-family: "Blogger Sans Light", "Arial", sans-serif;
+  color: $color-white;
+
+  &--bold {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  }
+}

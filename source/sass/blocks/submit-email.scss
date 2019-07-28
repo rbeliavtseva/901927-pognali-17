@@ -1,0 +1,12 @@
+.submit-email__input {
+  border: none;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-grey;
+    opacity: 0.3;
+  }
+}

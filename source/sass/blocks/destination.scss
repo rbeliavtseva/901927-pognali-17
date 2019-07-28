@@ -1,0 +1,27 @@
+.destination__image {
+  border-radius: 10px;
+}
+
+.destination__wrapper {
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
+.destination__title {
+  color: $button-text;
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+}
+
+.destination__description,
+.destination__counter {
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  line-height: 18px;
+  color: $color-grey;
+  opacity: 0.3;
+}
+
+.destination__counter {
+  line-height: 30px;
+}

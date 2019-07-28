@@ -1,0 +1,16 @@
+.companion {
+  background-color: $color-white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.companion__name {
+  color: $color-primary--light;
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+}
+
+.companion__countries-list {
+  @include reset-list;
+}

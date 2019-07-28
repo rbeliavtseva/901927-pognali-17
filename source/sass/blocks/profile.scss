@@ -1,0 +1,18 @@
+.profile {
+  background-color: $background--light;
+}
+
+.profile__tags-wrap,
+.profile__transport-wrap {
+  border: 1px solid $input-border;
+  border-radius: 10px;
+}
+
+.profile__tags-title,
+.profile__transport-title {
+  text-transform: uppercase;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-primary--light;
+}
