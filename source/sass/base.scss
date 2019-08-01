@@ -1,0 +1,14 @@
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+*, *::before, *::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+body {
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

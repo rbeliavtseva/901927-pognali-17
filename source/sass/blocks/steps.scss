@@ -1,32 +1,138 @@
 .steps {
+  padding: 0 25px;
   background-color: $color-primary;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px;
+  }
 }
 
 .steps__list {
   @include reset-list;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .steps__item {
-  padding: 23px 25px;
+  margin-top: -10px;
+  padding: 23px 21px 35px 25px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   color: $button-text;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 140px;
+    width: 50%;
+    padding: 30px 34px 65px 34px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 107px;
+    width: 25%;
+    padding: 30px 34px 30px 34px;
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    top: 23px;
+    right: 21px;
+    font-family: inherit;
+    color: $color-white;
+
+    @media (min-width: $tablet-width) {
+      left: 34px;
+      top: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 30px;
+      left: 270px;
+    }
+  }
 
   &:first-child {
     background-color: $color-tertiary;
+
+    &::after {
+      content: "1";
+    }
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 20px 0 0 20px;
+    }
   }
 
   &:nth-child(2) {
     background-color: $color-tertiary--light;
+
+    &::after {
+      content: "2";
+    }
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px 20px 0 0;
+      margin-left: -18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 20px 0 0 20px;
+    }
   }
 
   &:nth-child(3) {
     background-color: $color-secondary--dark;
+
+    &::after {
+      content: "3";
+    }
+
+    @media (min-width: $tablet-width) {
+      border-radius: 0 0 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 20px 0 0 20px;
+      margin-left: -18px;
+    }
   }
 
   &:last-child {
     background-color: $color-secondary;
+    border-radius: 10px;
+
+    &::after {
+      content: "4";
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: -18px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 20px;
+    }
   }
 }

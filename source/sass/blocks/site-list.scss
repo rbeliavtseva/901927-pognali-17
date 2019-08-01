@@ -1,6 +1,22 @@
 .site-list {
-  text-align: center;
   @include reset-list;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.site-list__item {
+  &:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      margin-right: 38px;
+    }
+  }
 }
 
 .site-list__link {
@@ -10,4 +26,14 @@
   font-size: 30px;
   line-height: 36px;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

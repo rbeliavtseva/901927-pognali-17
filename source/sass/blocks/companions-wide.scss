@@ -1,3 +1,18 @@
 .companions-wide {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
   background-color: $background--light;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.companions-wide__list {
+  @include reset-list;
 }

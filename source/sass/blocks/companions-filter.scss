@@ -1,11 +1,14 @@
 .companions-filter {
-  background-color: $color-secondary;
-  border-radius: 20px;
-}
+  padding: 25px;
+  background-color: $background--light;
 
-.companions-filter__title {
-  color: $color-primary--light;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
-  font-size: 22px;
-  line-height: 22px;
+  @media (min-width: $tablet-width) {
+    padding: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+
+    padding: 0;
+  }
 }

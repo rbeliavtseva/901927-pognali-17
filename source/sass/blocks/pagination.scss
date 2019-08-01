@@ -1,0 +1,54 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__list {
+  @include reset-list;
+  display: none;
+  padding: 25px 28px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: $button-text;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: $color-white;
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.pagination__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.pagination__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.pagination__button {
+  width: 100%;
+  &--back {
+    margin-right: 1px;
+    border-radius: 20px 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+
+  &--forward {
+    border-radius: 0 20px 20px 0;
+  }
+}

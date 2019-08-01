@@ -1,18 +1,43 @@
 .profile {
+  padding: 0 25px 33px 25px;
   background-color: $background--light;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 75px 50px 75px;
+  }
 }
 
 .profile__tags-wrap,
 .profile__transport-wrap {
+  padding: 25px;
   border: 1px solid $input-border;
   border-radius: 10px;
+  text-align: center;
+}
+
+.profile__tags-wrap {
+  margin-bottom: 25px;
+}
+
+.profile__button {
+  width: 100%;
+  margin-bottom: 33px;
 }
 
 .profile__tags-title,
 .profile__transport-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
   text-transform: uppercase;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $color-primary--light;
+  background-color: $background--light;
+  transform: translateY(-35px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(55px);
+  }
 }

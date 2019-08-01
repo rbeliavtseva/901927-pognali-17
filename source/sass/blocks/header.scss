@@ -1,3 +1,15 @@
 .header {
   background-color: $button-text;
+  padding: 27px 25px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

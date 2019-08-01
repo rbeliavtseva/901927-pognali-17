@@ -1,3 +1,9 @@
 .social {
+  display: flex;
+  justify-content: center;
   @include reset-list;
+}
+
+.social__item {
+  display: inline-block;
 }

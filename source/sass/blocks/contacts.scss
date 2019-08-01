@@ -1,12 +1,27 @@
 .contacts {
+
+}
+
+.contacts__wrapper {
+  padding: 0 25px 35px 25px;
+  border-radius: 0 0 25px 25px;
   background-color: $color-primary;
 }
 
 .contacts__text {
+  margin: 0;
+  margin-bottom: 30px;
   color: $color-white;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
+  text-align: center;
 }
 
-.contacts__wrap {
+.contacts__address {
+  margin-bottom: 33px;
+}
+
+.contacts__address-wrap {
+  padding: 35px 25px;
   background-color: $color-secondary;
+  border-radius: 0 0 25px 25px;
 }

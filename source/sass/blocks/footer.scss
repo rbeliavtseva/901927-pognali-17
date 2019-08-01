@@ -1,4 +1,17 @@
 .footer {
+  padding: 38px 25px 14px 25px;
   background-color: $color-white;
-  border-radius: 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
