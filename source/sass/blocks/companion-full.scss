@@ -12,7 +12,6 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 30px;
-      width: 950px;
     }
   }
 
@@ -50,10 +49,6 @@
   line-height: 18px;
   color: $color-grey;
   text-transform: lowercase;
-}
-
-.companion-full__tags-list {
-  justify-content: flex-start;
 }
 
 .companion-full__countries-list {

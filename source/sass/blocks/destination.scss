@@ -36,8 +36,7 @@
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 }
 
-.destination__description,
-.destination__counter {
+.destination__description {
   margin: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   line-height: 18px;
@@ -46,12 +45,16 @@
 }
 
 .destination__counter {
-  line-height: 30px;
   position: absolute;
   top: 28px;
   right: 25px;
+  margin: 0;
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  line-height: 30px;
+  color: $color-grey;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
-    position: initial;
+    position: static;
   }
 }

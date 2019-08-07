@@ -1,6 +1,7 @@
 .navigation-toggle-btn {
-  @include no-outline;
   position: relative;
+  background-color: transparent;
+  border: none;
 
   &::before {
     content: "";

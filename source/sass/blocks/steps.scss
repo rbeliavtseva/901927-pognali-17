@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  counter-reset: section;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -36,7 +37,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    height: 140px;
+    min-height: 140px;
     width: 50%;
     padding: 30px 34px 65px 34px;
     font-size: 24px;
@@ -44,18 +45,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 107px;
+    min-height: 107px;
     width: 25%;
     padding: 30px 34px 30px 34px;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     display: block;
     top: 23px;
     right: 21px;
     font-family: inherit;
     color: $color-white;
+    counter-increment: section;
+    content: counters(section, ".") " ";
 
     @media (min-width: $tablet-width) {
       left: 34px;
@@ -71,10 +74,6 @@
   &:first-child {
     background-color: $color-tertiary;
 
-    &::after {
-      content: "1";
-    }
-
     @media (min-width: $tablet-width) {
       border-radius: 20px 0 0 0;
     }
@@ -86,10 +85,6 @@
 
   &:nth-child(2) {
     background-color: $color-tertiary--light;
-
-    &::after {
-      content: "2";
-    }
 
     @media (min-width: $tablet-width) {
       border-radius: 20px 20px 0 0;
@@ -104,10 +99,6 @@
   &:nth-child(3) {
     background-color: $color-secondary--dark;
 
-    &::after {
-      content: "3";
-    }
-
     @media (min-width: $tablet-width) {
       border-radius: 0 0 0 20px;
     }
@@ -121,10 +112,6 @@
   &:last-child {
     background-color: $color-secondary;
     border-radius: 10px;
-
-    &::after {
-      content: "4";
-    }
 
     @media (min-width: $tablet-width) {
       margin-left: -18px;

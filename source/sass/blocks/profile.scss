@@ -7,7 +7,6 @@
   }
 }
 
-.profile__tags-wrap,
 .profile__transport-wrap {
   padding: 25px;
   border: 1px solid $input-border;
@@ -17,6 +16,10 @@
 
 .profile__tags-wrap {
   margin-bottom: 25px;
+  padding: 25px;
+  border: 1px solid $input-border;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .profile__button {
@@ -24,9 +27,9 @@
   margin-bottom: 33px;
 }
 
-.profile__tags-title,
-.profile__transport-title {
+.profile__title {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0 20px;
   text-transform: uppercase;

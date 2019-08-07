@@ -1,9 +1,9 @@
 .submit-email {
   display: flex;
-  height: 62px;
+  min-height: 62px;
 
   @media (min-width: $tablet-width) {
-    height: 81px;
+    min-height: 81px;
   }
 }
 

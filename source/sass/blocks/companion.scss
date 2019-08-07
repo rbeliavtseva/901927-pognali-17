@@ -1,6 +1,6 @@
 .companion {
   width: 270px;
-  height: 427px;
+  min-height: 427px;
   padding: 0 46px 22px 46px;
   background-color: $color-white;
   text-align: center;
@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 285px;
-    height: 483px;
+    min-height: 483px;
   }
 
   &:not(:last-child) {
