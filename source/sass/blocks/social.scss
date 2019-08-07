@@ -1,5 +1,5 @@
 .social {
+  @include reset-list;
   display: flex;
   justify-content: center;
-  @include reset-list;
 }

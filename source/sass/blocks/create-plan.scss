@@ -35,8 +35,8 @@
 }
 
 .create-plan__nav {
-  display: none;
   @include reset-list;
+  display: none;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 14px;
