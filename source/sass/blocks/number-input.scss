@@ -1,3 +1,8 @@
+.number-input {
+  display: flex;
+  flex-direction: column;
+}
+
 .number-input__label {
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   text-transform: uppercase;

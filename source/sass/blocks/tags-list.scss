@@ -1,11 +1,17 @@
 .tags-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
   color: $color-grey;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  @include reset-list;
 
   &--small {
     font-size: 15px;
   }
+}
+
+.tags-list__tag {
+  margin-right: 7px;
 }

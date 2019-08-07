@@ -1,4 +1,32 @@
+.companion-full {
+  padding: 26px;
+  background-color: $color-white;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 950px;
+  }
+}
+
+.companion-full__wrap {
+  display: flex;
+}
+
 .companion-full__name {
+  order: 2;
+  margin: 0;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -14,6 +42,8 @@
 }
 
 .companion-full__title {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 18px;
@@ -31,6 +61,10 @@
   line-height: 18px;
   color: $color-primary--light;
   text-transform: uppercase;
+}
+
+.companion-full__icons-list {
+  justify-content: flex-start;
 }
 
 .companion-full__level {

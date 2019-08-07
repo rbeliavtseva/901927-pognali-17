@@ -7,12 +7,14 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo">
-        <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
-      </a>
+      <div class="header__wrapper">
+        <a class="header__logo logo">
+          <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+        </a>
+        <button class="navigation-toggle-btn" type="button"><span class="visually-hidden">Показать меню</span></button>
+      </div>
       <p class="slogan">В путешествие с крутыми попутчиками!</p>
       <nav class="navigation">
-        <button class="navigation-toggle-btn" type="button">Показать меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
             <li class="site-list__item">
@@ -25,7 +27,7 @@
               <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="button button--rounded" href="login.html">Авторизация</a>
+          <a class="navigation__button button button--rounded" href="login.html">Авторизация</a>
           <div class="navigation__contact-info contact-info">
             <a class="contact-info__item contact-info__item--phone" href="tel:88005558628">8 800 555-86-28</a>
             <a class="contact-info__item contact-info__item--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -42,7 +44,9 @@
             </li>
           </ul>
         </div>
-        <ul class="navigation__list contact-info contact-info--icons">
+      </nav>
+      <div class="header__contact-wrapper">
+        <ul class="contact-info contact-info--icons">
           <li class="contact-info__item">
             <a href="#">Позвонить</a>
           </li>
@@ -51,7 +55,7 @@
           </li>
         </ul>
         <a class="button button--rounded" href="login.html">Авторизация</a>
-      </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -63,17 +67,17 @@
           <p class="reviews__text">
             "Лучшее приложение, что я видел в жизни!"
           </p>
-          <cite class="reviews__author-name">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
+          <cite class="reviews__author-name">Мурат Эльтазин<br>главный редактор газеты "гаджетлайф"</cite>
         </blockquote>
       </section>
 
       <section class="steps">
         <h2 class="visually-hidden">Как пользоваться сервисом</h2>
         <ol class="steps__list">
-          <li class="steps__item">Выберите направление</li>
-          <li class="steps__item">Изучите идеи путешественников</li>
-          <li class="steps__item">Находите тех, кто похож на вас</li>
-          <li class="steps__item">Путешествуйте вместе!</li>
+          <li class="steps__item">Выберите<br>направление</li>
+          <li class="steps__item">Изучите идеи<br>путешественников</li>
+          <li class="steps__item">Находите тех,<br>кто похож на вас</li>
+          <li class="steps__item">Путешествуйте<br>вместе!</li>
         </ol>
       </section>
 
@@ -86,23 +90,26 @@
         <p class="about__text about__text--bold">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
+        <a class="about__button button" href="#">Подробнее</a>
       </section>
 
       <section class="destinations">
-        <h2 class="destinations__title">Направления</h2>
-        <p class="destinations__disclaimer">
-          Мы не продаем туры и ничего не рекламируем.
-          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-        </p>
+        <div class="destinations__wrapper">
+          <h2 class="destinations__title">Направления</h2>
+          <p class="destinations__disclaimer">
+            Мы не продаем туры и ничего не рекламируем.
+            Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          </p>
+        </div>
         <ul class="destinations__list">
           <li class="destinations__item destination">
             <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Таиланд">
             <div class="destination__wrapper">
               <h3 class="destination__title">Таиланд</h3>
+              <span class="destination__counter">18321</span>
               <p class="destination__description">
                 Джунгли зовут!
               </p>
-              <span class="destination__counter">18321</span>
             </div>
           </li>
           <li class="destinations__item destination">
@@ -126,18 +133,20 @@
             </div>
           </li>
         </ul>
-        <a class="button" href="form.html">Показать все</a>
+        <a class="destinations__button button" href="form.html">Показать все</a>
       </section>
 
       <section class="companions">
-        <h2 class="companions__title">Попутчики</h2>
-        <p class="companions__text">
-          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-        </p>
-        <p class="companions__text companions__text--bold">
-          Теперь можно легко найти единомышленников!
-        </p>
+        <div class="companions__wrapper">
+          <h2 class="companions__title">Попутчики</h2>
+          <p class="companions__text">
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          </p>
+          <p class="companions__text companions__text--bold">
+            Теперь можно легко найти единомышленников!
+          </p>
+        </div>
         <ul class="companions__list">
           <li class="companions__item companion">
             <h3 class="companion__name">Таня Фирсова</h3>
@@ -187,45 +196,45 @@
             </ul>
           </li>
         </ul>
-        <a class="button" href="catalog.html">Показать всех</a>
+        <a class="companions__button button" href="catalog.html">Показать всех</a>
       </section>
 
       <section class="price">
-        <h2 class="price__title">Добавьте свой профиль</h2>
+        <h2 class="price__title">Добавьте свой профиль!</h2>
         <div class="price__wrap">
           <table class="price__table price-table">
-            <tr>
+            <tr class="price-table__row">
               <td class="price-table__service">
                 Базовое размещение
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__row">
               <td class="price-table__cost">
                 Бесплатно
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__row">
               <td class="price-table__service">
                 Вывод на первых позициях
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__row">
               <td class="price-table__cost">
                 99 руб./мес
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__row">
               <td class="price-table__service">
                 Кастомный цвет карточки
               </td>
             </tr>
-            <tr>
+            <tr class="price-table__row">
               <td class="price-table__cost">
                   59 руб./мес
               </td>
             </tr>
           </table>
-          <button class="modal-btn modal-btn--show" type="button">Показать тарифы для бизнеса</button>
+          <button class="price__button modal-btn modal-btn--show" type="button">Показать тарифы для бизнеса</button>
         </div>
 
         <div class="modal">
@@ -280,27 +289,31 @@
 
       <section class="sign-up">
         <h2 class="visually-hidden">Зарегистрироваться и войти</h2>
-        <b class="sign-up__prompt">Заинтересовались?</b>
-        <p class="sign-up__text">
-          Зарегистрируйтесь, это быстро и бесплатно!
-          Уже зарегистрированы? Тогда скорее <a class="sign-up__link" href="#">авторизуйтесь</a>.
-        </p>
+        <div class="sign-up__wrapper">
+          <b class="sign-up__prompt">Заинтересовались?</b>
+          <p class="sign-up__text">
+            Зарегистрируйтесь, это быстро и бесплатно!
+            Уже зарегистрированы? Тогда скорее <a class="sign-up__link" href="#">авторизуйтесь</a>.
+          </p>
+        </div>
         <form class="sign-up__email submit-email" action="https://echo.htmlacademy.ru" method="POST">
           <input class="submit-email__input" type="email" name="email" value="" placeholder="E-mail">
-          <a class="button" href="#">Регистрация</a>
+          <a class="submit-email__button button" href="#"><span class="submit-email__button-text">Регистрация</span></a>
         </form>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__text">
-          Остались вопросы? Мы с радостью на них ответим!
-        </p>
-        <div class="contacts__contact-info contact-info">
-          <a class="contact-info__item contact-info__item--phone contact-info__item--yellow" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="contact-info__item contact-info__item--email contact-info__item--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="contacts__wrapper">
+          <p class="contacts__text">
+            Остались вопросы?<br>Мы с радостью на них ответим!
+          </p>
+          <div class="contacts__contact-info contact-info">
+            <a class="contact-info__item contact-info__item--phone contact-info__item--yellow" href="tel:88005558628">8 800 555-86-28</a>
+            <a class="contact-info__item contact-info__item--email contact-info__item--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
         </div>
-        <div class="contacts__wrap">
+        <div class="contacts__address-wrap">
           <p class="contacts__address address">
             ул. Большая Конюшенная, 19/8
           </p>

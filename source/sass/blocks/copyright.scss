@@ -1,4 +1,25 @@
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
 .copyright__text {
+  display: inline-block;
+  vertical-align: middle;
   color: $color-grey;
   font-family: "Blogger Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
 }

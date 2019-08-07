@@ -1,4 +1,6 @@
 .control-group {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -7,4 +9,14 @@
   text-transform: uppercase;
   color: $color-primary--light;
   line-height: 18px;
+}
+
+.control-group__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

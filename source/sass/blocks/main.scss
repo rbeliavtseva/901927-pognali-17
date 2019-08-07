@@ -1,8 +1,20 @@
 .main__title {
+  margin: 0;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   background-color: $button-text;
   color: $color-white;
   border-radius: 0 0 20px 20px;
+}
+
+.main__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 77px 60px;
+    background-color: $background--light;
+  }
 }

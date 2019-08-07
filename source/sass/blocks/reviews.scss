@@ -1,14 +1,41 @@
 .reviews {
-  background-color: $color-primary;
+  min-height: 285px;
+  padding: 50px 116px 20px 51px;
+  background-color: $button-text;
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 74px 213px 74px;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
 }
 
 .reviews__text {
+  margin: 0;
+  margin-bottom: 20px;
   color: $color-white;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 50px;
+  }
 }
 
 .reviews__author-name {
   color: $color-white;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

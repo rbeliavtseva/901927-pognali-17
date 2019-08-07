@@ -1,0 +1,29 @@
+.navigation-toggle-btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $color-white;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $color-white;
+    top: 8px;
+    right: 0;
+  }
+}

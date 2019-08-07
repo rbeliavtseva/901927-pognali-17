@@ -1,10 +1,28 @@
 .companion {
+  width: 270px;
+  min-height: 427px;
+  padding: 0 46px 22px 46px;
   background-color: $color-white;
   text-align: center;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    min-height: 483px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-right: 48px;
+    }
+  }
 }
 
 .companion__name {
+  margin: 0;
   color: $color-primary--light;
   font-size: 21px;
   line-height: 21px;
@@ -13,4 +31,13 @@
 
 .companion__countries-list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.companion__tags-list {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
 }
