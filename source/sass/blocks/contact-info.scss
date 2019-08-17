@@ -2,13 +2,24 @@
   display: flex;
   flex-direction: column;
 
-  &--icons {
-    @include reset-list;
-    display: flex;
+  @media (min-width: $desktop-width) {
+    padding: 0 260px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
-  @media (min-width: $desktop-width) {
+  &--icons {
+    @include reset-list;
     flex-direction: row;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 }
 
@@ -18,6 +29,29 @@
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 
   &--yellow {
     color: $color-secondary;

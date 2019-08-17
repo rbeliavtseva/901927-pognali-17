@@ -1,9 +1,18 @@
 .navigation {
   padding: 27px 25px 40px;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 40px 100px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .navigation__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,17 +22,53 @@
   }
 }
 
-.navigation__list {
-  margin-bottom: 55px;
+.navigation__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.navigation__button-close {
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 25px;
+    right: 50%;
+  }
+}
+
+.navigation__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.navigation__list {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding: 0 57px;
   }
 }
 
 .navigation__contact-info {
   margin-top: 64px;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 150px;
+    margin-bottom: 145px;
+    padding: 0 57px;
+  }
 }
 
 .navigation__social {
@@ -31,7 +76,7 @@
     justify-content: flex-start;
   }
 
-  @media (min-width: $desktop-width) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    padding: 0 57px;
   }
 }

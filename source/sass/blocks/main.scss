@@ -1,11 +1,41 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .main__title {
+  display: inline-block;
   margin: 0;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
-  background-color: $button-text;
   color: $color-white;
-  border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.main__underline {
+  margin-top: 5px;
+  border-bottom: 5px solid $color-tertiary;
+  border-bottom-left-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  border-top-left-radius: 2.5px;
+  border-top-right-radius: 2.5px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 3px;
+    margin-top: 55px;
+    border-bottom: 8px solid $color-tertiary;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
 }
 
 .main__wrapper {
@@ -16,5 +46,100 @@
     justify-content: space-between;
     padding: 77px 60px;
     background-color: $background--light;
+  }
+}
+
+.main__about {
+  position: relative;
+  z-index: 60;
+}
+
+.main__destinations {
+  position: relative;
+  z-index: 50;
+  top: -20px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
+}
+
+.main__companions {
+  position: relative;
+  top: -40px;
+  z-index: 40;
+
+  @media (min-width: $tablet-width) {
+    top: -100px;
+  }
+}
+
+.main__price {
+  z-index: 30;
+  position: relative;
+  top: -60px;
+
+  @media (min-width: $tablet-width) {
+    top: -150px;
+  }
+}
+
+.main__sign-up {
+  z-index: 20;
+  position: relative;
+  top: -80px;
+
+  @media (min-width: $tablet-width) {
+    top: -210px;
+  }
+}
+
+.main__contacts {
+  z-index: 10;
+  position: relative;
+  top: -80px;
+
+  @media (min-width: $tablet-width) {
+    top: -210px;
+  }
+}
+
+.main__title-wrap {
+  z-index: 10;
+  padding: 0 27px;
+  background-color: $button-text;
+  border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 76px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 125px;
+  }
+}
+
+.main__profile {
+  position: relative;
+  top: -20px;
+
+  @media (min-width: $tablet-width) {
+    top: -55px;
+  }
+}
+
+.main__plans {
+  z-index: 9;
+  position: relative;
+  top: -40px;
+
+  @media (min-width: $tablet-width) {
+    top: -80px;
+    margin-top: -76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -30px;
   }
 }

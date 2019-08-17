@@ -1,12 +1,21 @@
 .price {
-  padding: 0 26px 18px 50px;
+  padding: 70px 20px 18px 50px;
   background-color: $background--light;
   border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 125px 74px 48px 40px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 155px 131px 150px 131px;
+  }
 }
 
 .price__title {
-  width: 100px;
   margin: 0;
+  margin-bottom: 45px;
   color: $color-tertiary;
   font-size: 24px;
   line-height: 24px;
@@ -14,13 +23,29 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin-bottom: 72px;
+    margin-left: 40px;
     font-size: 45px;
     line-height: 45px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 132px;
   }
 }
 
 .price__wrap {
   display: flex;
   flex-direction: column;
+  padding-bottom: 38px;
+}
+
+.price__table {
+  margin-bottom: 60px;
+}
+
+.price__button {
+  align-self: flex-start;
 }

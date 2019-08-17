@@ -1,4 +1,113 @@
 .price-table {
+  display: block;
+  position: relative;
+  padding-right: 50px;
+  border-collapse: collapse;
   color: $color-grey;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 90px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &--business {
+    padding: 0 25px 22px 25px;
+  }
+}
+
+.price-table tbody {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid rgba($color-black, 0.05);
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 18px 0 17px 0;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    border-radius: 50%;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: $color-white;
+
+    @media (min-width: $tablet-width) {
+      width: 67px;
+      height: 67px;
+      font-size: 28px;
+      line-height: 28px;
+      padding: 22px;
+    }
+  }
+}
+
+.price-table tbody:first-child {
+  &::after {
+    content: "1";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: $color-tertiary--light;
+
+    @media (min-width: $tablet-width) {
+      top: -2px;
+      left: 0;
+    }
+  }
+}
+
+.price-table tbody:nth-child(2) {
+  &::after {
+    content: "2";
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    background-color: $color-secondary--dark;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: 67px;
+    }
+  }
+}
+
+.price-table tbody:last-child {
+  border-bottom: 1px solid rgba($color-black, 0.05);
+
+  &::after {
+    content: "3";
+    position: absolute;
+    top: 139px;
+    right: 5px;
+    background-color: $color-secondary;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: 135px;
+    }
+  }
+}
+
+.price-table th {
+  text-align: left;
+  font-weight: normal;
+}
+
+.price-table--business tbody::after {
+  display: none;
 }

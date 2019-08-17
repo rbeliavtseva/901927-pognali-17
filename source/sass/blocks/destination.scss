@@ -1,13 +1,16 @@
 .destination {
-  margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
+    min-height: 140px;
   }
 }
 
 .destination__image {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   order: 2;
 
   @media (min-width: $tablet-width) {
@@ -16,38 +19,62 @@
 }
 
 .destination__wrapper {
+  position: relative;
+  top: -15px;
   padding: 28px 25px 20px 25px;
   background-color: $color-white;
   border-radius: 10px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
+    position: static;
     flex-grow: 1;
     border-radius: 20px 0 0 20px;
+    padding: 32px 25px 16px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 25px 16px 30px;
   }
 }
 
 .destination__title {
   margin: 0;
-  margin-bottom: 5px;
-  color: $button-text;
+  margin-bottom: 2px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  color: $button-text;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .destination__description {
   margin: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  font-size: 16px;
   line-height: 18px;
   color: $color-grey;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .destination__counter {
   position: absolute;
-  top: 28px;
-  right: 25px;
+  top: 23px;
+  right: 24px;
   margin: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   line-height: 30px;
@@ -56,5 +83,11 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
   }
 }

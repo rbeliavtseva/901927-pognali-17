@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     width: 285px;
     min-height: 483px;
+    border-radius: 20px;
   }
 
   &:not(:last-child) {
@@ -18,11 +19,16 @@
       margin-bottom: 0;
       margin-right: 48px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
+    }
   }
 }
 
 .companion__name {
   margin: 0;
+  margin-bottom: 15px;
   color: $color-primary--light;
   font-size: 21px;
   line-height: 21px;
@@ -37,7 +43,8 @@
 }
 
 .companion__tags-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
 }

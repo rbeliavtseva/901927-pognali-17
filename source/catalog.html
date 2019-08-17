@@ -7,12 +7,36 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="index.html">
-        <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
-      </a>
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo">
+            <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+          </a>
+          <button class="navigation-toggle-btn navigation-toggle-btn--open" type="button"><span class="visually-hidden">Показать меню</span></button>
+        </div>
+        <div class="header__site-list-wrap">
+          <div class="header__line"></div>
+          <ul class="header__site-list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--white" href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--white" href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--white" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <nav class="navigation">
-        <button class="navigation-toggle-btn" type="button">Показать меню</button>
         <div class="navigation__wrapper">
+          <div class="navigation__header">
+            <a class="navigation__logo logo">
+              <img class="logo__logo-image" src="http://placehold.it/150x100" width="96" height="15" alt="Логотип Погнали">
+            </a>
+            <button class="navigation__button-close navigation-toggle-btn navigation-toggle-btn--close" type="button"><span class="visually-hidden">Скрыть меню</span></button>
+          </div>
           <ul class="navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#">О сервисе</a>
@@ -42,13 +66,30 @@
           </ul>
         </div>
       </nav>
+      <div class="header__contact-wrapper header__contact-wrapper--inner">
+        <ul class="header__contact-info contact-info contact-info--icons">
+          <li class="contact-info__item contact-info__item--icon">
+            <a href="#">Позвонить</a>
+          </li>
+          <li class="contact-info__item contact-info__item--icon">
+            <a href="#">Написать</a>
+          </li>
+        </ul>
+        <a class="header__button button button--rounded" href="login.html">Авторизация</a>
+      </div>
     </header>
 
     <main class="main">
-      <h1 class="main__title">Попутчики</h1>
+      <div class="main__title-wrap">
+        <h1 class="main__title">Попутчики
+          <div class="main__underline"></div>
+        </h1>
+      </div>
       <section class="country-filter">
-        <h2 class="country-filter__title">Фильтрация по странам</h2>
-        <button class="btn-filter-toggle" type="button">Показать фильтр</button>
+        <div class="country-filter__title-wrap">
+          <h2 class="country-filter__title">Фильтрация по странам</h2>
+          <button class="btn-filter-toggle" type="button">Показать все</button>
+        </div>
         <ul class="country-filter__continent-list">
           <li class="country-filter__continent-item"><a class="country-filter__link country-filter__link--active" href="#">Европа</a></li>
           <li class="country-filter__continent-item"><a class="country-filter__link" href="#">Азия</a></li>
@@ -96,79 +137,94 @@
           <form class="companions-filter__form filter-form" action="https://echo.htmlacademy.ru" method="POST">
             <h2 class="filter-form__title">Подберите идеального попутчика</h2>
             <fieldset class="control-group filter-form__fieldset">
-              <legend class="control-group__title">Хобби</legend>
-              <div class="control-group__container">
+              <div class="control-group__legend-wrap">
+                <legend class="control-group__title">Хобби</legend>
+                <button class="control-group__button toggle-options-btn" type="button"><span class="visually-hidden">Показать варианты</span></button>
+              </div>
+              <div class="control-group__container control-group__container--hide">
                 <div class="checkbox control-group__item">
                   <input class="checkbox__input" type="checkbox" name="hobby" value="gym" id="hobby-gym" checked>
-                  <label class="checkbox__label" for="hobby-gym">Спортзал</label>
+                  <label class="checkbox__label checkbox__label--white" for="hobby-gym">Спортзал</label>
                 </div>
                 <div class="checkbox control-group__item">
                   <input class="checkbox__input" type="checkbox" name="hobby" value="hookah" id="hobby-hookah">
-                  <label class="checkbox__label" for="hobby-hookah">Кальян</label>
+                  <label class="checkbox__label checkbox__label--white" for="hobby-hookah">Кальян</label>
                 </div>
                 <div class="checkbox control-group__item">
                   <input class="checkbox__input" type="checkbox" name="hobby" value="couch" id="hobby-couch">
-                  <label class="checkbox__label" for="hobby-couch">Диван</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="control-group filter-form__fieldset filter-form__fieldset--expanded">
-              <legend class="control-group__title">Музыка</legend>
-              <div class="control-group__container">
-                <div class="checkbox control-group__item">
-                  <input class="checkbox__input" type="checkbox" name="music" value="rock" id="music-rock" checked>
-                  <label class="checkbox__label" for="music-rock">Тяжелый рок</label>
-                </div>
-                <div class="checkbox control-group__item">
-                  <input class="checkbox__input" type="checkbox" name="music" value="rap" id="music-rap">
-                  <label class="checkbox__label" for="music-rap">Русский рэп</label>
-                </div>
-                <div class="checkbox control-group__item">
-                  <input class="checkbox__input" type="checkbox" name="music" value="eurodance" id="music-eurodance">
-                  <label class="checkbox__label" for="music-eurodance">Евродэнс</label>
+                  <label class="checkbox__label checkbox__label--white" for="hobby-couch">Диван</label>
                 </div>
               </div>
             </fieldset>
             <fieldset class="control-group filter-form__fieldset">
-              <legend class="control-group__title">Еда</legend>
+              <div class="control-group__legend-wrap">
+                <legend class="control-group__title">Музыка</legend>
+                <button class="control-group__button toggle-options-btn toggle-options-btn--up" type="button"><span class="visually-hidden">Показать варианты</span></button>
+              </div>
               <div class="control-group__container">
                 <div class="checkbox control-group__item">
+                  <input class="checkbox__input" type="checkbox" name="music" value="rock" id="music-rock" checked>
+                  <label class="checkbox__label checkbox__label--white" for="music-rock">Тяжелый рок</label>
+                </div>
+                <div class="checkbox control-group__item">
+                  <input class="checkbox__input" type="checkbox" name="music" value="rap" id="music-rap">
+                  <label class="checkbox__label checkbox__label--white" for="music-rap">Русский рэп</label>
+                </div>
+                <div class="checkbox control-group__item">
+                  <input class="checkbox__input" type="checkbox" name="music" value="eurodance" id="music-eurodance">
+                  <label class="checkbox__label checkbox__label--white" for="music-eurodance">Евродэнс</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="control-group filter-form__fieldset">
+              <div class="control-group__legend-wrap">
+                <legend class="control-group__title">Еда</legend>
+                <button class="control-group__button toggle-options-btn" type="button"><span class="visually-hidden">Показать варианты</span></button>
+              </div>
+              <div class="control-group__container control-group__container--hide">
+                <div class="checkbox control-group__item">
                   <input class="checkbox__input" type="checkbox" name="food" value="meat" id="food-meat" checked>
-                  <label class="checkbox__label" for="food-meat">Мясоед</label>
+                  <label class="checkbox__label checkbox__label--white" for="food-meat">Мясоед</label>
                 </div>
                 <div class="checkbox control-group__item">
                   <input class="checkbox__input" type="checkbox" name="food" value="healthy" id="food-healthy">
-                  <label class="checkbox__label" for="food-healthy">Сидит на ПП</label>
+                  <label class="checkbox__label checkbox__label--white" for="food-healthy">Сидит на ПП</label>
                 </div>
                 <div class="checkbox control-group__item">
                   <input class="checkbox__input" type="checkbox" name="food" value="vegan" id="food-vegan">
-                  <label class="checkbox__label" for="food-vegan">Веган-сыроед</label>
+                  <label class="checkbox__label checkbox__label--white" for="food-vegan">Веган-сыроед</label>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="control-group filter-form__fieldset filter-form__fieldset--expanded">
-              <legend class="control-group__title">Транспорт</legend>
-              <div class="control-group__container">
-                <div class="checkbox control-group__item">
+            <fieldset class="control-group control-group--transport filter-form__fieldset">
+              <div class="control-group__legend-wrap">
+                <legend class="control-group__title">Транспорт</legend>
+                <button class="control-group__button toggle-options-btn toggle-options-btn--up" type="button"><span class="visually-hidden">Показать варианты</span></button>
+              </div>
+              <div class="control-group__container control-group__container--transport">
+                <div class="checkbox checkbox--icon control-group__item">
                   <input class="checkbox__input" type="checkbox" name="transport" value="plane" id="transport-plane" checked>
-                  <label class="checkbox__label" for="transport-plane">Самолет</label>
+                  <label class="checkbox__label checkbox__label--icon" for="transport-plane"><span class="visually-hidden">Самолет</span></label>
                 </div>
-                <div class="checkbox control-group__item">
+                <div class="checkbox checkbox--icon control-group__item">
                   <input class="checkbox__input" type="checkbox" name="transport" value="bus" id="transport-bus" checked>
-                  <label class="checkbox__label" for="transport-bus">Автобус</label>
+                  <label class="checkbox__label checkbox__label--icon" for="transport-bus"><span class="visually-hidden">Автобус</span></label>
                 </div>
-                <div class="checkbox control-group__item">
+                <div class="checkbox checkbox--icon control-group__item">
                   <input class="checkbox__input" type="checkbox" name="transport" value="cycle" id="transport-cycle">
-                  <label class="checkbox__label" for="transport-cycle">Велосипед</label>
+                  <label class="checkbox__label checkbox__label--icon" for="transport-cycle"><span class="visually-hidden">Велосипед</span></label>
                 </div>
-                <div class="checkbox control-group__item">
+                <div class="checkbox checkbox--icon control-group__item">
                   <input class="checkbox__input" type="checkbox" name="transport" value="feet" id="transport-feet" checked>
-                  <label class="checkbox__label" for="transport-feet">Пешком</label>
+                  <label class="checkbox__label checkbox__label--icon" for="transport-feet"><span class="visually-hidden">Пешком</span></label>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="control-group filter-form__fieldset filter-form__fieldset--expanded">
-              <legend class="control-group__title">Левел</legend>
+            <fieldset class="control-group filter-form__fieldset">
+              <div class="control-group__legend-wrap">
+                <legend class="control-group__title">Левел</legend>
+                <button class="control-group__button toggle-options-btn toggle-options-btn--up" type="button"><span class="visually-hidden">Показать варианты</span></button>
+              </div>
             </fieldset>
             <button class="filter-form__button button button--white" type="submit">Показать</button>
           </form>

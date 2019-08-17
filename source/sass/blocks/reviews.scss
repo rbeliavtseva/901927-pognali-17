@@ -6,13 +6,26 @@
   @media (min-width: $tablet-width) {
     padding: 90px 74px 213px 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: auto;
+    padding: 0 87px 0 130px;
+  }
 }
 
 .reviews__item {
   margin: 0;
+  min-width: 155px;
 
   @media (min-width: $tablet-width) {
     width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -200px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -26,6 +39,10 @@
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
   }
 }
 

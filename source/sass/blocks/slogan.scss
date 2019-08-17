@@ -4,4 +4,15 @@
   line-height: 40px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    box-sizing: content-box;
+    width: 395px;
+    padding-left: 68px;
+    padding-top: 55px;
+    margin: 0;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+  }
 }

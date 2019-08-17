@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -26,6 +27,19 @@
   font-size: 30px;
   line-height: 36px;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-secondary;
+  }
+
+  &:active {
+    color: rgba($color-secondary, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

@@ -18,3 +18,21 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.no-br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.br-desktop {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.no-br-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

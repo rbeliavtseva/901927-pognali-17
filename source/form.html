@@ -7,12 +7,36 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo logo" href="index.html">
-        <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
-      </a>
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo logo">
+            <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+          </a>
+          <button class="navigation-toggle-btn navigation-toggle-btn--open" type="button"><span class="visually-hidden">Показать меню</span></button>
+        </div>
+        <div class="header__site-list-wrap">
+          <div class="header__line"></div>
+          <ul class="header__site-list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--white" href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--white" href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--white" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <nav class="navigation">
-        <button class="navigation-toggle-btn" type="button">Показать меню</button>
         <div class="navigation__wrapper">
+          <div class="navigation__header">
+            <a class="navigation__logo logo">
+              <img class="logo__logo-image" src="http://placehold.it/150x100" width="96" height="15" alt="Логотип Погнали">
+            </a>
+            <button class="navigation__button-close navigation-toggle-btn navigation-toggle-btn--close" type="button"><span class="visually-hidden">Скрыть меню</span></button>
+          </div>
           <ul class="navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#">О сервисе</a>
@@ -42,40 +66,58 @@
           </ul>
         </div>
       </nav>
+      <div class="header__contact-wrapper header__contact-wrapper--inner">
+        <ul class="header__contact-info contact-info contact-info--icons">
+          <li class="contact-info__item contact-info__item--icon">
+            <a href="#">Позвонить</a>
+          </li>
+          <li class="contact-info__item contact-info__item--icon">
+            <a href="#">Написать</a>
+          </li>
+        </ul>
+        <a class="header__button button button--rounded" href="login.html">Авторизация</a>
+      </div>
     </header>
 
     <main class="main">
-      <h1 class="main__title">Направления</h1>
-
-      <section class="profile">
+      <div class="main__title-wrap">
+        <h1 class="main__title">Направления
+          <div class="main__underline"></div>
+        </h1>
+      </div>
+      <section class="main__profile profile">
         <h2 class="visually-hidden">Мой профайл</h2>
-        <div class="profile__level level level--profile">
-          <span>80</span><span>level</span>
+        <div class="profile__wrap">
+          <div class="profile__level level level--profile">
+            <span class="level__number level__number--profile">80</span><span class="level__text level__text--profile">level</span>
+          </div>
+          <img class="profile__image" src="http://placehold.it/150x100" width="100" height="100" alt="Фото профайла">
         </div>
-        <img class="profile__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото профайла">
-        <a class="button profile__button button--blue" href="#">Сменить фото</a>
-        <div class="profile__tags-wrap">
-          <h3 class="profile__title">Тэги</h3>
-          <ul class="profile__tags-list tags-list">
-            <li class="tags-list__tag">#бургер</li>
-            <li class="tags-list__tag">#бар</li>
-            <li class="tags-list__tag">#футбол</li>
-            <li class="tags-list__tag">#концерт</li>
-            <li class="tags-list__tag">#крафт</li>
-          </ul>
-        </div>
-        <div class="profile__transport-wrap">
-          <h3 class="profile__title">Транспорт</h3>
-          <ul class="profile__transport-list transport-list">
-            <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--active">Самолет</li>
-            <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--active">Автобус</li>
-            <li class="transport-list__icon-item transport-list__icon-item--cycle">Велосипед</li>
-            <li class="transport-list__icon-item transport-list__icon-item--feet transport-list__icon-item--active">Пешком</li>
-          </ul>
+        <a class="button profile__button button--blue" href="#"><span class="profile__button--display-none">Сменить</span> фото</a>
+        <div class="profile__user-info">
+          <div class="profile__tags-wrap">
+            <h3 class="profile__title profile__title--tags">Тэги</h3>
+            <ul class="profile__tags-list tags-list">
+              <li class="tags-list__tag">#бургер</li>
+              <li class="tags-list__tag">#бар</li>
+              <li class="tags-list__tag">#футбол</li>
+              <li class="tags-list__tag">#концерт</li>
+              <li class="tags-list__tag">#крафт</li>
+            </ul>
+          </div>
+          <div class="profile__transport-wrap">
+            <h3 class="profile__title profile__title--transport">Транспорт</h3>
+            <ul class="profile__transport-list transport-list">
+              <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--active">Самолет</li>
+              <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--active">Автобус</li>
+              <li class="transport-list__icon-item transport-list__icon-item--cycle">Велосипед</li>
+              <li class="transport-list__icon-item transport-list__icon-item--feet transport-list__icon-item--active">Пешком</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="plans">
+      <section class="plans main__plans">
         <div class="plans__upcoming upcoming">
           <div class="upcoming__wrapper">
             <h2 class="upcoming__title">Мои планы:</h2>
@@ -84,8 +126,8 @@
                 <h3 class="upcoming__item-title">Франция, Италия</h3>
                 <div class="upcoming__details-wrapper">
                   <div class="upcoming__details">
-                    <span>3 попутчика</span>
-                    <span>26 мар — 29 мар</span>
+                    <span class="upcoming__companions">3 попутчика</span>
+                    <span class="upcoming__dates">26 мар — 29 мар</span>
                   </div>
                   <a class="upcoming__button change-btn" href="#">Изменить</a>
                 </div>
@@ -94,8 +136,8 @@
                 <h3 class="upcoming__item-title">Тайланд, Индонезия</h3>
                 <div class="upcoming__details-wrapper">
                   <div class="upcoming__details">
-                    <span>1 попутчик</span>
-                    <span>июл — 15 июл</span>
+                    <span class="upcoming__companions">1 попутчик</span>
+                    <span class="upcoming__dates">1 июл — 15 июл</span>
                   </div>
                   <a class="upcoming__button change-btn" href="#">Изменить</a>
                 </div>
@@ -106,7 +148,14 @@
 
         <div class="plans__add create-plan">
           <div class="create-plan__wrapper">
-            <h2 class="create-plan__title">Добавить план:</h2>
+            <div class="create-plan__step-title-wrap">
+              <h2 class="create-plan__title">Добавить план:</h2>
+              <ul class="create-plan__steps-controls">
+                <li class="create-plan__control-item create-plan__control-item--active"><span></span></li>
+                <li class="create-plan__control-item"><span></span></li>
+                <li class="create-plan__control-item"><span></span></li>
+              </ul>
+            </div>
             <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="create-plan__step create-plan__step--step-one">
                 <div class="create-plan__title-wrap">
@@ -116,7 +165,7 @@
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link" href="#">Развлечения</a></li>
                   </ul>
                   <div class="create-plan__text-wrap">
-                    <h3 class="create-plan__step-title">Шаг 1. Даты пребывания</h3>
+                    <h3 class="create-plan__step-title">Шаг 1. <br class="no-br-desktop">Даты пребывания</h3>
                     <p class="create-plan__description">
                       Укажите предпочтительное количество попутчиков, которых<br>
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.
@@ -124,22 +173,28 @@
                   </div>
                 </div>
                 <div class="create-plan__field-wrap number-input">
-                  <label class="number-input__label" for="people">Ищу попутчиков:</label>
+                  <div class="number-input__label-wrap">
+                    <label class="number-input__label" for="people">Ищу попутчиков:</label>
+                    <span class="number-input__units">чел.</span>
+                  </div>
                   <div class="number-input__wrapper">
-                    <button class="number-input__button count-btn count-btn--minus" type="button">-</button>
+                    <button class="number-input__button number-input__button--minus count-btn count-btn--minus" type="button"><span class="visually-hidden">-</span></button>
                     <input class="number-input__input" type="text" id="people" name="people" value="2">
-                    <button class="number-input__button count-btn count-btn--plus" type="button">+</button>
+                    <button class="number-input__button number-input__button--plus count-btn count-btn--plus" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
                 <div class="create-plan__field-wrap number-input">
-                  <label class="number-input__label" for="days">Длительность:</label>
+                  <div class="number-input__label-wrap">
+                    <label class="number-input__label" for="days">Длительность:</label>
+                    <span class="number-input__units">дн.</span>
+                  </div>
                   <div class="number-input__wrapper">
-                    <button class="number-input__button count-btn count-btn--minus" type="button">-</button>
+                    <button class="number-input__button number-input__button--minus count-btn count-btn--minus" type="button"><span class="visually-hidden">-</span></button>
                     <input class="number-input__input" type="text" id="days" name="days" value="2">
-                    <button class="number-input__button count-btn count-btn--plus" type="button">+</button>
+                    <button class="number-input__button number-input__button--plus count-btn count-btn--plus" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
-                <div class="create-plan__field-wrap checkbox">
+                <div class="create-plan__field-wrap create-plan__field-wrap--checkbox checkbox">
                   <input class="checkbox__input" type="checkbox" name="kids" value="yes" id="kids" checked>
                   <label class="checkbox__label" for="kids">Можно с детьми</label>
                 </div>
@@ -179,86 +234,88 @@
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link" href="#">Развлечения</a></li>
                   </ul>
                   <div class="create-plan__text-wrap">
-                    <h3 class="create-plan__step-title">Шаг 2. Маршрут</h3>
+                    <h3 class="create-plan__step-title">Шаг 2. <br class="no-br-desktop">Маршрут</h3>
                     <p class="create-plan__description">
-                      Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                      Укажите страны, которые вы хотели по посетить. <br class="br-desktop">Это может быть одна или сразу несколько.
                     </p>
                   </div>
                 </div>
-                <select class="create-plan__country-select">
-                  <option disabled>Выберите страну</option>
-                  <option value="bosnia and herzegovina" selected>Босния и Герцеговина</option>
-                </select>
-                <select class="create-plan__country-select">
-                  <option disabled>Выберите страну</option>
-                  <option value="czech republic" selected>Чехия</option>
-                </select>
-                <button class="create-plan__country-select-button" type="button">Выберите страну</button>
-                <div class="create-plan__alphabet alphabet-filter">
-                  <table class="alphabet-filter__letters-table">
-                    <tr>
-                      <td>А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td>
-                    </tr>
-                    <tr>
-                      <td>Е</td><td>Ё</td><td>Ж</td><td>З</td><td>И</td>
-                    </tr>
-                    <tr>
-                      <td>Й</td><td>К</td><td>Л</td><td>М</td><td>Н</td>
-                    </tr>
-                    <tr>
-                      <td>О</td><td>П</td><td>Р</td><td>С</td><td>Т</td>
-                    </tr>
-                    <tr>
-                      <td>У</td><td>Ф</td><td>Х</td><td>Ц</td><td>Ч</td>
-                    </tr>
-                    <tr>
-                      <td>Ш</td><td>Щ</td><td>Э</td><td>Ю</td><td>Я</td>
-                    </tr>
-                  </table>
-                  <ul class="alphabet-filter__countries-list">
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Афганистан</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Албания</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Алжир</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Андорра</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Аргентина</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Армения</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Австралия</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Австрия</a></li>
-                    <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Азербайджан</a></li>
-                  </ul>
+                <div class="create-plan__country-select-wrap">
+                  <select class="create-plan__country-select">
+                    <option disabled>Выберите страну</option>
+                    <option value="bosnia and herzegovina" selected>Босния и Герцеговина</option>
+                  </select>
+                  <select class="create-plan__country-select">
+                    <option disabled>Выберите страну</option>
+                    <option value="czech republic" selected>Чехия</option>
+                  </select>
+                  <button class="create-plan__country-select-button" type="button">Выберите страну</button>
+                  <div class="create-plan__alphabet alphabet-filter">
+                    <table class="alphabet-filter__letters-table">
+                      <tr>
+                        <td>А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td>
+                      </tr>
+                      <tr>
+                        <td>Е</td><td>Ё</td><td>Ж</td><td>З</td><td>И</td>
+                      </tr>
+                      <tr>
+                        <td>Й</td><td>К</td><td>Л</td><td>М</td><td>Н</td>
+                      </tr>
+                      <tr>
+                        <td>О</td><td>П</td><td>Р</td><td>С</td><td>Т</td>
+                      </tr>
+                      <tr>
+                        <td>У</td><td>Ф</td><td>Х</td><td>Ц</td><td>Ч</td>
+                      </tr>
+                      <tr>
+                        <td>Ш</td><td>Щ</td><td>Э</td><td>Ю</td><td>Я</td>
+                      </tr>
+                    </table>
+                    <ul class="alphabet-filter__countries-list">
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Афганистан</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Албания</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Алжир</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Андорра</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Аргентина</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Армения</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Австралия</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Австрия</a></li>
+                      <li class="alphabet-filter__countries-item"><a class="alphabet-filter__link" href="#">Азербайджан</a></li>
+                    </ul>
+                  </div>
+                  <button class="create-plan__country-add-button" type="button">Добавить страну</button>
                 </div>
-                <button class="create-plan__country-add-button" type="button">Добавить страну</button>
                 <div class="create-plan__buttons-group">
                   <button class="button create-plan__button button--rounder" type="button">Следующий шаг</button>
-                  <button class="button create-plan__button button--transparent" type="button">На шаг назад</button>
+                  <button class="button create-plan__button create-plan__button--transparent button--transparent" type="button">На шаг назад</button>
                 </div>
               </div>
               <div class="create-plan__step create-plan__step--step-three">
-                <div class="create-plan__title-wrap">
+                <div class="create-plan__title-wrap create-plan__title-wrap--step-three">
                   <ul class="create-plan__nav">
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link" href="#">Даты</a></li>
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link" href="#">Маршрут</a></li>
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link create-plan__nav-link--active" href="#">Развлечения</a></li>
                   </ul>
                   <div class="create-plan__text-wrap">
-                    <h3 class="create-plan__step-title">Шаг 3. Развлечения</h3>
+                    <h3 class="create-plan__step-title">Шаг 3. <br class="no-br-desktop">Развлечения</h3>
                     <p class="create-plan__description">
-                      Наконец, расскажите о своих планах времяпровождения.
+                      Наконец, расскажите о своих планах времяпровождения.<br class="br-desktop">
                       Можно писать в свободной форме и ставить тэги.
                     </p>
                   </div>
                 </div>
                 <div class="create-plan__country-wrap textfield">
                   <label class="textfield__label" for="country-1">Босния и Герцеговина</label>
-                  <textarea class="textfield__textarea" id="country-1" rows="10" cols="30" name="country-1" placeholder="План действий"></textarea>
+                  <textarea class="textfield__textarea" id="country-1" rows="9" cols="30" name="country-1" placeholder="План действий"></textarea>
                 </div>
-                <div class="create-plan__country-wrap textfield">
-                  <label class="textfield__label" for="country-2">Чехия</label>
-                  <textarea class="textfield__textarea" id="country-2" name="country-2" rows="10" cols="30" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <div class="create-plan__country-wrap create-plan__country-wrap--step-three textfield">
+                  <label class="textfield__label textfield__label--country-2" for="country-2">Чехия</label>
+                  <textarea class="textfield__textarea" id="country-2" name="country-2" rows="9" cols="30" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </div>
                 <div class="create-plan__buttons-group">
                   <button class="button create-plan__button button--rounder" type="submit">Отправить</button>
-                  <button class="button create-plan__button button--transparent" type="button">На шаг назад</button>
+                  <button class="button create-plan__button create-plan__button--transparent button--transparent" type="button">На шаг назад</button>
                 </div>
               </div>
             </form>

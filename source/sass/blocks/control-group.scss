@@ -1,7 +1,18 @@
 .control-group {
-  padding: 0;
+  padding: 5px 0;
   margin: 0;
   border: none;
+  border-top: 1px solid rgba($color-primary--light, 0.1);
+
+  &--transport {
+    padding-bottom: 50px;
+  }
+}
+
+.control-group__legend-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .control-group__title {
@@ -12,6 +23,19 @@
 }
 
 .control-group__container {
+  margin-top: 10px;
+  
+  &--hide {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
+
+  &--transport {
+    display: flex;
+  }
   @media (min-width: $tablet-width) {
     display: flex;
   }

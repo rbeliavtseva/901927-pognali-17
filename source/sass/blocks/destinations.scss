@@ -1,18 +1,35 @@
 .destinations {
-  padding: 120px 25px 30px 25px;
-  border-radius: 0 0 20px 20px;
+  padding: 92px 25px 30px 25px;
+  border-radius: 0 0 30px 30px;
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
     padding: 75px;
+    padding-top: 123px;
+    padding-bottom: 80px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 131px;
+    padding: 212px 240px 150px 131px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+}
+
+.destinations__wrapper {
+  padding: 0 50px 0 25px;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -25,15 +42,20 @@
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
+    margin-left: -3px;
     font-size: 45px;
     line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    margin-bottom: 57px;
   }
 }
 
 .destinations__disclaimer {
   margin: 0;
-  margin-bottom: 63px;
   color: $color-grey;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
 
@@ -51,16 +73,20 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    min-width: 560px;
+    min-width: 50%;
+    margin-bottom: 0;
   }
 }
 
 .destinations__button {
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
+    bottom: 140px;
+    right: 365px;
   }
 }

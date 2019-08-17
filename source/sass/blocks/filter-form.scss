@@ -1,5 +1,5 @@
 .filter-form {
-  padding: 26px 20px 22px 20px;
+  padding: 26px 26px 22px 26px;
   background-color: $color-secondary;
   border-radius: 20px;
 
@@ -13,6 +13,9 @@
 }
 
 .filter-form__title {
+  width: 120px;
+  margin: 0;
+  margin-bottom: 23px;
   color: $color-primary--light;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 22px;
