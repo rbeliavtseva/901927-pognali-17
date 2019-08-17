@@ -73,7 +73,7 @@
 
     &::before {
       counter-increment: section;
-      content: counters(section,".") ".";
+      content: counters(section, ".") ".";
       color: $color-primary--light;
       font-family: "Blogger Sans Medium", "Arial", sans-serif;
       font-size: 20px;

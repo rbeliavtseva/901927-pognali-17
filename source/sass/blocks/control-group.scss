@@ -24,7 +24,7 @@
 
 .control-group__container {
   margin-top: 10px;
-  
+
   &--hide {
     display: none;
   }
@@ -36,6 +36,7 @@
   &--transport {
     display: flex;
   }
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
