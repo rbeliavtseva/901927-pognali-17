@@ -36,7 +36,7 @@
 
   &::after {
     counter-increment: section;
-    content: counters(section,".") " ";
+    content: counters(section, ".") " ";
     position: absolute;
     top: 0;
     right: -45px;
