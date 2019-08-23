@@ -1,0 +1,38 @@
+.countries-table {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.countries-table__cell {
+  vertical-align: top;
+}
+
+.countries-table__country-letter-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.countries-table__country-letter {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  color: $color-primary;
+}
+
+.countries-table__countries-list {
+  @include reset-list;
+}
+
+.countries-table__link {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: $color-grey;
+}

@@ -14,33 +14,31 @@
 
 .steps__list {
   @include reset-list;
-  position: relative;
-  top: -75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   counter-reset: section;
   list-style-type: none;
+  border-radius: 10px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    top: -110px;
     flex-direction: row;
     flex-wrap: wrap;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 107px;
-    top: -85px;
     z-index: 100;
   }
 }
 
 .steps__item {
-  padding: 20px 21px 35px 25px;
+  padding: 2px 21px 42px 25px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
-  border-radius: 10px 10px 0 0;
   color: $button-text;
   position: relative;
 
@@ -58,10 +56,35 @@
     padding: 30px 34px 30px 34px;
   }
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: -20px;
+    left: 0;
+    min-height: 20px;
+    min-width: 100%;
+    background-color: inherit;
+    border-radius: 10px 10px 0 0;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px 0 0 0;
+      min-height: 100%;
+      min-width: 20px;
+      top: 0;
+      left: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 20px 0 0 20px;
+    }
+  }
+
   &::after {
     position: absolute;
     display: block;
-    top: 20px;
+    top: 2px;
     right: 21px;
     font-family: inherit;
     color: $color-white;
@@ -81,65 +104,34 @@
   }
 
   &:first-child {
+    // padding-top: 20px;
     background-color: $color-tertiary;
-
-    @media (min-width: $tablet-width) {
-      border-radius: 20px 0 0 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-radius: 20px 0 0 20px;
-    }
   }
 
   &:nth-child(2) {
-    position: relative;
-    top: -10px;
     background-color: $color-tertiary--light;
-
-    @media (min-width: $tablet-width) {
-      top: 0;
-      left: -20px;
-      border-radius: 20px 20px 0 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-radius: 20px 0 0 20px;
-    }
   }
 
   &:nth-child(3) {
-    position: relative;
-    top: -20px;
     background-color: $color-secondary--dark;
-
-    @media (min-width: $tablet-width) {
-      top: 0;
-      border-radius: 0 0 0 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-radius: 20px 0 0 20px;
-      left: -40px;
-    }
   }
 
   &:last-child {
-    position: relative;
-    top: -33px;
     padding-bottom: 23px;
-    border-radius: 10px;
     background-color: $color-secondary;
 
-    @media (min-width: $tablet-width) {
-      top: 0;
-      left: -20px;
-      border-radius: 0 0 20px 20px;
-    }
+    &::before {
+      @media (min-width: $tablet-width) {
+        border-radius: 0 0 0 20px;
+        min-height: 100%;
+        min-width: 20px;
+        top: 0;
+        left: -20px;
+      }
 
-    @media (min-width: $desktop-width) {
-      left: -60px;
-      border-radius: 20px;
+      @media (min-width: $desktop-width) {
+        border-radius: 20px 0 0 20px;
+      }
     }
   }
 }

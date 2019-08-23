@@ -1,12 +1,11 @@
 .plans__add {
   position: relative;
-  top: -20px;
 
   @media (min-width: $tablet-width) {
-    top: -30px;
+
   }
 
   @media (min-width: $desktop-width) {
-    top: -50px;
+
   }
 }

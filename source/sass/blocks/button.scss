@@ -74,7 +74,7 @@
 
 .button--rounded {
   min-width: 189px;
-  padding: 13px 20px 9px 20px;
+  padding: 7px 20px 3px 20px;
   border-radius: 25px;
   font-size: 17px;
   line-height: 30px;
@@ -143,6 +143,14 @@
   }
 }
 
+.button--transparent-white {
+  background-color: transparent;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .button--transparent-light {
   background-color: transparent;
   font-size: 17px;
@@ -175,6 +183,7 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
+    vertical-align: middle;
     padding: 18px 21px 13px 21px;
     border-radius: 0 0 10px 10px;
   }

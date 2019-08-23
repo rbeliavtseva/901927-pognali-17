@@ -1,13 +1,13 @@
 .destinations {
   padding: 92px 25px 30px 25px;
-  border-radius: 0 0 30px 30px;
+  // border-radius: 0 0 30px 30px;
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
     padding: 75px;
     padding-top: 123px;
     padding-bottom: 80px;
-    border-radius: 0 0 60px 60px;
+    // border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {

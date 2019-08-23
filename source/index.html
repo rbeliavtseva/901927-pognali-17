@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Погнали</title>
@@ -14,20 +15,17 @@
           </a>
           <button class="navigation-toggle-btn navigation-toggle-btn--open" type="button"><span class="visually-hidden">Показать меню</span></button>
         </div>
-        <div class="header__site-list-wrap">
-          <div class="header__line"></div>
-          <ul class="header__site-list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--white" href="#">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--white" href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--white" href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="header__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--white" href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--white" href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--white" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
       </div>
       <nav class="navigation">
         <div class="navigation__wrapper">
@@ -66,32 +64,33 @@
           </ul>
         </div>
       </nav>
-      <p class="slogan">В путешествие с крутыми попутчиками!</p>
-      <div class="header__contact-wrapper">
-        <ul class="header__contact-info contact-info contact-info--icons">
-          <li class="contact-info__item contact-info__item--icon">
-            <a href="#">Позвонить</a>
-          </li>
-          <li class="contact-info__item contact-info__item--icon">
-            <a href="#">Написать</a>
-          </li>
-        </ul>
-        <a class="header__button button button--rounded" href="login.html">Авторизация</a>
-      </div>
     </header>
 
     <main class="main">
       <h1 class="visually-hidden">Сервис для поиска попутчиков Погнали</h1>
-
-      <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <blockquote class="reviews__item">
-          <p class="reviews__text">
-            &laquo;Лучшее приложение, что я видел в жизни!&raquo;
-          </p>
-          <cite class="reviews__author-name">Мурат Эльтазин<br>главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
-        </blockquote>
-      </section>
+      <div class="main__slogan-wrapper">
+        <p class="slogan">В путешествие с крутыми попутчиками!</p>
+        <div class="main__contact-wrapper">
+          <ul class="main__contact-info contact-info contact-info--icons">
+            <li class="contact-info__item contact-info__item--icon">
+              <a href="#">Позвонить</a>
+            </li>
+            <li class="contact-info__item contact-info__item--icon">
+              <a href="#">Написать</a>
+            </li>
+          </ul>
+          <a class="main__button button button--rounded" href="login.html">Авторизация</a>
+        </div>
+        <section class="reviews">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <blockquote class="reviews__item">
+            <p class="reviews__text">
+              &laquo;Лучшее приложение, что я видел в жизни!&raquo;
+            </p>
+            <cite class="reviews__author-name">Мурат Эльтазин<br>главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
+          </blockquote>
+        </section>
+      </div>
 
       <section class="steps">
         <h2 class="visually-hidden">Как пользоваться сервисом</h2>
@@ -231,7 +230,7 @@
         <h2 class="price__title">Добавьте<br class="no-br"> свой<br class="no-br"> профиль!</h2>
         <div class="price__wrap">
           <table class="price__table price-table">
-            <tbody>
+            <tbody class="price-table__tbody">
               <tr>
                 <th class="price-table__service">
                   Базовое размещение
@@ -243,7 +242,7 @@
                 </td>
               </tr>
             </tbody>
-            <tbody>
+            <tbody class="price-table__tbody">
               <tr>
                 <th class="price-table__service">
                   Вывод на первых позициях
@@ -255,7 +254,7 @@
                 </td>
               </tr>
             </tbody>
-            <tbody>
+            <tbody class="price-table__tbody">
               <tr>
                 <th class="price-table__service">
                   Кастомный цвет карточки
@@ -275,7 +274,7 @@
           <div class="modal__wrap">
             <h2 class="modal__title">Бизнес-тарифы</h2>
             <table class="modal__table price-table price-table--business">
-              <tbody>
+              <tbody class="price-table__tbody">
                 <tr>
                   <td class="price-table__service">
                     Реклама у блоггера
@@ -287,7 +286,7 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody>
+              <tbody class="price-table__tbody">
                 <tr>
                   <td class="price-table__service">
                     Накрутка подписчиков
@@ -299,7 +298,7 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody>
+              <tbody class="price-table__tbody">
                 <tr>
                   <td class="price-table__service">
                     Лайки от ботов
@@ -311,7 +310,7 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody>
+              <tbody class="price-table__tbody">
                 <tr>
                   <td class="price-table__service">
                     Ваш продакт-плейсмент
@@ -348,7 +347,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__text">
-            Остались вопросы?<span class="contacts__text--mobile-tablet"><br class="no-br"> Мы с радостью на них ответим!</span> <span class="contacts__text--desktop">Свяжитесь с нами удобным для вас способом:</span>
+            Остались вопросы?<span class="contacts__text-variant"><br class="no-br"> Мы с радостью на них ответим!</span> <span class="contacts__full-text">Свяжитесь с нами удобным для вас способом:</span>
           </p>
           <div class="contacts__contact-info contact-info">
             <a class="contact-info__item contact-info__item--phone contact-info__item--yellow" href="tel:88005558628">8 800 555-86-28</a>
@@ -360,6 +359,9 @@
             ул. Большая<br class="no-br"> Конюшенная, 19/8
           </p>
           <a class="button button--bordered" href="https://yandex.ru/maps/-/CCw360pk">Проложить маршрут</a>
+        </div>
+        <div class="contacts__map">
+          Карта
         </div>
       </section>
     </main>

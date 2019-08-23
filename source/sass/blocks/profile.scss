@@ -119,17 +119,18 @@
     width: auto;
     min-width: 190px;
     position: absolute;
-    top: 52px;
+    top: 0px;
     right: 155px;
     margin-bottom: 0;
   }
+}
 
-  &--display-none {
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
+.profile__btn-full-text {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
+
 
 .profile__title {
   display: inline-block;

@@ -1,12 +1,13 @@
 .price-table {
   display: block;
-  position: relative;
+
   padding-right: 50px;
   border-collapse: collapse;
   color: $color-grey;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -20,7 +21,8 @@
   }
 }
 
-.price-table tbody {
+.price-table__tbody {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px 0 10px 0;
@@ -33,9 +35,11 @@
   }
 
   &::after {
+    counter-increment: section;
+    content: counters(section,".") " ";
     position: absolute;
     top: 0;
-    right: 0;
+    right: -45px;
     width: 34px;
     height: 34px;
     padding: 10px;
@@ -52,54 +56,28 @@
       font-size: 28px;
       line-height: 28px;
       padding: 22px;
+      left: -90px;
     }
   }
 }
 
-.price-table tbody:first-child {
+.price-table__tbody:first-child {
   &::after {
-    content: "1";
-    position: absolute;
-    top: 5px;
-    right: 5px;
     background-color: $color-tertiary--light;
-
-    @media (min-width: $tablet-width) {
-      top: -2px;
-      left: 0;
-    }
   }
 }
 
-.price-table tbody:nth-child(2) {
+.price-table__tbody:nth-child(2) {
   &::after {
-    content: "2";
-    position: absolute;
-    top: 70px;
-    right: 5px;
     background-color: $color-secondary--dark;
-
-    @media (min-width: $tablet-width) {
-      left: 0;
-      top: 67px;
-    }
   }
 }
 
-.price-table tbody:last-child {
+.price-table__tbody:last-child {
   border-bottom: 1px solid rgba($color-black, 0.05);
 
   &::after {
-    content: "3";
-    position: absolute;
-    top: 139px;
-    right: 5px;
     background-color: $color-secondary;
-
-    @media (min-width: $tablet-width) {
-      left: 0;
-      top: 135px;
-    }
   }
 }
 

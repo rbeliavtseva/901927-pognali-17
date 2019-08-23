@@ -1,27 +1,13 @@
 .number-input {
   position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
     width: 50%;
     flex-direction: row;
     align-items: center;
-  }
-}
-
-.number-input__label-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-    min-width: 220px;
   }
 }
 
@@ -37,6 +23,10 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 185px;
   }
 }
 
@@ -55,26 +45,40 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 0;
+    order: 3;
     color: $color-primary--light;
   }
 }
 
 .number-input__wrapper {
+  display: flex;
+  align-items: center;
   position: relative;
+  width: 100%;
+  margin-top: 9px;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    margin-top: 0;
+  }
 }
 
 .number-input__input {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid $input-border;
-  border-radius: 4px;
+  border: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 13px;
-  letter-spacing: 1.5;
+  letter-spacing: 1px;
   color: $color-primary--light;
   text-align: center;
 
@@ -86,31 +90,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 180px;
     padding: 23px 20px;
   }
 }
 
 .number-input__button {
-  position: absolute;
-
-  &--minus {
-    top: 14px;
-    left: 14px;
-
-    @media (min-width: $tablet-width) {
-      top: 25px;
-      left: 23px;
-    }
-  }
-
-  &--plus {
-    top: 14px;
-    right: 14px;
-  }
+  position: relative;
+  min-width: 40px;
 
   @media (min-width: $tablet-width) {
-    top: 25px;
-    right: 20px;
+    min-width: 60px;
   }
 }
