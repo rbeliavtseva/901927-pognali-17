@@ -1,10 +1,14 @@
 .sign-up {
-  padding: 25px;
+  padding: 102px 25px 30px;
   text-align: center;
   background-color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    padding: 75px;
+    padding: 136px 75px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 75px 68px;
   }
 }
 
@@ -25,7 +29,7 @@
 
 .sign-up__prompt {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: $color-tertiary;
   font-size: 24px;
   line-height: 24px;
@@ -33,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+    margin-left: 3px;
     font-size: 45px;
     line-height: 45px;
   }

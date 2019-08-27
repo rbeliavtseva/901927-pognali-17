@@ -1,6 +1,6 @@
 .price-table {
+  position: relative;
   display: block;
-
   padding-right: 50px;
   border-collapse: collapse;
   color: $color-grey;
@@ -16,6 +16,24 @@
     line-height: 28px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-right: 270px;
+
+    &::after {
+      z-index: -1;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 444px;
+      height: 300px;
+      border-radius: 20px;
+      background-color: $background;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 115px;
+    }
+  }
+
   &--business {
     padding: 0 25px 22px 25px;
   }
@@ -25,7 +43,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 10px 0 10px 0;
+  padding: 9px 0 10px 0;
   border-top: 1px solid rgba($color-black, 0.05);
 
   @media (min-width: $tablet-width) {
@@ -38,7 +56,7 @@
     counter-increment: section;
     content: counters(section, ".") " ";
     position: absolute;
-    top: 0;
+    top: 2px;
     right: -45px;
     width: 34px;
     height: 34px;
@@ -57,6 +75,7 @@
       line-height: 28px;
       padding: 22px;
       left: -90px;
+      top: 0;
     }
   }
 }
@@ -78,6 +97,14 @@
 
   &::after {
     background-color: $color-secondary;
+  }
+}
+
+.price-table__row {
+  margin-top: -2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 

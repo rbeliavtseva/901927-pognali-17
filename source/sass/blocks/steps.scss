@@ -1,6 +1,6 @@
 .steps {
   padding: 0 25px;
-  background-color: $color-primary;
+  background-image: linear-gradient(to bottom, $button-text 0%, $button-text 20%, $color-primary 20%, $color-primary 100%);
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
@@ -19,13 +19,13 @@
   justify-content: center;
   counter-reset: section;
   list-style-type: none;
-  border-radius: 10px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 20px;
+    overflow: hidden;
+    min-width: 688px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,16 +100,17 @@
     @media (min-width: $desktop-width) {
       top: 30px;
       left: 270px;
+      font-size: 24px;
     }
   }
 
   &:first-child {
-    // padding-top: 20px;
     background-color: $color-tertiary;
   }
 
   &:nth-child(2) {
     background-color: $color-tertiary--light;
+    padding-left: 5px;
   }
 
   &:nth-child(3) {
@@ -118,6 +119,7 @@
 
   &:last-child {
     padding-bottom: 23px;
+    border-radius: 0 0 10px 10px;
     background-color: $color-secondary;
 
     &::before {
@@ -132,6 +134,10 @@
       @media (min-width: $desktop-width) {
         border-radius: 20px 0 0 20px;
       }
+    }
+
+    @media (min-width: $tablet-width) {
+      border-radius: 0;
     }
   }
 }

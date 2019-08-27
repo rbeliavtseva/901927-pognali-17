@@ -1,29 +1,29 @@
 .about {
-  padding-top: 39px;
+  padding-top: 72px;
   padding-right: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   padding-left: 50px;
   background-color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    padding: 138px 75px 87px 75px;
+    padding: 139px 75px 28px 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 278px 75px 160px 130px;
+    padding: 255px 75px 102px 130px;
   }
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: $color-tertiary;
   font-size: 24px;
   line-height: 24px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -35,12 +35,12 @@
 
 .about__text {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
     width: 300px;
     font-size: 28px;
     line-height: 33px;
@@ -63,7 +63,7 @@
 
     @media (min-width: $desktop-width) {
       padding-right: 150px;
-      margin-bottom: 85px;
+      margin-bottom: 82px;
     }
   }
 }
@@ -74,5 +74,6 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
+    min-width: 274px;
   }
 }

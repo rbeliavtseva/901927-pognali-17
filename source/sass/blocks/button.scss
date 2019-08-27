@@ -24,19 +24,39 @@
 }
 
 .button--bordered {
-  padding: 20px 30px 18px 20px;
+  position: relative;
+  padding: 20px 32px 18px 20px;
   border: 3px solid $color-primary;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid currentColor;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
     padding: 28px 37px 24px 32px;
     font-size: 24px;
     line-height: 24px;
+
+    &::after {
+      right: 28px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 325px;
-    padding-left: 35px;
+    padding-left: 34px;
+    padding-top: 26px;
   }
 
   &:hover,
@@ -89,6 +109,22 @@
 }
 
 .button--text-arrow {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid currentColor;
+  }
+
   &:hover,
   &:focus {
     background-color: $color-secondary--dark;
@@ -103,17 +139,47 @@
     padding: 30px 34px 28px 34px;
     font-size: 24px;
     line-height: 24px;
+
+    &::after {
+      right: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 274px;
   }
 }
 
 .button--arrow {
+  position: relative;
   min-width: 60px;
   height: 62px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid currentColor;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 82px;
     height: auto;
     border-radius: 0 20px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 

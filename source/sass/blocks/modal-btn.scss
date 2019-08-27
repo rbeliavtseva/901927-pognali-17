@@ -1,13 +1,13 @@
 .modal-btn {
+  padding: 0 2px;
   border: none;
   background-color: transparent;
   color: $color-primary;
   line-height: 16px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  cursor: pointer;
 
   &--show {
-    padding: 0 10px 0 10px;
-
     &:hover,
     &:focus {
       opacity: 0.7;

@@ -3,11 +3,6 @@
   padding: 20px 25px 14px 25px;
   margin-bottom: 0;
   background-color: $color-white;
-  // border-radius: 25px 25px 0 0;
-
-  @media (min-width: $tablet-width) {
-    // border-radius: 60px 60px 0 0;
-  }
 
   &::after {
     content: "";

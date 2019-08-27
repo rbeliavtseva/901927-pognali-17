@@ -1,14 +1,14 @@
 .reviews {
-  padding: 25px 116px 20px 51px;
+  padding: 25px 116px 50px 51px;
   background-color: $button-text;
 
   @media (min-width: $tablet-width) {
-    padding: 90px 74px 213px 74px;
+    padding: 86px 75px 210px 75px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 0 87px 0 130px;
     padding: 0;
+    padding-top: 10px;
   }
 }
 
@@ -30,7 +30,7 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {

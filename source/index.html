@@ -69,7 +69,7 @@
     <main class="main">
       <h1 class="visually-hidden">Сервис для поиска попутчиков Погнали</h1>
       <div class="main__slogan-wrapper">
-        <p class="slogan">В путешествие с крутыми попутчиками!</p>
+        <p class="slogan">В путешествие <br class="br-desktop">с крутыми попутчиками!</p>
         <div class="main__contact-wrapper">
           <ul class="main__contact-info contact-info contact-info--icons">
             <li class="contact-info__item contact-info__item--icon">
@@ -124,7 +124,7 @@
         </div>
         <ul class="destinations__list">
           <li class="destinations__item destination">
-            <img class="destination__image" src="http://placehold.it/150x100" width="150" height="100" alt="Таиланд">
+            <img class="destination__image" src="http://placehold.it/150x100" width="150" height="110" alt="Таиланд">
             <div class="destination__wrapper">
               <h3 class="destination__title">Таиланд</h3>
               <p class="destination__description">
@@ -162,25 +162,27 @@
           <h2 class="companions__title">Попутчики</h2>
           <p class="companions__text">
             Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль,<br class="no-br--desktop"> а другому маршрут для хайкинга.
+            Одному нужен пляж и коктейль, <br class="no-br-mobile">а другому маршрут для хайкинга.
           </p>
           <p class="companions__text companions__text--bold">
-            Теперь можно легко<br class="no-br--desktop"> найти единомышленников!
+            Теперь можно легко <br class="no-br-mobile">найти единомышленников!
           </p>
         </div>
         <ul class="companions__list">
           <li class="companions__item companion">
             <img class="companion__image" src="http://placehold.it/150x100" width="150" height="100" alt="Таня Фирсова">
-            <p class="companion__level level">
-              <span class="level__number">99</span>
-              <span class="level__text">level</span>
-            </p>
+            <div class="companion__level level">
+              <div class="level__circle">
+                <span class="level__number">99</span>
+                <span class="level__text">level</span>
+              </div>
+            </div>
             <ul class="companion__countries-list">
               <li class="companion__country-item">Шри-Ланка</li>
               <li class="companion__country-item">Тайланд</li>
               <li class="companion__country-item">Сейшельские острова</li>
             </ul>
-            <h3 class="companion__name">Таня Фирсова</h3>
+            <h3 class="companion__name companion__name--offline">Таня Фирсова</h3>
             <ul class="companion__tags-list tags-list">
               <li class="tags-list__tag">#ЗОЖ</li>
               <li class="tags-list__tag">#ПП</li>
@@ -199,10 +201,12 @@
 
           <li class="companions__item companion">
             <img class="companion__image" src="http://placehold.it/150x100" width="150" height="100" alt="Петя Демин">
-            <p class="companion__level level">
-              <span class="level__number">80</span>
-              <span class="level__text">level</span>
-            </p>
+            <div class="companion__level level">
+              <div class="level__circle">
+                <span class="level__number">80</span>
+                <span class="level__text">level</span>
+              </div>
+            </div>
             <ul class="companion__countries-list">
               <li class="companion__country-item">Бельгия</li>
               <li class="companion__country-item">Чехия</li>
@@ -236,7 +240,7 @@
                   Базовое размещение
                 </th>
               </tr>
-              <tr>
+              <tr class="price-table__row">
                 <td class="price-table__cost">
                   Бесплатно
                 </td>
@@ -248,7 +252,7 @@
                   Вывод на первых позициях
                 </th>
               </tr>
-              <tr>
+              <tr class="price-table__row">
                 <td class="price-table__cost">
                   99 руб./мес
                 </td>
@@ -260,7 +264,7 @@
                   Кастомный цвет карточки
                 </th>
               </tr>
-              <tr>
+              <tr class="price-table__row">
                 <td class="price-table__cost">
                   59 руб./мес
                 </td>

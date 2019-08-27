@@ -1,19 +1,18 @@
 .destinations {
-  padding: 92px 25px 30px 25px;
-  // border-radius: 0 0 30px 30px;
+  padding: 103px 25px 0 25px;
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
     padding: 75px;
-    padding-top: 123px;
-    padding-bottom: 80px;
-    // border-radius: 0 0 60px 60px;
+    padding-top: 133px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 212px 240px 150px 131px;
+    padding: 220px 240px 10px 131px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -68,7 +67,7 @@
 
 .destinations__list {
   @include reset-list;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -84,8 +83,8 @@
 
 .destinations__button {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 140px;
-    right: 365px;
+    position: relative;
+    top: -70px;
+    left: -60px;
   }
 }

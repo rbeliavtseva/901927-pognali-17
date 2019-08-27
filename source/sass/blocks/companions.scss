@@ -1,29 +1,31 @@
 .companions {
   padding: 25px;
   padding-top: 100px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   background-color: $color-primary;
 
   @media (min-width: $tablet-width) {
     padding: 75px;
-    padding-top: 190px;
-    padding-bottom: 87px;
+    padding-top: 200px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 178px 60px 140px 132px;
+    padding: 188px 60px 0 132px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .companions__wrapper {
   padding: 0 30px 0 25px;
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: 425px;
   }
 }
 
@@ -57,12 +59,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     font-size: 28px;
     line-height: 33px;
 
     &--bold {
       font-size: 21px;
       line-height: 25px;
+      margin-bottom: 0;
     }
   }
 
@@ -93,7 +97,8 @@
 
 .companions__button {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 135px;
+    position: relative;
+    top: -82px;
+    min-width: 280px;
   }
 }

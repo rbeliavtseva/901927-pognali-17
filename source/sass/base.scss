@@ -39,3 +39,11 @@ img {
     display: none;
   }
 }
+
+.no-br-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
