@@ -1,5 +1,6 @@
 .companions-filter {
   padding: 25px;
+  padding-bottom: 28px;
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +9,6 @@
 
   @media (min-width: $desktop-width) {
     width: 285px;
-
     padding: 0;
   }
 }

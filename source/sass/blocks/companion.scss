@@ -9,6 +9,11 @@
   @media (min-width: $tablet-width) {
     width: 285px;
     min-height: 483px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 487px;
   }
 
   &:not(:last-child) {
@@ -18,15 +23,39 @@
       margin-bottom: 0;
       margin-right: 48px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
+    }
   }
 }
 
 .companion__name {
+  position: relative;
   margin: 0;
+  margin-bottom: 15px;
   color: $color-primary--light;
   font-size: 21px;
   line-height: 21px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 5px;
+    height: 5px;
+    background-color: $online;
+    border-radius: 50%;
+  }
+
+  &--offline {
+    &::before {
+      background-color: $offline;
+    }
+  }
 }
 
 .companion__countries-list {
@@ -37,7 +66,8 @@
 }
 
 .companion__tags-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
 }

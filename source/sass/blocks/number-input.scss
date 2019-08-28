@@ -1,6 +1,14 @@
 .number-input {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .number-input__label {
@@ -8,18 +16,89 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 1.6;
+  letter-spacing: 1.6px;
   color: $color-primary--light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 185px;
+  }
+}
+
+.number-input__units {
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  color: rgba($color-primary--light, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    color: $color-primary--light;
+  }
+}
+
+.number-input__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 9px;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    margin-top: 0;
+  }
 }
 
 .number-input__input {
-  border: 1px solid $input-border;
-  border-radius: 4px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 13px;
-  letter-spacing: 1.5;
+  letter-spacing: 1px;
   color: $color-primary--light;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 20px;
+  }
+}
+
+.number-input__button {
+  position: relative;
+  min-width: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 60px;
+  }
 }

@@ -1,5 +1,15 @@
+.alphabet-filter {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .alphabet-filter__countries-list {
   @include reset-list;
+}
+
+.alphabet-filter__letters-table {
+  border-collapse: collapse;
 }
 
 .alphabet-filter__link {
@@ -8,4 +18,22 @@
   line-height: 22px;
   color: $color-grey;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+.alphabet-filter__cell {
+  padding: 0;
+  width: 45px;
+  height: 42px;
+  border: 1px solid $input-border;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

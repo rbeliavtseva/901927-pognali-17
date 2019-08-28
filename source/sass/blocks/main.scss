@@ -1,11 +1,63 @@
+.main {
+  flex-grow: 1;
+  background-color: $button-text;
+}
+
 .main__title {
+  padding-bottom: 10px;
   margin: 0;
+  margin-left: 27px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
-  background-color: $button-text;
   color: $color-white;
-  border-radius: 0 0 20px 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: $color-tertiary;
+    border-radius: 2px;
+
+    @media (min-width: $tablet-width) {
+      height: 8px;
+      border-radius: 4px;
+      bottom: -4px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+    margin-left: 77px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+  }
+}
+
+.main__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main__heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main__wrapper {
@@ -16,5 +68,134 @@
     justify-content: space-between;
     padding: 77px 60px;
     background-color: $background--light;
+  }
+}
+
+.main__slogan-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px 100px 127px;
+  }
+}
+
+.main__contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--inner {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      right: 60px;
+      top: 50px;
+      display: flex;
+    }
+  }
+}
+
+.main__about {
+  position: relative;
+  z-index: 100;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    min-height: 30px;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      min-height: 60px;
+      bottom: -60px;
+      border-radius: 0 0 60px 60px;
+    }
+  }
+}
+
+.main__destinations {
+  position: relative;
+  z-index: 99;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    min-height: 30px;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      min-height: 60px;
+      bottom: -60px;
+      border-radius: 0 0 60px 60px;
+    }
+  }
+}
+
+.main__companions {
+  position: relative;
+  z-index: 98;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    min-height: 30px;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      min-height: 60px;
+      bottom: -53px;
+      border-radius: 0 0 60px 60px;
+    }
+  }
+}
+
+.main__price {
+  position: relative;
+  z-index: 97;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    min-height: 30px;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      min-height: 60px;
+      bottom: -60px;
+      border-radius: 0 0 60px 60px;
+    }
   }
 }

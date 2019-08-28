@@ -1,4 +1,86 @@
 .count-btn {
+  width: 14px;
+  height: 14px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--minus {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba($color-primary--light, 0.3);
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba($color-primary--light, 0.2);
+      }
+    }
+  }
+
+  &--plus {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba($color-primary--light, 0.3);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 14px;
+      background-color: rgba($color-primary--light, 0.2);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba($color-primary--light, 0.2);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba($color-primary--light, 0.2);
+      }
+    }
+  }
 }

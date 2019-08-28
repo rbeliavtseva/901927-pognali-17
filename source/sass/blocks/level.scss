@@ -1,0 +1,114 @@
+// .level {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin: 0;
+//   height: 60px;
+//   width: 60px;
+//   border: 3px solid $color-tertiary;
+//   border-radius: 50%;
+//   background-color: rgba($color-black, 0.5);
+
+//   &--big {
+//     height: 100px;
+//     width: 100px;
+//     background-color: transparent;
+
+//     @media (min-width: $tablet-width) {
+//       height: 94px;
+//       width: 94px;
+//     }
+//   }
+// }
+
+.level {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background-color: rgba($color-black, 0.5);
+  border-radius: 50%;
+
+  &--big {
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      height: 94px;
+      width: 94px;
+    }
+  }
+}
+
+.level__circle {
+  width: 60px;
+  height: 60px;
+  border: 3px solid $color-tertiary;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.level__number {
+  display: block;
+  position: relative;
+  padding-top: 8px;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-white;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 31px;
+    height: 1px;
+    background-color: rgba($color-white, 0.5);
+  }
+
+  &--profile {
+    position: relative;
+    font-size: 38px;
+    line-height: 38px;
+    color: $button-text;
+
+    @media (min-width: $desktop-width) {
+      color: $color-white;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      width: 49px;
+      height: 2px;
+      background-color: $input-border;
+    }
+  }
+}
+
+.level__text {
+  display: block;
+  padding-top: 2px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-white;
+
+  &--profile {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-grey;
+
+    @media (min-width: $desktop-width) {
+      color: $color-white;
+    }
+  }
+}

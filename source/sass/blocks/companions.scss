@@ -1,25 +1,31 @@
 .companions {
   padding: 25px;
+  padding-top: 100px;
+  padding-bottom: 0;
   background-color: $color-primary;
-  border-radius: 0 0 25px 25px;
 
   @media (min-width: $tablet-width) {
     padding: 75px;
+    padding-top: 200px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 0 60px 54px 132px;
+    padding: 188px 60px 0 132px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .companions__wrapper {
   padding: 0 30px 0 25px;
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    width: 425px;
   }
 }
 
@@ -32,8 +38,41 @@
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
+    margin-left: -2px;
+    margin-bottom: 57px;
     font-size: 45px;
     line-height: 45px;
+  }
+}
+
+.companions__text {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $color-white;
+  font-family: "Blogger Sans Light", "Arial", sans-serif;
+
+  &--bold {
+    margin-bottom: 0;
+    font-family: "Blogger Sans Bold", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+    margin-bottom: 40px;
   }
 }
 
@@ -56,28 +95,10 @@
   }
 }
 
-.companions__text {
-  margin: 0;
-  margin-bottom: 24px;
-  color: $color-white;
-  font-family: "Blogger Sans Light", "Arial", sans-serif;
-
-  @media (min-width: $tablet-width) {
-    font-size: 28px;
-    line-height: 33px;
-  }
-
-  &--bold {
-    margin-bottom: 0;
-    font-family: "Blogger Sans Bold", "Arial", sans-serif;
-    font-size: 21px;
-    line-height: 25px;
-  }
-}
-
 .companions__button {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: -82px;
+    min-width: 280px;
   }
 }

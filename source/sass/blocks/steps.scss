@@ -1,19 +1,19 @@
 .steps {
   padding: 0 25px;
-  background-color: $color-primary;
+  background-image: linear-gradient(to bottom, $button-text 0%, $button-text 20%, $color-primary 20%, $color-primary 100%);
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $button-text;
     padding: 0 60px;
   }
 }
 
 .steps__list {
   @include reset-list;
-  margin-top: -80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,23 +23,29 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 688px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 107px;
+    z-index: 100;
   }
 }
 
 .steps__item {
-  margin-top: -10px;
-  padding: 23px 21px 35px 25px;
+  padding: 2px 21px 42px 25px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
-  border-radius: 10px 10px 0 0;
   color: $button-text;
   position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
     width: 50%;
-    padding: 30px 34px 65px 34px;
+    padding: 30px 34px 60px 34px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -50,10 +56,35 @@
     padding: 30px 34px 30px 34px;
   }
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: -20px;
+    left: 0;
+    min-height: 20px;
+    min-width: 100%;
+    background-color: inherit;
+    border-radius: 10px 10px 0 0;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px 0 0 0;
+      min-height: 100%;
+      min-width: 20px;
+      top: 0;
+      left: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 20px 0 0 20px;
+    }
+  }
+
   &::after {
     position: absolute;
     display: block;
-    top: 23px;
+    top: 2px;
     right: 21px;
     font-family: inherit;
     color: $color-white;
@@ -63,63 +94,50 @@
     @media (min-width: $tablet-width) {
       left: 34px;
       top: 90px;
+      font-size: 30px;
     }
 
     @media (min-width: $desktop-width) {
       top: 30px;
       left: 270px;
+      font-size: 24px;
     }
   }
 
   &:first-child {
     background-color: $color-tertiary;
-
-    @media (min-width: $tablet-width) {
-      border-radius: 20px 0 0 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-radius: 20px 0 0 20px;
-    }
   }
 
   &:nth-child(2) {
     background-color: $color-tertiary--light;
-
-    @media (min-width: $tablet-width) {
-      border-radius: 20px 20px 0 0;
-      margin-left: -18px;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-radius: 20px 0 0 20px;
-    }
+    padding-left: 5px;
   }
 
   &:nth-child(3) {
     background-color: $color-secondary--dark;
-
-    @media (min-width: $tablet-width) {
-      border-radius: 0 0 0 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-radius: 20px 0 0 20px;
-      margin-left: -18px;
-    }
   }
 
   &:last-child {
+    padding-bottom: 23px;
+    border-radius: 0 0 10px 10px;
     background-color: $color-secondary;
-    border-radius: 10px;
 
-    @media (min-width: $tablet-width) {
-      margin-left: -18px;
-      border-radius: 0 0 20px 20px;
+    &::before {
+      @media (min-width: $tablet-width) {
+        border-radius: 0 0 0 20px;
+        min-height: 100%;
+        min-width: 20px;
+        top: 0;
+        left: -20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        border-radius: 20px 0 0 20px;
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      border-radius: 20px;
+    @media (min-width: $tablet-width) {
+      border-radius: 0;
     }
   }
 }

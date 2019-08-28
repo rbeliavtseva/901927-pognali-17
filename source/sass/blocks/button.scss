@@ -1,7 +1,7 @@
 .button {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 17px 31px 14px 29px;
+  display: block;
+  min-width: 270px;
+  padding: 23px 31px 22px 23px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -14,6 +14,9 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: auto;
     font-size: 20px;
     line-height: 30px;
     border-radius: 20px;
@@ -21,26 +24,168 @@
 }
 
 .button--bordered {
+  position: relative;
+  padding: 20px 32px 18px 20px;
   border: 3px solid $color-primary;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid currentColor;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 28px 37px 24px 32px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::after {
+      right: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 325px;
+    padding-left: 34px;
+    padding-top: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-primary;
+    color: rgba($color-white, 0.3);
+  }
 }
 
 .button--rounder {
+  min-width: auto;
+  padding: 8px 46px 5px 35px;
   font-size: 17px;
   line-height: 30px;
   border-radius: 20px;
   text-transform: uppercase;
   color: $button-text;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px 34px 28px 34px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    color: $color-primary--light;
+  }
 }
 
 .button--rounded {
   min-width: 189px;
+  padding: 7px 20px 3px 20px;
   border-radius: 25px;
+  font-size: 17px;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+  color: $button-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.button--text-arrow {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary--dark;
+  }
+
+  &:active {
+    color: rgba($color-primary--light, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 30px 34px 28px 34px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::after {
+      right: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 274px;
+  }
+}
+
+.button--arrow {
+  position: relative;
+  min-width: 60px;
+  height: 62px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid currentColor;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 82px;
+    height: auto;
+    border-radius: 0 20px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .button--white {
+  min-width: auto;
+  padding: 10px;
   background-color: $color-white;
   border-radius: 20px;
   text-transform: uppercase;
@@ -55,6 +200,21 @@
   color: $button-text;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    color: $color-primary--light;
+  }
+}
+
+.button--transparent-white {
+  background-color: transparent;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .button--transparent-light {
@@ -67,22 +227,31 @@
 }
 
 .button--blue {
-  background-color: $background--dark;
+  min-height: 40px;
+  padding: 13px;
+  border-radius: 20px;
   text-transform: uppercase;
   color: $button-text;
   font-size: 17px;
-  line-height: 30px;
-  border-radius: 20px;
+  line-height: 17px;
   text-align: center;
+  background-color: $background--dark;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 21px 23px;
+    padding: 21px;
     border-radius: 10px;
     color: $color-primary--light;
     font-family: "Blogger Sans Medium", "Arial", sans-serif;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 18px 21px 13px 21px;
+    border-radius: 0 0 10px 10px;
   }
 }
 

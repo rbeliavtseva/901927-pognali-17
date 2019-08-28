@@ -1,0 +1,124 @@
+.calendar__title {
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-primary--light;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 0 21px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.calendar__table {
+  margin: 0 auto;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-grey;
+  border-collapse: collapse;
+}
+
+.calendar__heading {
+  width: 30px;
+  height: 30px;
+  color: $color-grey;
+  font-weight: normal;
+
+  &:nth-last-child(-n+2) {
+    color: $calendar-weekend;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 70px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    vertical-align: bottom;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 143px;
+    height: 72px;
+  }
+}
+
+.calendar__month-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.calendar__cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba($color-grey, 0.3);
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 70px;
+    font-family: "Blogger Sans Medium", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: rgba($color-primary--light, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 143px;
+    height: 72px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  &--selected {
+    background-color: $color-primary--light;
+    color: $color-white;
+  }
+
+  &--active {
+    border: 2px solid $calendar-border;
+
+    @media (min-width: $tablet-width) {
+      border: 4px solid $calendar-border;
+    }
+  }
+
+  &--unavailible {
+    background-color: $background--light;
+    color: $color-grey;
+
+    @media (min-width: $tablet-width) {
+      color: $color-primary--light;
+    }
+  }
+}
+
+.calendar__full-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+
+  &--dates {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}

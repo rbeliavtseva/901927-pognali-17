@@ -1,10 +1,14 @@
 .sign-up {
-  padding: 25px;
+  padding: 102px 25px 30px;
   text-align: center;
   background-color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    padding: 80px;
+    padding: 136px 75px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 75px 68px;
   }
 }
 
@@ -12,22 +16,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
   }
 }
 
 .sign-up__prompt {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: $color-tertiary;
   font-size: 24px;
   line-height: 24px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    margin-left: 3px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -45,5 +55,15 @@
 }
 
 .sign-up__link {
+  display: inline-block;
   color: $color-secondary;
+
+  &:hover,
+  &:focus {
+    color: $color-tertiary;
+  }
+
+  &:active {
+    color: rgba($color-tertiary, 0.3);
+  }
 }
