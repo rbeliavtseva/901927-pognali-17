@@ -1,10 +1,10 @@
 .filter-form {
-  padding: 26px 26px 22px 26px;
+  padding: 26px 20px 22px 20px;
   background-color: $color-secondary;
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 37px 35px;
+    padding: 37px 35px 37px 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,12 +14,68 @@
 
 .filter-form__title {
   width: 120px;
+  padding-left: 5px;
   margin: 0;
   margin-bottom: 23px;
   color: $color-primary--light;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 22px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 36px;
+    padding-left: 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.filter-form__fieldset {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &:first-of-type {
+    @media (min-width: $tablet-width) {
+      padding-top: 33px;
+      border-top: 1px solid $filter-button-active;
+    }
+  }
+
+  &:nth-of-type(2) {
+    padding-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &:nth-of-type(4) {
+    padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 17px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 2px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 37px;
+      padding-bottom: 33px;
+      border-bottom: 1px solid $filter-button-active;
+    }
+  }
 }
 
 .filter-form__button {

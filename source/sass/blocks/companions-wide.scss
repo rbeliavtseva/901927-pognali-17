@@ -1,6 +1,7 @@
 .companions-wide {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0 25px;
   padding-bottom: 75px;
   background-color: $background--light;
@@ -17,4 +18,10 @@
 
 .companions-wide__list {
   @include reset-list;
+  margin-bottom: 20px;
+}
+
+.companions-wide__show-more-btn {
+  margin-left: 25px;
+  margin-bottom: 20px;
 }

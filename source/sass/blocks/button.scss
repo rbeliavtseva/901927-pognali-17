@@ -186,10 +186,16 @@
 .button--white {
   min-width: auto;
   padding: 10px;
+  padding-top: 12px;
   background-color: $color-white;
   border-radius: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  &:active {
+    background-color: $filter-button-active;
+    color: rgba($button-text, 0.3);
+  }
 }
 
 .button--transparent {
@@ -218,12 +224,45 @@
 }
 
 .button--transparent-light {
+  position: relative;
+  padding: 0;
   background-color: transparent;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   color: $color-primary--light;
   text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 45px;
+    width: 18px;
+    height: 2px;
+    background-color: currentColor;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 53px;
+    width: 2px;
+    height: 18px;
+    background-color: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--blue {
