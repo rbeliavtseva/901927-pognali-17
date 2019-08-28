@@ -1,6 +1,14 @@
 .checkbox {
+  @media (min-width: $tablet-width) {
+    width: 33.333%;
+  }
+
   &:not(:last-child) {
     margin-bottom: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--icon {
