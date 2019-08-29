@@ -1,10 +1,12 @@
 .companion {
+  position: relative;
   width: 270px;
   min-height: 427px;
-  padding: 0 46px 22px 46px;
+  padding-bottom: 22px;
   background-color: $color-white;
   text-align: center;
   border-radius: 10px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 285px;
@@ -28,6 +30,21 @@
       margin-right: 58px;
     }
   }
+}
+
+.companion__image {
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
+}
+
+.companion__level {
+  top: 16px;
+  left: 17px;
+}
+
+.companion__wrap {
+  padding: 0 46px;
 }
 
 .companion__name {

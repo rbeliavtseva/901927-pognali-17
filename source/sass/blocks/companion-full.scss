@@ -1,4 +1,6 @@
 .companion-full {
+  display: flex;
+  min-width: 270px;
   min-height: 415px;
   padding: 26px;
   background-color: $color-white;
@@ -6,36 +8,75 @@
 
   &:not(:last-child) {
     margin-bottom: 10px;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 30px;
-    }
+  @media (min-width: $tablet-width) {
+    min-width: 688px;
+    margin-bottom: 40px;
+    padding: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 950px;
+    margin-bottom: 30px;
+    min-width: 950px;
   }
 }
 
-.companion-full__title-wrap {
+
+.companion-full__companion-wrap {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .companion-full__name {
-  order: 2;
+  position: relative;
   margin: 0;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: $color-primary--light;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 5px;
+    height: 5px;
+    background-color: $online;
+    border-radius: 50%;
+  }
+
+  &--offline {
+    &::after {
+      background-color: $offline;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+
+    &::after {
+      width: 7px;
+      height: 7px;
+    }
+  }
 }
 
 .companion-full__image {
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 25px;
+    width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0;
+  }
 }
 
 .companion-full__likes {
@@ -55,28 +96,6 @@
   line-height: 18px;
   color: $color-grey;
   text-transform: lowercase;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 7px;
-    left: -26px;
-    height: 1px;
-    width: 20px;
-    background-color: $background--light;
-  }
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   top: 7px;
-  //   right: -100%;
-  //   height: 1px;
-  //   width: 100%;
-  //   background-color: $background--light;
-  // }
 }
 
 .companion-full__countries-wrap {
@@ -85,6 +104,11 @@
 
 .companion-full__countries-list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .companion-full__country-item {
@@ -93,6 +117,12 @@
   line-height: 18px;
   color: $color-primary--light;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 75px;
+    }
+  }
 }
 
 .companion-full__icons-list {

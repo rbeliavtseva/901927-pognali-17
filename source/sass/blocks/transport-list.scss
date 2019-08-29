@@ -3,4 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+    }
+  }
 }

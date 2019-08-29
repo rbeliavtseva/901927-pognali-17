@@ -1,16 +1,34 @@
 .about {
-  padding-top: 72px;
+  padding-top: 30px;
   padding-right: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-left: 50px;
   background-color: $color-primary;
+  background: url("../../img/about-mobile@1x.png") no-repeat 18px center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../../img/about-mobile@2x.png") no-repeat 18px center;
+    background-size: 292px auto;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 139px 75px 28px 75px;
+    background: url("../../img/about-tablet@1x.png") no-repeat right 150px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../../img/about-tablet@2x.png") no-repeat right 150px;
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 255px 75px 102px 130px;
+    background: url("../../img/about-desktop@1x.png") no-repeat right 210px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../../img/about-desktop@2x.png") no-repeat right 210px;
+      background-size: 630px auto;
+    }
   }
 }
 

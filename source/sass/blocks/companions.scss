@@ -3,6 +3,22 @@
   padding-top: 100px;
   padding-bottom: 0;
   background-color: $color-primary;
+  background-image: url("../../img/smolov-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: -1;
+    width: 113px;
+    height: 132px;
+    background-color: $color-primary--darken;
+    border-radius: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 75px;

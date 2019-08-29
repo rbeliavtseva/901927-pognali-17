@@ -15,6 +15,9 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 }
 
@@ -68,10 +71,11 @@
 .destinations__list {
   @include reset-list;
   margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 47px;
   }
 

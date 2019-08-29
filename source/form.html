@@ -88,7 +88,11 @@
           <div class="profile__level level level--big">
             <span class="level__number level__number--profile">80</span><span class="level__text level__text--profile">level</span>
           </div>
-          <img class="profile__image" src="http://placehold.it/150x100" width="100" height="100" alt="Фото профайла">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+            <img class="profile__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="100" height="100" alt="Петя Демин">
+          </picture>
         </div>
         <a class="button profile__button button--blue" href="#"><span class="profile__btn-full-text">Сменить</span> фото</a>
         <div class="profile__user-info">

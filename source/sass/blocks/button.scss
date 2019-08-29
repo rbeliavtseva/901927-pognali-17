@@ -255,6 +255,24 @@
     background-color: currentColor;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      left: -49px;
+      width: 27px;
+      height: 3px;
+    }
+
+    &::after {
+      top: 1px;
+      left: -37px;
+      width: 3px;
+      height: 27px;
+    }
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
