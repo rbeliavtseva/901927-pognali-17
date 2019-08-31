@@ -3,12 +3,8 @@
     width: 33.333%;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 6px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 
   &--icon {
@@ -54,6 +50,10 @@
       width: 24px;
       height: 24px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: -2px;
+    }
   }
 
   &--bordered {
@@ -77,7 +77,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -8px;
+      top: -5px;
       display: block;
       width: 26px;
       height: 26px;
@@ -89,6 +89,15 @@
         height: 36px;
       }
     }
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba($color-grey, 0.6);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -117,7 +126,7 @@
 .checkbox__input:checked ~ .checkbox__label--bordered::after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 9px;
   display: block;
   width: 10px;

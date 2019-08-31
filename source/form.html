@@ -11,7 +11,11 @@
       <div class="header__wrapper">
         <div class="header__logo-wrapper">
           <a class="header__logo logo">
-            <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+            <picture>
+              <source media="(min-width: 1439px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img class="logo__logo-image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
+            </picture>
           </a>
           <button class="navigation-toggle-btn navigation-toggle-btn--open" type="button"><span class="visually-hidden">Показать меню</span></button>
         </div>
@@ -30,8 +34,12 @@
       <nav class="navigation">
         <div class="navigation__wrapper">
           <div class="navigation__header">
-            <a class="navigation__logo logo">
-              <img class="logo__logo-image" src="http://placehold.it/150x100" width="96" height="15" alt="Логотип Погнали">
+            <a class="navigation__logo logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                <img class="logo__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип Погнали">
+              </picture>
             </a>
             <button class="navigation__button-close navigation-toggle-btn navigation-toggle-btn--close" type="button"><span class="visually-hidden">Скрыть меню</span></button>
           </div>
@@ -85,8 +93,11 @@
       <section class="main__profile profile">
         <h2 class="visually-hidden">Мой профайл</h2>
         <div class="profile__wrap">
-          <div class="profile__level level level--big">
-            <span class="level__number level__number--profile">80</span><span class="level__text level__text--profile">level</span>
+          <div class="companion__level level level--big">
+            <div class="level__circle level__circle--big">
+              <span class="level__number level__number--big">80</span>
+              <span class="level__text level__text--big">level</span>
+            </div>
           </div>
           <picture>
             <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
@@ -96,15 +107,9 @@
         </div>
         <a class="button profile__button button--blue" href="#"><span class="profile__btn-full-text">Сменить</span> фото</a>
         <div class="profile__user-info">
-          <div class="profile__tags-wrap">
-            <h3 class="profile__title profile__title--tags">Тэги</h3>
-            <ul class="profile__tags-list tags-list">
-              <li class="tags-list__tag">#бургер</li>
-              <li class="tags-list__tag">#бар</li>
-              <li class="tags-list__tag">#футбол</li>
-              <li class="tags-list__tag">#концерт</li>
-              <li class="tags-list__tag">#крафт</li>
-            </ul>
+          <div class="profile__tags-wrap textfield">
+            <label class="profile__title profile__title--tags" for="tags">Тэги</label>
+            <textarea class="profile__textarea textfield__textarea textfield__textarea--profile" id="tags" rows="2" cols="30" name="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
           <div class="profile__transport-wrap">
             <h3 class="profile__title profile__title--transport">Транспорт</h3>
@@ -198,7 +203,11 @@
                   </div>
                 </div>
                 <div class="create-plan__calendar calendar">
-                  <p class="calendar__title">Март 2019</p>
+                  <div class="calendar__title-wrap">
+                    <button class="calendar__button calendar-btn calendar-btn--back"><span class="visually-hidden">Назад</span></button>
+                    <span class="calendar__title">Март 2019</span>
+                    <button class="calendar__button calendar-btn calendar-btn--forward"><span class="visually-hidden">Вперед</span></button>
+                  </div>
                   <table class="calendar__table">
                     <tbody class="calendar__tbody">
                       <tr class="calendar__days-row">
@@ -287,11 +296,13 @@
                   <div class="create-plan__country-select">
                     <div class="create-plan__country-option">
                       <span class="create-plan__country-name">Босния и Герцеговина</span>
+                      <span class="create-plan__country-flag"><span class="visually-hidden">Флаг Боснии и Герцеговины</span></span>
                     </div>
                   </div>
                   <div class="create-plan__country-select">
                     <div class="create-plan__country-option">
                       <span class="create-plan__country-name">Чехия</span>
+                      <span class="create-plan__country-flag"><span class="visually-hidden">Флаг Чехии</span></span>
                     </div>
                   </div>
                   <button class="create-plan__country-select-button country-select-btn" type="button">Выберите страну</button>
@@ -372,7 +383,11 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo logo" href="index.html">
-          <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип Погнали">
+          </picture>
         </a>
         <ul class="footer__social social">
           <li class="social__item">

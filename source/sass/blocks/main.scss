@@ -1,6 +1,10 @@
 .main {
   flex-grow: 1;
   background-color: $button-text;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .main__title {
@@ -49,7 +53,7 @@
 .main__button {
   display: none;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
@@ -64,6 +68,7 @@
     content: "";
     display: block;
     position: absolute;
+    z-index: 10;
     bottom: -30px;
     left: 0;
     min-height: 30px;
@@ -85,10 +90,64 @@
 }
 
 .main__slogan-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 280px;
+      right: 112px;
+      width: 372px;
+      height: 451px;
+      background-image: url("../../img/traveller-illustration-tablet@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::after {
+        background-image: url("../../img/traveller-illustration-tablet@2x.png");
+        background-size: cover;
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 85px 100px 127px;
+    align-items: flex-start;
+    padding: 0 60px 123px 60px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 405px;
+      width: 431px;
+      height: 640px;
+      background-image: url("../../img/traveller-illustration-desktop@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::after {
+        background-image: url("../../img/traveller-illustration-desktop@2x.png");
+        background-size: 431px auto;
+      }
+    }
+  }
+}
+
+.main__back-img {
+  display: block;
+  margin-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -210,5 +269,21 @@
       bottom: -60px;
       border-radius: 0 0 60px 60px;
     }
+  }
+}
+
+.main__plans {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    min-height: 27px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    background-color: inherit;
   }
 }

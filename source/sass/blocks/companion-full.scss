@@ -32,10 +32,6 @@
 .companion-full__name {
   position: relative;
   margin: 0;
-  font-family: "Blogger Sans Bold", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  color: $color-primary--light;
 
   &::after {
     content: "";
@@ -64,6 +60,23 @@
       height: 7px;
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.companion-full__profile-link {
+  font-family: "Blogger Sans Bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-primary--light;
+  text-decoration: none;
 }
 
 .companion-full__image {
@@ -76,6 +89,11 @@
 
   @media (min-width: $desktop-width) {
     border-radius: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-primary--light;
   }
 }
 
@@ -96,10 +114,6 @@
   line-height: 18px;
   color: $color-grey;
   text-transform: lowercase;
-}
-
-.companion-full__countries-wrap {
-
 }
 
 .companion-full__countries-list {

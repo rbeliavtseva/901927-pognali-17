@@ -34,8 +34,12 @@
       <nav class="navigation">
         <div class="navigation__wrapper">
           <div class="navigation__header">
-            <a class="navigation__logo logo">
-              <img class="logo__logo-image" src="http://placehold.it/150x100" width="96" height="15" alt="Логотип Погнали">
+            <a class="navigation__logo logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                <img class="logo__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип Погнали">
+              </picture>
             </a>
             <button class="navigation__button-close navigation-toggle-btn navigation-toggle-btn--close" type="button"><span class="visually-hidden">Скрыть меню</span></button>
           </div>
@@ -74,6 +78,7 @@
       <h1 class="visually-hidden">Сервис для поиска попутчиков Погнали</h1>
       <div class="main__slogan-wrapper">
         <p class="slogan">В путешествие <br class="br-desktop">с крутыми попутчиками!</p>
+        <img class="main__back-img" src="img/traveller-illustration-mobile@1x.png" srcset="img/traveller-illustration-mobile@2x.png 2x" width="192" height="255" alt="Путешественник">
         <div class="main__contact-wrapper">
           <ul class="main__contact-info contact-info contact-info--icons">
             <li class="contact-info__item contact-info__item--icon">
@@ -94,18 +99,16 @@
             <cite class="reviews__author-name">Мурат Эльтазин<br>главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
           </blockquote>
         </section>
+        <section class="steps">
+          <h2 class="visually-hidden">Как пользоваться сервисом</h2>
+          <ol class="steps__list">
+            <li class="steps__item">Выберите<br>направление</li>
+            <li class="steps__item">Изучите идеи<br>путешественников</li>
+            <li class="steps__item">Находите тех,<br>кто похож на вас</li>
+            <li class="steps__item">Путешествуйте<br>вместе!</li>
+          </ol>
+        </section>
       </div>
-
-      <section class="steps">
-        <h2 class="visually-hidden">Как пользоваться сервисом</h2>
-        <ol class="steps__list">
-          <li class="steps__item">Выберите<br>направление</li>
-          <li class="steps__item">Изучите идеи<br>путешественников</li>
-          <li class="steps__item">Находите тех,<br>кто похож на вас</li>
-          <li class="steps__item">Путешествуйте<br>вместе!</li>
-        </ol>
-      </section>
-
       <section class="main__about about">
         <h2 class="about__title">О сервисе</h2>
         <p class="about__text">
@@ -398,7 +401,11 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo logo">
-          <img class="logo__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Погнали">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Логотип Погнали">
+          </picture>
         </a>
         <ul class="footer__social social">
           <li class="social__item">

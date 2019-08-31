@@ -1,12 +1,16 @@
 .filter-range {
   @media (min-width: $tablet-width) {
-    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: 80%;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column-reverse;
+  }
 }
+
 .filter-range__level-controls {
   width: 220px;
   margin: 0 auto;
@@ -38,6 +42,12 @@
       width: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    width: 192px;
+    margin-bottom: 35px;
+  }
 }
 
 .filter-range__level {
@@ -60,6 +70,10 @@
     @media (min-width: $tablet-width) {
       padding-left: 25px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
+    }
   }
 
   &--max {
@@ -78,6 +92,10 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 30px;
     }
   }
 }
@@ -112,6 +130,12 @@
     padding-bottom: 5px;
     width: 285px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-bottom: 0;
+    margin-right: 5px;
+  }
 }
 
 .filter-range__scale {
@@ -136,6 +160,10 @@
     width: 75%;
     border-radius: 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
+  }
 }
 
 .filter-range__range-toggle {
@@ -147,12 +175,6 @@
   box-sizing: content-box;
   background-color: $color-primary--light;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    width: 13px;
-    height: 13px;
-    top: -5px;
-  }
 
   &--min {
     left: 67px;
@@ -173,6 +195,25 @@
     width: 13px;
     height: 13px;
     top: -5px;
-    box-shadow: 0px 3px 7px 0 rgba($color-primary--light, 0.3);
+    box-shadow: 0px 3px 7px 0px rgba($color-primary--light, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+
+    &:hover,
+    &:focus {
+      width: 19px;
+      height: 19px;
+      top: -8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--min {
+      left: 60px;
+    }
   }
 }

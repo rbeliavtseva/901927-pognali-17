@@ -48,6 +48,11 @@
   position: relative;
   z-index: 2;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba($button-text, 0.6);
+  }
 }
 
 .pagination__buttons-wrapper {
@@ -57,48 +62,5 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-  }
-}
-
-.pagination__button {
-  width: 100%;
-  min-height: 50px;
-  position: relative;
-  padding: 10px;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-  }
-
-  &--back {
-    margin-right: 1px;
-    border-radius: 20px 0 0 20px;
-
-    &::before {
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid currentColor;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-right: 0;
-    }
-  }
-
-  &--forward {
-    border-radius: 0 20px 20px 0;
-
-    &::before {
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 10px solid currentColor;
-    }
   }
 }

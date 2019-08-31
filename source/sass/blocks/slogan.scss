@@ -1,33 +1,21 @@
 .slogan {
   margin: 0;
-  padding: 39px 40px 267px 40px;
+  padding: 39px 40px 12px 40px;
   color: $color-white;
   font-size: 36px;
   line-height: 40px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   text-align: center;
-  background-color: $button-text;
-  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 80px bottom,
-              url("../../img/globe-back-mobile@1x.jpg") no-repeat center -53px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../../img/traveller-illustration-mobile@2x.png") no-repeat 80px bottom,
-                url("../../img/globe-back-mobile@2x.jpg") no-repeat center -53px;
-    background-size: 192px auto, 100%;
-  }
 
   @media (min-width: $tablet-width) {
     padding: 0 170px;
     font-size: 60px;
     line-height: 70px;
-
-    background: url("../../img/traveller-illustration-tablet@1x.png") no-repeat 80px bottom,
-                url("../../img/globe-back-tablet@1x.jpg") no-repeat center -53px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 470px;
-    padding: 0;
+    width: 480px;
+    padding: 0 0 105px 68px;
     margin: 0;
     font-size: 60px;
     line-height: 70px;

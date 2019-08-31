@@ -24,6 +24,10 @@
       min-height: 48px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 60px;
+  }
 }
 
 .footer__wrapper {
