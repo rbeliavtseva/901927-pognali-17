@@ -1,5 +1,5 @@
 .create-plan {
-  padding: 30px 25px 64px 25px;
+  padding: 0 25px 64px 25px;
   background-color: $background--darken;
 
   @media (min-width: $tablet-width) {
@@ -19,8 +19,7 @@
 }
 
 .create-plan__step {
-  padding: 25px;
-  padding-bottom: 20px;
+  padding: 23px 25px 20px 25px;
   margin-bottom: 10px;
   background-color: $color-white;
   border-radius: 10px;
@@ -67,7 +66,7 @@
 .create-plan__step-title-wrap {
   display: flex;
   align-items: center;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -118,6 +117,10 @@
 .create-plan__field-wrap {
   margin-bottom: 20px;
 
+  &:nth-of-type(2) {
+    margin-bottom: 23px;
+  }
+
   @media (min-width: $tablet-width) {
     border-top: 1px solid $border;
   }
@@ -146,7 +149,7 @@
   }
 
   &:last-child {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       order: 2;
@@ -271,7 +274,7 @@
 
 .create-plan__step-title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   color: $color-primary--light;
   font-size: 20px;
@@ -342,14 +345,28 @@
 }
 
 .create-plan__country-option {
-  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
   margin: 0;
   margin-bottom: 22px;
-  padding: 12px 12px 8px 12px;
+}
+
+.create-plan__country-name {
+  display: block;
+  position: relative;
+  padding: 12px 0 8px 12px;
   border: 1px solid $border;
   border-radius: 4px;
   overflow: hidden;
   flex-grow: 1;
+  font-family: "Blogger Sans Medium", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-primary--light;
 
   &::after {
     content: "";
@@ -366,6 +383,9 @@
     min-width: 370px;
     padding: 27px 27px 24px 27px;
     margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
 
     &::after {
       background: none;
@@ -377,18 +397,27 @@
   }
 }
 
-.create-plan__country-name {
-  font-family: "Blogger Sans Medium", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-primary--light;
+.create-plan__country-flag {
+  position: relative;
+  display: block;
+  min-width: 53px;
+  padding: 12px 12px 8px 12px;
+  border: 1px solid $border;
+  border-radius: 4px;
+  overflow: hidden;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 18px;
-    letter-spacing: 2px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 8px;
+    height: 8px;
+    background-color: $color-primary--light;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3px;
   }
 }
 

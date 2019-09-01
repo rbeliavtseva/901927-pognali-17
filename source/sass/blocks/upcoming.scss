@@ -1,10 +1,9 @@
 .upcoming {
-  padding: 29px 25px 50px 25px;
+  padding: 0 25px 58px 25px;
   background-color: $background--dark;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 75px;
-    padding-bottom: 105px;
+    padding: 50px 75px 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +20,7 @@
 
 .upcoming__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   color: $color-primary--light;
   font-size: 24px;
@@ -45,11 +44,22 @@
 }
 
 .upcoming__item {
-  padding: 25px;
-  padding-top: 24px;
-  padding-bottom: 18px;
+  position: relative;
+  padding: 23px 25px 20px 26px;
   background-color: $color-white;
   border-radius: 10px;
+
+  &::before {
+    counter-increment: section;
+    content: counters(section, ".") ".";
+    position: absolute;
+    top: 23px;
+    color: $color-primary--light;
+    font-family: "Blogger Sans Medium", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 10px;
@@ -70,9 +80,7 @@
     padding: 24px 40px 23px 43px;
 
     &::before {
-      counter-increment: section;
-      content: counters(section, ".") ".";
-      color: $color-primary--light;
+      position: static;
       font-family: "Blogger Sans Medium", "Arial", sans-serif;
       font-size: 20px;
       line-height: 18px;
@@ -84,6 +92,7 @@
 .upcoming__item-title {
   margin: 0;
   margin-bottom: 21px;
+  padding-left: 16px;
   color: $color-primary--light;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -137,7 +146,7 @@
 }
 
 .upcoming__companions {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

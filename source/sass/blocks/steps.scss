@@ -1,5 +1,7 @@
 .steps {
   padding: 0 25px;
+  padding-bottom: 39px;
+  align-self: stretch;
   background-image: linear-gradient(to bottom, $button-text 0%, $button-text 20%, $color-primary 20%, $color-primary 100%);
 
   @media (min-width: $tablet-width) {
@@ -7,8 +9,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 100;
     background-color: $button-text;
-    padding: 0 60px;
+    min-width: 100%;
+    // padding: 0 60px;
+    padding: 0;
   }
 }
 
@@ -110,7 +115,7 @@
 
   &:nth-child(2) {
     background-color: $color-tertiary--light;
-    padding-left: 5px;
+    // padding-left: 5px;
   }
 
   &:nth-child(3) {

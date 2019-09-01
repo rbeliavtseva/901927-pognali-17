@@ -1,6 +1,6 @@
 .slogan {
   margin: 0;
-  padding: 0 40px 240px 40px;
+  padding: 39px 40px 12px 40px;
   color: $color-white;
   font-size: 36px;
   line-height: 40px;
@@ -14,8 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 470px;
-    padding: 0;
+    width: 480px;
+    padding: 0 0 105px 68px;
     margin: 0;
     font-size: 60px;
     line-height: 70px;

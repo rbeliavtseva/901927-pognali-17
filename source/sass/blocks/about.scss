@@ -1,16 +1,58 @@
 .about {
-  padding-top: 72px;
+  padding-top: 30px;
   padding-right: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-left: 50px;
   background-color: $color-primary;
+  background-image: url("../../img/about-mobile@1x.png") no-repeat 18px center $color-primary;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../../img/about-mobile@2x.png") no-repeat 18px center $color-primary;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 139px 75px 28px 75px;
+    padding: 135px 75px 28px 75px;
+    background: none;
+    background-color: $color-primary;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 376px;
+      height: 548px;
+      bottom: 29px;
+      right: 8px;
+      background-image: url("../../img/about-tablet@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::before {
+        background-image: url("../../img/about-tablet@2x.png");
+        background-size: 376px auto;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 255px 75px 102px 130px;
+    padding: 127px 75px 102px 130px;
+
+    &::before {
+      width: 630px;
+      height: 665px;
+      bottom: 0;
+      right: 40px;
+      background-image: url("../../img/about-desktop@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::before {
+        background-image: url("../../img/about-desktop@2x.png");
+        background-size: 630px auto;
+      }
+    }
   }
 }
 
@@ -23,13 +65,34 @@
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     margin-bottom: 40px;
     font-size: 45px;
     line-height: 45px;
+
+    &::after {
+      content: "";
+      z-index: -1;
+      display: block;
+      position: absolute;
+      top: -38px;
+      left: -35px;
+      width: 688px;
+      height: 213px;
+      border-radius: 20px;
+      background-color: $color-primary--darken;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 58px;
+
+    &::after {
+      width: 213px;
+      height: 213px;
+      left: -70px;
+      top: -56px;
+    }
   }
 }
 
@@ -40,7 +103,7 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
     width: 300px;
     font-size: 28px;
     line-height: 33px;
@@ -48,7 +111,7 @@
 
   @media (min-width: $desktop-width) {
     width: 611px;
-    margin-bottom: 38px;
+    margin-bottom: 41px;
   }
 
   &--bold {
@@ -56,14 +119,14 @@
     font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 53px;
       font-size: 21px;
       line-height: 25px;
     }
 
     @media (min-width: $desktop-width) {
       padding-right: 150px;
-      margin-bottom: 82px;
+      margin-bottom: 86px;
     }
   }
 }

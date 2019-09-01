@@ -1,14 +1,16 @@
 .reviews {
-  padding: 25px 116px 50px 51px;
+  padding: 0 116px 50px 51px;
   background-color: $button-text;
 
   @media (min-width: $tablet-width) {
-    padding: 86px 75px 210px 75px;
+    padding: 90px 0 212px 75px;
+    background-color: transparent;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-top: 10px;
+    padding: 13px 25px 0 0;
+    margin-right: 0;
   }
 }
 

@@ -14,20 +14,28 @@
     padding-left: 90px;
     font-size: 28px;
     line-height: 28px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 270px;
 
     &::after {
       z-index: -1;
       content: "";
       display: block;
       position: absolute;
-      width: 444px;
-      height: 300px;
+      width: 198px;
+      height: 285px;
       border-radius: 20px;
       background-color: $background;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -33px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 270px;
+
+    &::after {
+      width: 444px;
+      height: 300px;
       top: 50%;
       transform: translateY(-50%);
       right: 115px;

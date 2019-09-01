@@ -1,6 +1,6 @@
 .profile {
   position: relative;
-  padding: 45px 25px 50px 25px;
+  padding: 53px 25px 60px 25px;
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
@@ -15,9 +15,9 @@
 .profile__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 17px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -48,9 +48,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -135px;
-    right: 245px;
+    top: -190px;
+    right: 155px;
     z-index: 100;
+    width: 190px;
   }
 }
 
@@ -62,10 +63,8 @@
 }
 
 .profile__tags-wrap {
+  align-items: center;
   margin-bottom: 25px;
-  padding: 25px;
-  border: 1px solid $input-border;
-  border-radius: 10px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -80,6 +79,7 @@
 
 .profile__transport-wrap {
   padding: 15px;
+  padding-bottom: 12px;
   border: 1px solid $input-border;
   border-radius: 10px;
   text-align: center;
@@ -103,13 +103,9 @@
   margin-top: -10px;
 }
 
-.profile__tags-list {
-  margin-top: -25px;
-}
-
 .profile__button {
   width: 100%;
-  margin-bottom: 33px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
@@ -130,7 +126,6 @@
     display: none;
   }
 }
-
 
 .profile__title {
   display: inline-block;
@@ -153,7 +148,7 @@
   }
 
   &--tags {
-    top: -35px;
+    top: 9px;
 
     @media (min-width: $tablet-width) {
       top: 47px;
@@ -166,7 +161,7 @@
   }
 
   &--transport {
-    top: -25px;
+    top: -27px;
 
     @media (min-width: $tablet-width) {
       top: -8px;

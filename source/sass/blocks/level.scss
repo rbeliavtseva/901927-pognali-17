@@ -1,36 +1,20 @@
-// .level {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   margin: 0;
-//   height: 60px;
-//   width: 60px;
-//   border: 3px solid $color-tertiary;
-//   border-radius: 50%;
-//   background-color: rgba($color-black, 0.5);
-
-//   &--big {
-//     height: 100px;
-//     width: 100px;
-//     background-color: transparent;
-
-//     @media (min-width: $tablet-width) {
-//       height: 94px;
-//       width: 94px;
-//     }
-//   }
-// }
-
 .level {
   width: 60px;
   height: 60px;
-  position: relative;
+  position: absolute;
   background-color: rgba($color-black, 0.5);
   border-radius: 50%;
 
+  @media (min-width: $desktop-width) {
+    top: 23px;
+    left: 23px;
+  }
+
   &--big {
+    position: static;
     height: 100px;
     width: 100px;
+    padding-left: 3px;
     background-color: transparent;
 
     @media (min-width: $tablet-width) {
@@ -46,6 +30,11 @@
   border: 3px solid $color-tertiary;
   border-radius: 50px;
   position: absolute;
+
+  &--big {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .level__number {
@@ -69,8 +58,9 @@
     background-color: rgba($color-white, 0.5);
   }
 
-  &--profile {
+  &--big {
     position: relative;
+    padding-top: 17px;
     font-size: 38px;
     line-height: 38px;
     color: $button-text;
@@ -101,7 +91,7 @@
   text-align: center;
   color: $color-white;
 
-  &--profile {
+  &--big {
     position: relative;
     font-size: 18px;
     line-height: 22px;

@@ -73,7 +73,7 @@
 
 .button--rounder {
   min-width: auto;
-  padding: 8px 46px 5px 35px;
+  padding: 5px 30px;
   font-size: 17px;
   line-height: 30px;
   border-radius: 20px;
@@ -192,6 +192,12 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: $desktop-width) {
+    border-radius: 25px;
+    padding: 11px;
+    padding-left: 7px;
+  }
+
   &:active {
     background-color: $filter-button-active;
     color: rgba($button-text, 0.3);
@@ -255,6 +261,24 @@
     background-color: currentColor;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      left: -49px;
+      width: 27px;
+      height: 3px;
+    }
+
+    &::after {
+      top: 1px;
+      left: -37px;
+      width: 3px;
+      height: 27px;
+    }
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -268,6 +292,7 @@
 .button--blue {
   min-height: 40px;
   padding: 13px;
+  padding-top: 11px;
   border-radius: 20px;
   text-transform: uppercase;
   color: $button-text;
