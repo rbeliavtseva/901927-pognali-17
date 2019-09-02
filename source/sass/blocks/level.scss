@@ -5,22 +5,24 @@
   background-color: rgba($color-black, 0.5);
   border-radius: 50%;
 
-  @media (min-width: $desktop-width) {
-    top: 23px;
-    left: 23px;
-  }
-
   &--big {
     position: static;
     height: 100px;
     width: 100px;
     padding-left: 3px;
     background-color: transparent;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &--big {
       height: 94px;
       width: 94px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+    left: 23px;
   }
 }
 
@@ -34,6 +36,13 @@
   &--big {
     width: 100px;
     height: 100px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--big {
+      height: 94px;
+      width: 94px;
+    }
   }
 }
 

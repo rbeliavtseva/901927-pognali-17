@@ -13,6 +13,12 @@
       margin-right: 33px;
     }
   }
+
+  &--bordered {
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
+  }
 }
 
 .checkbox__input {
@@ -88,6 +94,10 @@
         width: 36px;
         height: 36px;
       }
+
+      @media (min-width: $desktop-width) {
+        left: 2px;
+      }
     }
   }
 
@@ -143,5 +153,10 @@
     height: 7px;
     border-width: 0 0 3px 3px;
     border-color: $color-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 9px;
+    left: 14px;
   }
 }

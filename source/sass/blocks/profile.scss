@@ -4,7 +4,7 @@
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
-    padding: 120px 75px 50px 75px;
+    padding: 125px 75px 50px 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-bottom: 52px;
+    margin-bottom: 46px;
     align-items: stretch;
   }
 
@@ -44,6 +44,8 @@
 
   @media (min-width: $tablet-width) {
     border-radius: 5px;
+    width: 94px;
+    height: 94px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +54,7 @@
     right: 155px;
     z-index: 100;
     width: 190px;
+    height: 190px;
   }
 }
 
@@ -67,13 +70,15 @@
   margin-bottom: 25px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    padding: 37px 40px 34px 40px;
-  }
-
   @media (min-width: $desktop-width) {
     min-width: 730px;
     margin-bottom: 0;
+  }
+}
+
+.profile__textarea {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -86,10 +91,11 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -376px;
+    top: -380px;
     padding: 25px;
     width: 308px;
     margin: 0 auto;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,7 +114,7 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,7 +157,7 @@
     top: 9px;
 
     @media (min-width: $tablet-width) {
-      top: 47px;
+      top: 104px;
     }
 
     @media (min-width: $desktop-width) {
@@ -164,7 +170,7 @@
     top: -27px;
 
     @media (min-width: $tablet-width) {
-      top: -8px;
+      top: 55px;
     }
 
     @media (min-width: $desktop-width) {
