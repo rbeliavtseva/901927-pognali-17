@@ -31,4 +31,15 @@
       transform: rotate(-45deg);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+
+    &::before {
+      width: 25px;
+      height: 25px;
+      border-width: 0 3px 3px 0;
+    }
+  }
 }
