@@ -1,9 +1,9 @@
 .reviews {
-  padding: 0 116px 50px 51px;
+  padding: 6px 116px 50px 51px;
   background-color: $button-text;
 
   @media (min-width: $tablet-width) {
-    padding: 90px 0 212px 75px;
+    padding: 90px 0 209px 75px;
     background-color: transparent;
     margin-right: auto;
   }
@@ -25,7 +25,7 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: $color-white;
   font-family: "Blogger Sans Light", "Arial", sans-serif;
 

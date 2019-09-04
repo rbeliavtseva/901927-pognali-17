@@ -4,11 +4,11 @@
   background-color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    padding: 136px 75px 60px;
+    padding: 133px 75px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 170px 75px 68px;
+    padding: 164px 75px 66px;
   }
 }
 
@@ -19,11 +19,11 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 60px;
   }
 }
 
@@ -40,6 +40,10 @@
     margin-left: 3px;
     font-size: 45px;
     line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
   }
 }
 

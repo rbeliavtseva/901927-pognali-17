@@ -2,36 +2,55 @@
   background-color: $background--light;
 }
 
+.country-filter__expanded {
+  // display: none;
+}
+
 .country-filter__filter-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 60px 32px 0 54px;
+  padding: 46px 0 14px;
   border-radius: 0 0 20px 20px;
   background-color: $background;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 75px 74px 75px;
+    flex-direction: column;
+    padding: 118px 122px 75px 75px;
+    border-radius: 0 0 60px 60px;
   }
 }
 
 .country-filter__filter-expanded-wrap {
-  display: none;
+  padding: 0 25px 12px;
+  // display: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .country-filter__title-wrap {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0 26px 0 50px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: auto;
     justify-content: center;
+
+    &--expanded {
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0;
+    }
   }
 }
 
 .country-filter__title {
+  position: relative;
   margin: 0;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -39,23 +58,41 @@
   text-transform: uppercase;
   color: $color-primary;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -27px;
+    width: 15px;
+    height: 10px;
+    background-image: url("../../img/filter.svg");
+  }
+
   @media (min-width: $tablet-width) {
-    margin-right: 64px;
+    display: none;
   }
 }
 
 .country-filter__continent-list {
   @include reset-list;
-  margin-top: 30px;
+  margin: 30px 0 20px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    margin-top: 0;
+    width: 100%;
+    margin: 0;
     order: -1;
   }
+}
+
+.country-filter__continent-item {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
 }
 
 .country-filter__link {
@@ -69,6 +106,11 @@
 
   &--active {
     opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

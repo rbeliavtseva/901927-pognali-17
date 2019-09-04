@@ -57,8 +57,11 @@
 
 .textfield__label {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 16px;
-  margin-left: 13px;
+  margin-left: 12px;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -97,4 +100,9 @@
     top: 0;
     background: linear-gradient(to right, transparent 0%, transparent 60%, $color-white 70%, $color-white 100%);
   }
+}
+
+.textfield__label-icon {
+  position: relative;
+  z-index: 10;
 }

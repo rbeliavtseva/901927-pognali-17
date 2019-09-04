@@ -2,34 +2,43 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 0;
   color: $color-grey;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+
+  &--small {
+    font-size: 15px;
+    justify-content: flex-start;
+    padding: 0 58px 0 7px;
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     font-size: 20px;
     line-height: 24px;
   }
-
-  &--small {
-    font-size: 15px;
-  }
 }
 
 .tags-list__tag {
-  &:first-child {
-    margin-bottom: 5px;
+  &:not(:last-child) {
+    margin-right: 3px;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
+  &--small {
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+
+    &:last-child {
+      margin-right: auto;
     }
   }
 
-  &:not(:last-child) {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
       margin-right: 5px;
     }
   }

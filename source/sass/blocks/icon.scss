@@ -4,6 +4,149 @@
   width: 33px;
   height: 33px;
   border: none;
-  border-radius: 50%;
-  background-color: $color-white;
+
+  @media (min-width: $desktop-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.icon__input {
+  position: absolute;
+  display: none;
+}
+
+.icon__label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: $color-white;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    opacity: 0.15;
+  }
+
+  &--plane {
+    &::after {
+      width: 14px;
+      height: 16px;
+      background-image: url("../../img/plane.svg");
+    }
+  }
+
+  &--bus {
+    &::after {
+      width: 13px;
+      height: 16px;
+      left: 10px;
+      top: 8px;
+      background-image: url("../../img/bus.svg");
+    }
+  }
+
+  &--bike {
+    &::after {
+      width: 19px;
+      height: 17px;
+      background-image: url("../../img/bike.svg");
+    }
+  }
+
+  &--run {
+    &::after {
+      width: 15px;
+      height: 17px;
+      background-image: url("../../img/run.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+
+    &--plane {
+      &::after {
+        width: 19px;
+        height: 21px;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    &--bus {
+      &::after {
+        width: 17px;
+        height: 21px;
+        top: 10px;
+        left: 13px;
+      }
+    }
+
+    &--bike {
+      &::after {
+        width: 24px;
+        height: 21px;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    &--run {
+      &::after {
+        width: 20px;
+        height: 21px;
+        top: 10px;
+        left: 11px;
+      }
+    }
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $checkbox-active;
+    }
+
+    &::after {
+      opacity: 0.1;
+    }
+  }
+}
+
+.icon__input:checked ~ .icon__label {
+  &::after {
+    opacity: 1;
+  }
+}
+
+.icon__input:checked ~ .icon__label:active {
+  &::before {
+    background-color: $checkbox-active;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
 }

@@ -1,10 +1,10 @@
 .navigation {
   // display: none;
-  padding: 27px 25px 40px;
+  padding: 28px 25px 40px 27px;
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 40px 100px 40px;
+    padding: 40px 40px 65px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,10 +27,16 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 64px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 86px;
+  }
+}
+
+.navigation__logo {
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
   }
 }
 
@@ -63,11 +69,11 @@
 
 .navigation__contact-info {
   margin-top: 64px;
-  margin-bottom: 42px;
+  margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 150px;
-    margin-bottom: 145px;
+    margin-top: 155px;
+    margin-bottom: 153px;
     padding: 0 57px;
   }
 }
@@ -78,6 +84,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 57px;
+    padding: 0 57px 0 83px;
   }
 }

@@ -3,14 +3,13 @@
   background-color: $button-text;
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 47px;
   }
 }
 
 .main__title {
   padding-bottom: 10px;
   margin: 0;
-  margin-left: 27px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -39,8 +38,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     padding-bottom: 62px;
-    margin-left: 77px;
     font-size: 60px;
     line-height: 70px;
   }
@@ -50,22 +49,16 @@
   }
 }
 
-.main__button {
+.main__button-return {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .main__heading {
   position: relative;
-  display: flex;
-  justify-content: space-between;
   background-color: inherit;
 
   &::after {
@@ -87,6 +80,17 @@
       min-height: 60px;
       border-radius: 0 0 60px 60px;
     }
+  }
+}
+
+.main__heading-wrap {
+  padding: 0 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 105px 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -164,6 +168,8 @@
 }
 
 .main__contact-wrapper {
+  position: relative;
+  top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;

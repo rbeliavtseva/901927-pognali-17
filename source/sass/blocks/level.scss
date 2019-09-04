@@ -13,16 +13,18 @@
     background-color: transparent;
   }
 
+  &--small {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+  }
+
   @media (min-width: $tablet-width) {
     &--big {
       height: 94px;
       width: 94px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 23px;
-    left: 23px;
   }
 }
 
@@ -38,10 +40,20 @@
     height: 100px;
   }
 
+  &--small {
+    width: 45px;
+    height: 45px;
+  }
+
   @media (min-width: $tablet-width) {
     &--big {
       height: 94px;
       width: 94px;
+    }
+
+    &--small {
+      width: 60px;
+      height: 60px;
     }
   }
 }
@@ -74,10 +86,6 @@
     line-height: 38px;
     color: $button-text;
 
-    @media (min-width: $desktop-width) {
-      color: $color-white;
-    }
-
     &::after {
       content: "";
       display: block;
@@ -87,6 +95,38 @@
       width: 49px;
       height: 2px;
       background-color: $input-border;
+    }
+  }
+
+  &--small {
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 18px;
+    color: $color-primary--light;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--small {
+      &::after {
+        display: block;
+        bottom: -3px;
+        background-color: rgba($color-grey, 0.1);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--big {
+      color: $color-white;
+
+      &::after {
+        background-color: $color-white;
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -105,8 +145,23 @@
     font-size: 18px;
     line-height: 22px;
     color: $color-grey;
+  }
 
-    @media (min-width: $desktop-width) {
+  &--small {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    color: rgba($color-grey, 0.4);
+
+    &--big {
+      padding-left: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--big {
       color: $color-white;
     }
   }

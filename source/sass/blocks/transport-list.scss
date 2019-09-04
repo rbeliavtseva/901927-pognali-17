@@ -2,11 +2,86 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 20px;
 
   &--catalog {
-    @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 83px;
+
+    &--catalog {
       flex-direction: column;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 56px;
+
+    &--catalog {
+      padding: 0;
+      flex-direction: row;
+    }
+  }
+}
+
+.transport-list__icon {
+  opacity: 0.15;
+
+  @media (min-width: $tablet-width) {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.transport-list__icon-item {
+  position: relative;
+  width: 33px;
+  height: 33px;
+
+  &--catalog {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: -6px;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      background-color: $background--light;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      &::before {
+        display: none;
+      }
     }
   }
 }

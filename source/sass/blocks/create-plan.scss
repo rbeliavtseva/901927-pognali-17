@@ -80,7 +80,7 @@
 }
 
 .create-plan__title-wrap {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
@@ -371,9 +371,11 @@
 .create-plan__country-select-wrap {
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
+    margin-bottom: 50px;
+    padding-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -382,21 +384,51 @@
 }
 
 .create-plan__country-select {
-  display: flex;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    bottom: -16px;
+    right: 50px;
+    background-image: url("../../img/small-arrow.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .create-plan__country-option {
+  position: relative;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .create-plan__country-name {
   display: block;
   position: relative;
+  height: 42px;
   padding: 12px 0 8px 12px;
   border: 1px solid $border;
   border-radius: 4px;
@@ -408,6 +440,22 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-primary--light;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border: solid $border;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    top: 13px;
+    right: 13px;
+    transform: rotate(45deg);
+  }
 
   &::after {
     content: "";
@@ -422,8 +470,9 @@
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     min-width: 370px;
-    padding: 27px 27px 24px 27px;
-    margin-bottom: 15px;
+    height: 70px;
+    padding: 26px 24px 24px 24px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -440,9 +489,9 @@
 
 .create-plan__country-flag {
   position: relative;
-  display: block;
-  min-width: 53px;
-  padding: 12px 12px 8px 12px;
+  width: 53px;
+  height: 42px;
+  padding: 7px 0 0 6px;
   border: 1px solid $border;
   border-radius: 4px;
   overflow: hidden;
@@ -460,10 +509,26 @@
     transform: translateY(-50%);
     left: -3px;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 70px;
+    height: 47px;
+    padding: 0;
+  }
 }
 
-.create-plan__country-select-button {
-  margin-bottom: 25px;
+.create-plan__icon-flag {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+.create-plan__select-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 .create-plan__calendar {

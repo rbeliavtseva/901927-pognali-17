@@ -1,5 +1,6 @@
 .country-select-btn {
-  padding: 12px 12px 8px 12px;
+  width: 100%;
+  padding: 12px;
   border: 1px solid $border;
   border-radius: 4px;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
@@ -11,9 +12,28 @@
   background-color: transparent;
   text-align: left;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border: solid $border;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    top: 13px;
+    right: 15px;
+    transform: rotate(45deg);
+  }
+
   &--add {
     border: none;
     background-color: $background--light;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

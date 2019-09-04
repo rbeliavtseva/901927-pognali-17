@@ -18,9 +18,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 75px;
-    padding-top: 197px;
-    padding-bottom: 28px;
+    padding: 197px 75px 35px;
 
     &::before {
       width: 213px;

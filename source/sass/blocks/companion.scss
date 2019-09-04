@@ -2,7 +2,6 @@
   position: relative;
   width: 270px;
   min-height: 427px;
-  padding-bottom: 22px;
   background-color: $color-white;
   text-align: center;
   border-radius: 10px;
@@ -39,12 +38,32 @@
 }
 
 .companion__level {
-  top: 16px;
+  top: -243px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: -253px;
+    left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -248px;
+    left: 23px;
+
+    &--big {
+      margin-right: 45px;
+    }
+  }
 }
 
 .companion__wrap {
+  position: relative;
+  top: -18px;
   padding: 0 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 26px;
@@ -73,6 +92,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     font-size: 24px;
     line-height: 24px;
 
@@ -88,6 +108,10 @@
       background-color: $offline;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .companion__countries-list {
@@ -95,11 +119,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.companion__country-item {
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.companion__icon-flag {
+  width: 35px;
+  height: 24px;
 }
 
 .companion__tags-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
