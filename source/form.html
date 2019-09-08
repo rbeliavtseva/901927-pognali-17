@@ -112,13 +112,13 @@
         </div>
         <ul class="header__site-list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--white" href="#">О сервисе</a>
+            <a class="site-list__link site-list__link--white" href="#"><span class="site-list__link-text" data-hover="О сервисе">О сервисе</span></a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--white" href="form.html">Направления</a>
+            <a class="site-list__link site-list__link--white" href="form.html"><span class="site-list__link-text" data-hover="Направления">Направления</span></a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--white" href="catalog.html">Попутчики</a>
+            <a class="site-list__link site-list__link--white" href="catalog.html"><span class="site-list__link-text" data-hover="Попутчики">Попутчики</span></a>
           </li>
         </ul>
       </div>
@@ -282,7 +282,7 @@
               </ul>
             </div>
             <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="POST">
-              <div class="create-plan__step">
+              <div class="create-plan__step" id="step1">
                 <div class="create-plan__title-wrap">
                   <ul class="create-plan__nav">
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link create-plan__nav-link--active" href="#">Даты</a></li>
@@ -323,9 +323,9 @@
                 </div>
                 <div class="create-plan__calendar calendar">
                   <div class="calendar__title-wrap">
-                    <button class="calendar__button calendar-btn calendar-btn--back"><span class="visually-hidden">Назад</span></button>
+                    <button class="calendar__button calendar-btn calendar-btn--back" type="button"><span class="visually-hidden">Назад</span></button>
                     <span class="calendar__title">Март 2019</span>
-                    <button class="calendar__button calendar-btn calendar-btn--forward"><span class="visually-hidden">Вперед</span></button>
+                    <button class="calendar__button calendar-btn calendar-btn--forward" type="button"><span class="visually-hidden">Вперед</span></button>
                   </div>
                   <table class="calendar__table">
                     <tbody class="calendar__tbody">
@@ -395,9 +395,9 @@
                     </tbody>
                   </table>
                 </div>
-                <button class="button create-plan__button button--rounder-wide" type="button">Следующий шаг</button>
+                <a class="button create-plan__button button--rounder-wide" href="#step2">Следующий шаг</a>
               </div>
-              <div class="create-plan__step">
+              <div class="create-plan__step" id="step2">
                 <div class="create-plan__title-wrap">
                   <ul class="create-plan__nav">
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link" href="#">Даты</a></li>
@@ -412,7 +412,7 @@
                   </div>
                 </div>
                 <div class="create-plan__country-select-wrap">
-                  <div class="create-plan__country-select">
+                  <div class="create-plan__country-select create-plan__country-select--filled">
                     <div class="create-plan__country-option">
                       <span class="create-plan__country-name">Босния и Герцеговина</span>
                       <div class="create-plan__country-flag">
@@ -422,7 +422,7 @@
                     </div>
                     <button class="create-plan__country-clear-button country-clear-btn" type="button"><span class="visually-hidden">Сбросить</span></button>
                   </div>
-                  <div class="create-plan__country-select">
+                  <div class="create-plan__country-select create-plan__country-select--filled">
                     <div class="create-plan__country-option">
                       <span class="create-plan__country-name">Чехия</span>
                       <span class="create-plan__country-flag">
@@ -432,7 +432,7 @@
                     </div>
                     <button class="create-plan__country-clear-button country-clear-btn" type="button"><span class="visually-hidden">Сбросить</span></button>
                   </div>
-                  <div class="create-plan__country-select">
+                  <div class="create-plan__country-select create-plan__country-select--choose">
                     <button class="create-plan__country-select-button country-select-btn" type="button">Выберите страну</button>
                     <button class="create-plan__country-clear-button country-clear-btn" type="button"><span class="visually-hidden">Сбросить</span></button>
                   </div>
@@ -490,14 +490,14 @@
                       </ul>
                     </div>
                   </div>
-                  <button class="create-plan__country-select-button country-select-btn country-select-btn--add" type="button">Добавить страну</button>
+                  <button class="create-plan__country-select create-plan__country-select--add country-select-btn country-select-btn--add" type="button">Добавить страну</button>
                 </div>
                 <div class="create-plan__buttons-group">
-                  <button class="button create-plan__button button--rounder-wide" type="button">Следующий шаг</button>
-                  <button class="button create-plan__button create-plan__button--transparent button--transparent" type="button">На шаг назад</button>
+                  <a class="button create-plan__button button--rounder-wide" href="#step3">Следующий шаг</a>
+                  <a class="button create-plan__button create-plan__button--transparent button--transparent" href="#step1">На шаг назад</a>
                 </div>
               </div>
-              <div class="create-plan__step">
+              <div class="create-plan__step" id="step3">
                 <div class="create-plan__title-wrap">
                   <ul class="create-plan__nav">
                     <li class="create-plan__nav-item"><a class="create-plan__nav-link" href="#">Даты</a></li>
@@ -517,18 +517,22 @@
                     <span class="textfield__label-text">Босния и Герцеговина</span>
                     <svg class="textfield__label-icon" width="35" height="24"><use xlink:href="#icon-flag--bosnia"></use></svg>
                   </label>
-                  <textarea class="textfield__textarea" id="country-1" rows="9" cols="30" name="country-1" placeholder="План действий"></textarea>
+                  <div class="textfield__textarea-wrap">
+                    <textarea class="textfield__textarea" id="country-1" rows="9" cols="10" name="country-1" placeholder="План действий"></textarea>
+                  </div>
                 </div>
                 <div class="create-plan__country-wrap textfield">
                   <label class="textfield__label textfield__label--country-2" for="country-2">
                     <span class="textfield__label-text">Чехия</span>
                     <svg class="textfield__label-icon" width="35" height="24"><use xlink:href="#icon-flag--czech"></use></svg>
                   </label>
-                  <textarea class="textfield__textarea" id="country-2" name="country-2" rows="9" cols="30" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <div class="textfield__textarea-wrap">
+                    <textarea class="textfield__textarea" id="country-2" name="country-2" rows="9" cols="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  </div>
                 </div>
                 <div class="create-plan__buttons-group">
                   <button class="button create-plan__button button--rounder-wide" type="submit">Отправить</button>
-                  <button class="button create-plan__button create-plan__button--transparent button--transparent" type="button">На шаг назад</button>
+                  <a class="button create-plan__button create-plan__button--transparent button--transparent" href="#step2">На шаг назад</a>
                 </div>
               </div>
             </form>

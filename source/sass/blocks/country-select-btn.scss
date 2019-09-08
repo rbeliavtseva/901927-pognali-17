@@ -1,4 +1,5 @@
 .country-select-btn {
+  position: relative;
   width: 100%;
   padding: 12px;
   border: 1px solid $border;
@@ -11,6 +12,7 @@
   color: $color-primary--light;
   background-color: transparent;
   text-align: left;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -27,12 +29,45 @@
     transform: rotate(45deg);
   }
 
+  &:hover,
+  &:focus {
+    border: 1px solid $input-border--hover;
+  }
+
   &--add {
     border: none;
     background-color: $background--light;
 
     &::before {
-      display: none;
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 14px;
+      height: 14px;
+      border: none;
+      transform: none;
+      background-image: url("../../img/qty-plus-mobile.svg");
+      opacity: 0.2;
+    }
+
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: $background--dark;
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+
+    &:active {
+      background-color: $input-border;
+      color: rgba($color-primary--light, 0.3);
+
+      &::before {
+        opacity: 0.1;
+      }
     }
   }
 
@@ -42,6 +77,20 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+
+    &::before {
+      width: 13px;
+      height: 13px;
+      top: 23px;
+      right: 29px;
+    }
+
+    &--add {
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {

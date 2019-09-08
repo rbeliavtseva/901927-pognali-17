@@ -178,6 +178,13 @@
     display: none;
   }
 
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 60px;
+    top: -150px;
+    display: flex;
+  }
+
   &--inner {
     display: none;
 

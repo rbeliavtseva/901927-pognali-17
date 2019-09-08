@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 83px;
+    padding: 0 75px;
 
     &--catalog {
       flex-direction: column;
@@ -84,4 +84,8 @@
       }
     }
   }
+}
+
+.transport-list__icon-item:hover .tooltip {
+  visibility: visible;
 }

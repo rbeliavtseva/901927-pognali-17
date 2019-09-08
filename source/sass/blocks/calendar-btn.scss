@@ -12,7 +12,8 @@
     position: absolute;
     width: 12px;
     height: 12px;
-    border: solid $border;
+    border: solid $color-black;
+    opacity: 0.3;
     border-width: 0 1px 1px 0;
     padding: 3px;
     top: 4px;
@@ -40,6 +41,19 @@
       width: 25px;
       height: 25px;
       border-width: 0 3px 3px 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.1;
     }
   }
 }

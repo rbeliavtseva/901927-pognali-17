@@ -221,188 +221,192 @@
       </section>
 
       <section class="main__destinations destinations">
-        <div class="destinations__wrapper">
-          <h2 class="destinations__title">Направления</h2>
-          <p class="destinations__disclaimer">
-            Мы не продаем туры <br>и ничего не рекламируем.
-            Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-          </p>
+        <div class="destinations__container">
+          <div class="destinations__text-wrapper">
+            <h2 class="destinations__title">Направления</h2>
+            <p class="destinations__disclaimer">
+              Мы не продаем туры <br>и ничего не рекламируем.
+              Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+            </p>
+          </div>
+          <ul class="destinations__list">
+            <li class="destinations__item destination">
+              <div class="destination__img-container">
+                <picture>
+                  <source media="(min-width: 1439px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                  <img class="destination__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Таиланд">
+                </picture>
+                <svg class="destination__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--thailand"></use></svg>
+              </div>
+              <div class="destination__wrapper">
+                <h3 class="destination__title">Таиланд</h3>
+                <p class="destination__description">
+                  Джунгли зовут!
+                </p>
+                <span class="destination__counter">18321</span>
+              </div>
+            </li>
+            <li class="destinations__item destination">
+              <div class="destination__img-container">
+                <picture>
+                  <source media="(min-width: 1439px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                  <img class="destination__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="Франция">
+                </picture>
+                <svg class="destination__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--france"></use></svg>
+              </div>
+              <div class="destination__wrapper">
+                <h3 class="destination__title">Франция</h3>
+                <p class="destination__description">
+                  Трэ бьен, манифик!
+                </p>
+                <span class="destination__counter">12518</span>
+              </div>
+            </li>
+            <li class="destinations__item destination">
+              <div class="destination__img-container">
+                <picture>
+                  <source media="(min-width: 1439px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                  <img class="destination__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Чехия">
+                </picture>
+                <svg class="destination__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--czech"></use></svg>
+              </div>
+              <div class="destination__wrapper">
+                <h3 class="destination__title">Чехия</h3>
+                <p class="destination__description">
+                  Закоулки старой Европы
+                </p>
+                <span class="destination__counter">5326</span>
+              </div>
+            </li>
+          </ul>
+          <a class="destinations__button button button--text-arrow" href="form.html">Показать все</a>
         </div>
-        <ul class="destinations__list">
-          <li class="destinations__item destination">
-            <div class="destination__img-container">
-              <picture>
-                <source media="(min-width: 1439px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
-                <img class="destination__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Таиланд">
-              </picture>
-              <svg class="destination__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--thailand"></use></svg>
-            </div>
-            <div class="destination__wrapper">
-              <h3 class="destination__title">Таиланд</h3>
-              <p class="destination__description">
-                Джунгли зовут!
-              </p>
-              <span class="destination__counter">18321</span>
-            </div>
-          </li>
-          <li class="destinations__item destination">
-            <div class="destination__img-container">
-              <picture>
-                <source media="(min-width: 1439px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
-                <img class="destination__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="Франция">
-              </picture>
-              <svg class="destination__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--france"></use></svg>
-            </div>
-            <div class="destination__wrapper">
-              <h3 class="destination__title">Франция</h3>
-              <p class="destination__description">
-                Трэ бьен, манифик!
-              </p>
-              <span class="destination__counter">12518</span>
-            </div>
-          </li>
-          <li class="destinations__item destination">
-            <div class="destination__img-container">
-              <picture>
-                <source media="(min-width: 1439px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-                <img class="destination__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Чехия">
-              </picture>
-              <svg class="destination__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--czech"></use></svg>
-            </div>
-            <div class="destination__wrapper">
-              <h3 class="destination__title">Чехия</h3>
-              <p class="destination__description">
-                Закоулки старой Европы
-              </p>
-              <span class="destination__counter">5326</span>
-            </div>
-          </li>
-        </ul>
-        <a class="destinations__button button button--text-arrow" href="form.html">Показать все</a>
       </section>
 
       <section class="main__companions companions">
-        <div class="companions__wrapper">
-          <h2 class="companions__title">Попутчики</h2>
-          <p class="companions__text">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль, <br class="no-br-mobile">а другому маршрут для хайкинга.
-          </p>
-          <p class="companions__text companions__text--bold">
-            Теперь можно легко <br class="no-br-mobile">найти единомышленников!
-          </p>
-        </div>
-        <ul class="companions__list">
-          <li class="companions__item companion">
-            <picture>
-              <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-              <img class="companion__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова">
-            </picture>
-            <div class="companion__wrap">
-              <div class="companion__level level">
-                <div class="level__circle">
-                  <span class="level__number">99</span>
-                  <span class="level__text">level</span>
+        <div class="companions__container">
+          <div class="companions__wrapper">
+            <h2 class="companions__title">Попутчики</h2>
+            <p class="companions__text">
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+              Одному нужен пляж и коктейль, <br class="no-br-mobile">а другому маршрут для хайкинга.
+            </p>
+            <p class="companions__text companions__text--bold">
+              Теперь можно легко <br class="no-br-mobile">найти единомышленников!
+            </p>
+          </div>
+          <ul class="companions__list">
+            <li class="companions__item companion">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                <img class="companion__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова">
+              </picture>
+              <div class="companion__wrap">
+                <div class="companion__level level">
+                  <div class="level__circle">
+                    <span class="level__number">99</span>
+                    <span class="level__text">level</span>
+                  </div>
                 </div>
+                <ul class="companion__countries-list">
+                  <li class="companion__country-item">
+                    <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--sri-lanka"></use></svg>
+                    <span class="visually-hidden">Шри-Ланка</span>
+                  </li>
+                  <li class="companion__country-item">
+                    <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--thailand"></use></svg>
+                    <span class="visually-hidden">Тайланд</span>
+                  </li>
+                  <li class="companion__country-item">
+                    <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--seychelles"></use></svg>
+                    <span class="visually-hidden">Сейшельские острова</span>
+                  </li>
+                </ul>
+                <h3 class="companion__name companion__name--offline">Таня Фирсова</h3>
+                <ul class="companion__tags-list tags-list">
+                  <li class="tags-list__tag">#ЗОЖ</li>
+                  <li class="tags-list__tag">#ПП</li>
+                  <li class="tags-list__tag">#Фитнес</li>
+                  <li class="tags-list__tag">#пляж</li>
+                  <li class="tags-list__tag">#авокадо</li>
+                  <li class="tags-list__tag">#смузи</li>
+                </ul>
+                <ul class="companion__icons-list transport-list">
+                  <li class="transport-list__icon-item transport-list__icon-item--plane">
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21"><use xlink:href="#icon-plane"></use></svg>
+                    <span class="tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport-list__icon-item transport-list__icon-item--bus">
+                    <svg class="transport-list__icon" width="19" height="21"><use xlink:href="#icon-bus"></use></svg>
+                    <span class="tooltip">Автотранспорт</span>
+                  </li>
+                  <li class="transport-list__icon-item transport-list__icon-item--cycle">
+                    <svg class="transport-list__icon" width="24" height="21"><use xlink:href="#icon-bike"></use></svg>
+                    <span class="tooltip">Велосипед</span>
+                  </li>
+                  <li class="transport-list__icon-item transport-list__icon-item--run">
+                    <svg class="transport-list__icon" width="20" height="21"><use xlink:href="#icon-run"></use></svg>
+                    <span class="tooltip">Пешком</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="companion__countries-list">
-                <li class="companion__country-item">
-                  <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--sri-lanka"></use></svg>
-                  <span class="visually-hidden">Шри-Ланка</span>
-                </li>
-                <li class="companion__country-item">
-                  <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--thailand"></use></svg>
-                  <span class="visually-hidden">Тайланд</span>
-                </li>
-                <li class="companion__country-item">
-                  <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--seychelles"></use></svg>
-                  <span class="visually-hidden">Сейшельские острова</span>
-                </li>
-              </ul>
-              <h3 class="companion__name companion__name--offline">Таня Фирсова</h3>
-              <ul class="companion__tags-list tags-list">
-                <li class="tags-list__tag">#ЗОЖ</li>
-                <li class="tags-list__tag">#ПП</li>
-                <li class="tags-list__tag">#Фитнес</li>
-                <li class="tags-list__tag">#пляж</li>
-                <li class="tags-list__tag">#авокадо</li>
-                <li class="tags-list__tag">#смузи</li>
-              </ul>
-              <ul class="companion__icons-list transport-list">
-                <li class="transport-list__icon-item transport-list__icon-item--plane">
-                  <svg class="transport-list__icon transport-list__icon--active" width="19" height="21"><use xlink:href="#icon-plane"></use></svg>
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="transport-list__icon-item transport-list__icon-item--bus">
-                  <svg class="transport-list__icon" width="19" height="21"><use xlink:href="#icon-bus"></use></svg>
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport-list__icon-item transport-list__icon-item--cycle">
-                  <svg class="transport-list__icon" width="24" height="21"><use xlink:href="#icon-bike"></use></svg>
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport-list__icon-item transport-list__icon-item--run">
-                  <svg class="transport-list__icon" width="20" height="21"><use xlink:href="#icon-run"></use></svg>
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-          </li>
+            </li>
 
-          <li class="companions__item companion">
-            <picture>
-              <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-              <img class="companion__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
-            </picture>
-            <div class="companion__wrap">
-              <div class="companion__level level">
-                <div class="level__circle">
-                  <span class="level__number">80</span>
-                  <span class="level__text">level</span>
+            <li class="companions__item companion">
+              <picture>
+                <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                <img class="companion__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
+              </picture>
+              <div class="companion__wrap">
+                <div class="companion__level level">
+                  <div class="level__circle">
+                    <span class="level__number">80</span>
+                    <span class="level__text">level</span>
+                  </div>
                 </div>
+                <ul class="companion__countries-list">
+                  <li class="companion__country-item">
+                    <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--belgium"></use></svg>
+                    <span class="visually-hidden">Бельгия</span>
+                  </li>
+                  <li class="companion__country-item">
+                    <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--czech"></use></svg>
+                    <span class="visually-hidden">Чехия</span>
+                  </li>
+                </ul>
+                <h3 class="companion__name">Петя Демин</h3>
+                <ul class="companion__tags-list tags-list">
+                  <li class="tags-list__tag">#бургер</li>
+                  <li class="tags-list__tag">#бар</li>
+                  <li class="tags-list__tag">#футбол</li>
+                  <li class="tags-list__tag">#концерт</li>
+                  <li class="tags-list__tag">#крафт</li>
+                </ul>
+                <ul class="companion__icons-list transport-list">
+                  <li class="transport-list__icon-item transport-list__icon-item--plane">
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21"><use xlink:href="#icon-plane"></use></svg>
+                    <span class="tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport-list__icon-item transport-list__icon-item--bus">
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21"><use xlink:href="#icon-bus"></use></svg>
+                    <span class="tooltip">Автотранспорт</span>
+                  </li>
+                  <li class="transport-list__icon-item transport-list__icon-item--cycle">
+                    <svg class="transport-list__icon" width="24" height="21"><use xlink:href="#icon-bike"></use></svg>
+                    <span class="tooltip">Велосипед</span>
+                  </li>
+                  <li class="transport-list__icon-item transport-list__icon-item--run">
+                    <svg class="transport-list__icon transport-list__icon--active" width="20" height="21"><use xlink:href="#icon-run"></use></svg>
+                    <span class="tooltip">Пешком</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="companion__countries-list">
-                <li class="companion__country-item">
-                  <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--belgium"></use></svg>
-                  <span class="visually-hidden">Бельгия</span>
-                </li>
-                <li class="companion__country-item">
-                  <svg class="companion__icon-flag" width="35" height="24"><use xlink:href="#icon-flag--czech"></use></svg>
-                  <span class="visually-hidden">Чехия</span>
-                </li>
-              </ul>
-              <h3 class="companion__name">Петя Демин</h3>
-              <ul class="companion__tags-list tags-list">
-                <li class="tags-list__tag">#бургер</li>
-                <li class="tags-list__tag">#бар</li>
-                <li class="tags-list__tag">#футбол</li>
-                <li class="tags-list__tag">#концерт</li>
-                <li class="tags-list__tag">#крафт</li>
-              </ul>
-              <ul class="companion__icons-list transport-list">
-                <li class="transport-list__icon-item transport-list__icon-item--plane">
-                  <svg class="transport-list__icon transport-list__icon--active" width="19" height="21"><use xlink:href="#icon-plane"></use></svg>
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="transport-list__icon-item transport-list__icon-item--bus">
-                  <svg class="transport-list__icon transport-list__icon--active" width="19" height="21"><use xlink:href="#icon-bus"></use></svg>
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport-list__icon-item transport-list__icon-item--cycle">
-                  <svg class="transport-list__icon" width="24" height="21"><use xlink:href="#icon-bike"></use></svg>
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport-list__icon-item transport-list__icon-item--run">
-                  <svg class="transport-list__icon transport-list__icon--active" width="20" height="21"><use xlink:href="#icon-run"></use></svg>
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <a class="companions__button button button--text-arrow" href="catalog.html">Показать всех</a>
+            </li>
+          </ul>
+          <a class="companions__button button button--text-arrow" href="catalog.html">Показать всех</a>
+        </div>
       </section>
 
       <section class="main__price price">
@@ -455,7 +459,7 @@
           <div class="modal__wrap">
             <h2 class="modal__title">Бизнес-тарифы</h2>
             <table class="modal__table price-table price-table--business">
-              <tbody class="price-table__tbody">
+              <tbody class="price-table__tbody price-table__tbody--business">
                 <tr>
                   <td class="price-table__service">
                     Реклама у блоггера
@@ -467,7 +471,7 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody class="price-table__tbody">
+              <tbody class="price-table__tbody price-table__tbody--business">
                 <tr>
                   <td class="price-table__service">
                     Накрутка подписчиков
@@ -479,7 +483,7 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody class="price-table__tbody">
+              <tbody class="price-table__tbody price-table__tbody--business">
                 <tr>
                   <td class="price-table__service">
                     Лайки от ботов
@@ -491,7 +495,7 @@
                   </td>
                 </tr>
               </tbody>
-              <tbody class="price-table__tbody">
+              <tbody class="price-table__tbody price-table__tbody--business">
                 <tr>
                   <td class="price-table__service">
                     Ваш продакт-плейсмент
@@ -504,8 +508,8 @@
                 </tr>
               </tbody>
             </table>
-            <button class="modal-btn modal-btn--hide" type="button">Закрыть окно</button>
           </div>
+          <button class="modal-btn modal-btn--hide" type="button">Закрыть окно</button>
         </div>
       </section>
 

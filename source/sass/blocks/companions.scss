@@ -31,14 +31,21 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding: 184px 60px 0 132px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
     &::before {
       top: 125px;
       left: 60px;
     }
+  }
+}
+
+.companions__container {
+  @media (min-width: $desktop-width) {
+    max-width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 

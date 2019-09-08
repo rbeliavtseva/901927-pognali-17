@@ -37,18 +37,18 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: 0px;
+    top: 0;
     right: 0;
     background-color: transparent;
     width: 17px;
     height: 17px;
 
     &::before {
-      width: 20px;
+      width: 22px;
     }
 
     &::after {
-      width: 20px;
+      width: 22px;
     }
   }
 }

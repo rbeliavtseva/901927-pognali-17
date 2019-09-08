@@ -63,6 +63,15 @@
     }
   }
 
+  &:hover,
+  &:focus {
+    color: rgba($color-grey, 0.6);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--bordered {
     position: relative;
     padding-left: 40px;
@@ -100,15 +109,24 @@
         left: 2px;
       }
     }
-  }
 
-  &:hover,
-  &:focus {
-    color: rgba($color-grey, 0.6);
-  }
+    &:hover,
+    &:focus {
+      color: $color-primary--light;
 
-  &:active {
-    opacity: 0.3;
+      &::before {
+        border: 1px solid $input-border--hover;
+      }
+    }
+
+    &:active {
+      opacity: 1;
+
+      &::before {
+        border: none;
+        background-color: $checkbox-active;
+      }
+    }
   }
 }
 
@@ -160,4 +178,8 @@
     top: 9px;
     left: 14px;
   }
+}
+
+.checkbox__input:checked ~ .checkbox__label--bordered:active::after {
+  opacity: 0.3;
 }

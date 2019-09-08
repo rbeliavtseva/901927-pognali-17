@@ -28,6 +28,23 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    &--form {
+      border: 1px solid $input-border;
+      border-radius: 4px;
+
+      &:hover,
+      &:focus {
+        border: 1px solid $input-border--hover;
+      }
+
+      &:active {
+        color: $color-white;
+        background-color: $color-primary--light;
+      }
+    }
+  }
+
   &--active {
     color: $color-white;
     background-color: $color-primary--light;
@@ -40,6 +57,7 @@
   }
 
   &--active-blue {
-
+    color: $color-white;
+    background-color: $color-primary--light;
   }
 }

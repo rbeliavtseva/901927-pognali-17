@@ -152,8 +152,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
-    color: rgba($color-grey, 0.4);
+    &--small {
+      display: inline-block;
+      color: rgba($color-grey, 0.4);
+    }
 
     &--big {
       padding-left: 28px;

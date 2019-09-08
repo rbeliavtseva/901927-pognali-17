@@ -258,6 +258,7 @@
 }
 
 .button--transparent {
+  display: block;
   padding: 0;
   background-color: transparent;
   font-size: 17px;
@@ -267,6 +268,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 27px 0 30px;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;

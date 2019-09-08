@@ -20,7 +20,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 6px 21px 0 rgba($color-black, 0.08);
+    box-shadow: 0 6px 21px 0 rgba($color-black, 0.08);
   }
 }
 
@@ -186,10 +186,6 @@
       margin-right: 40px;
     }
   }
-}
-
-.companion-full__icons-list {
-
 }
 
 .companion-full__icon {

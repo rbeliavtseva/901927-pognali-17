@@ -68,6 +68,10 @@
     width: 180px;
     margin-top: 0;
   }
+
+  &:hover {
+    border: 1px solid $input-border--hover;
+  }
 }
 
 .number-input__input {

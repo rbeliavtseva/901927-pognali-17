@@ -51,7 +51,8 @@
   }
 
   &--hide {
-    padding: 23px;
+    min-width: 100%;
+    padding: 19px 23px 17px;
     border-radius: 0 0 20px 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -60,8 +61,18 @@
 
     @media (min-width: $tablet-width) {
       padding: 41px 41px 44px 41px;
+      border-radius: 0 0 30px 30px;
       font-size: 24px;
       text-transform: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $background--light;
+    }
+
+    &:active {
+      color: rgba($color-primary--light, 0.3);
     }
   }
 }
