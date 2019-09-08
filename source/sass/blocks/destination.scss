@@ -39,7 +39,7 @@
 
 .destination__wrapper {
   position: relative;
-  padding: 18px 25px 20px 25px;
+  padding: 14px 25px 24px 25px;
   background-color: $color-white;
 
   &::before {
@@ -55,7 +55,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: static;
     flex-grow: 1;
     padding: 30px 25px 16px 30px;
   }
@@ -81,6 +80,28 @@
   }
 }
 
+.destination__img-container {
+  position: relative;
+}
+
+.destination__icon-flag {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    top: 15px;
+    left: -35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+  }
+}
+
 .destination__description {
   margin: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
@@ -102,7 +123,7 @@
 
 .destination__counter {
   position: absolute;
-  top: 14px;
+  top: 12px;
   right: 25px;
   margin: 0;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
@@ -110,10 +131,32 @@
   color: $color-grey;
   opacity: 0.3;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -17px;
+    width: 11px;
+    height: 11px;
+    background-image: url("../../img/user.svg");
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      width: 21px;
+      height: 20px;
+      top: 1px;
+      left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

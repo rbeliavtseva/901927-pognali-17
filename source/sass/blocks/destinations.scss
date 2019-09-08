@@ -1,12 +1,12 @@
 .destinations {
   position: relative;
-  padding: 103px 25px 0 25px;
+  padding: 101px 25px 0 25px;
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
     padding: 75px;
     padding-top: 130px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 
     &::before {
       content: "";
@@ -30,11 +30,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 220px 240px 10px 131px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    padding: 221px 240px 10px 131px;
 
     &::before {
       top: 150px;
@@ -43,7 +39,18 @@
   }
 }
 
-.destinations__wrapper {
+.destinations__container {
+  @media (min-width: $desktop-width) {
+    max-width: 1225px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.destinations__text-wrapper {
   padding: 0 50px 0 25px;
   margin-bottom: 60px;
 
@@ -93,7 +100,7 @@
 
 .destinations__list {
   @include reset-list;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;

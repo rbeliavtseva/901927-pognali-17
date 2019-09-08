@@ -13,4 +13,13 @@
     line-height: 18px;
     letter-spacing: 2px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }

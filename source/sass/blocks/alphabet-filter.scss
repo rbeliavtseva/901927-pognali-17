@@ -1,15 +1,91 @@
 .alphabet-filter {
+  padding: 0 26px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &--form {
+    padding: 0;
+    box-shadow: 0 20px 50px 0 rgba($input-border, 0.1);
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      width: 730px;
+      padding: 34px 27px;
+    }
   }
 }
 
 .alphabet-filter__countries-list {
   @include reset-list;
+  margin-bottom: 20px;
+
+  &--form {
+    padding: 10px 20px;
+    border: 1px solid $input-border;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &--form {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 1px;
+        height: 100%;
+        background-color: $input-border;
+        opacity: 0.5;
+      }
+    }
+  }
 }
 
 .alphabet-filter__letters-table {
   border-collapse: collapse;
+  margin-bottom: 22px;
+
+  &--form {
+    margin-bottom: 0;
+    min-width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &--form {
+      min-width: 370px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      min-width: 490px;
+      border-collapse: separate;
+      border-spacing: 15px;
+    }
+  }
 }
 
 .alphabet-filter__link {
@@ -20,9 +96,18 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    font-family: "Blogger Sans Bold", "Arial", sans-serif;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-primary--light;
+  }
+
+  &:active {
+    color: $color-primary--light;
+    opacity: 0.3;
   }
 }
 
@@ -35,5 +120,18 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+
+    &--form {
+      width: 45px;
+      height: 70px;
+      border: 1px solid $input-border;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      width: 60px;
+      border: none;
+    }
   }
 }

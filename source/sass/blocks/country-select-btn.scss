@@ -1,5 +1,7 @@
 .country-select-btn {
-  padding: 12px 12px 8px 12px;
+  position: relative;
+  width: 100%;
+  padding: 12px;
   border: 1px solid $border;
   border-radius: 4px;
   font-family: "Blogger Sans Medium", "Arial", sans-serif;
@@ -10,10 +12,63 @@
   color: $color-primary--light;
   background-color: transparent;
   text-align: left;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border: solid $border;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    top: 13px;
+    right: 15px;
+    transform: rotate(45deg);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $input-border--hover;
+  }
 
   &--add {
     border: none;
     background-color: $background--light;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 14px;
+      height: 14px;
+      border: none;
+      transform: none;
+      background-image: url("../../img/qty-plus-mobile.svg");
+      opacity: 0.2;
+    }
+
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: $background--dark;
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+
+    &:active {
+      background-color: $input-border;
+      color: rgba($color-primary--light, 0.3);
+
+      &::before {
+        opacity: 0.1;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -22,6 +77,20 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+
+    &::before {
+      width: 13px;
+      height: 13px;
+      top: 23px;
+      right: 29px;
+    }
+
+    &--add {
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {

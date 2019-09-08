@@ -1,15 +1,60 @@
 .btn-filter-toggle {
   position: relative;
+  width: 20px;
+  height: 20px;
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 16px;
+    height: 3px;
+    background-image: url("../../img/dots.svg");
+  }
+
+  &--close {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      background-image: url("../../img/close.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+
+    &::before {
+      width: 27px;
+      height: 5px;
+      left: 150px;
+    }
+
+    &--close {
+      &::before {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
 }
 
 .btn-filter-toggle__text {
-  // display: none;
+  display: none;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
   text-transform: uppercase;
   color: $color-primary;
 

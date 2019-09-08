@@ -9,10 +9,14 @@
   line-height: 22px;
   counter-reset: section;
 
+  &--business {
+    padding: 0 25px 33px 25px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-left: 90px;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 28px;
 
     &::after {
@@ -28,6 +32,10 @@
       transform: translateY(-50%);
       right: -33px;
     }
+
+    &--business {
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -40,10 +48,10 @@
       transform: translateY(-50%);
       right: 115px;
     }
-  }
 
-  &--business {
-    padding: 0 25px 22px 25px;
+    &--business {
+      padding: 0 25px 50px 25px;
+    }
   }
 }
 
@@ -51,13 +59,37 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 9px 0 10px 0;
+  padding: 10px 0;
   border-top: 1px solid rgba($color-black, 0.05);
+
+  &--business {
+    padding: 8px 0;
+
+    &:first-child {
+      padding-bottom: 10px;
+    }
+
+    &:last-child {
+      padding-top: 10px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     flex-direction: row;
     padding: 18px 0 17px 0;
+
+    &--business {
+      padding: 10px 0 15px;
+
+      &:first-child {
+        padding-bottom: 15px;
+      }
+
+      &:last-child {
+        padding-top: 10px;
+      }
+    }
   }
 
   &::after {

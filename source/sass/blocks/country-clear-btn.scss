@@ -1,0 +1,54 @@
+.country-clear-btn {
+  position: absolute;
+  right: -10px;
+  top: -9px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: $background--light;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 1px;
+    background-color: $color-grey;
+    opacity: 0.3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 1px;
+    background-color: $color-grey;
+    opacity: 0.3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 17px;
+    height: 17px;
+
+    &::before {
+      width: 22px;
+    }
+
+    &::after {
+      width: 22px;
+    }
+  }
+}

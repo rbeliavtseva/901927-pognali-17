@@ -1,8 +1,5 @@
 .about {
-  padding-top: 30px;
-  padding-right: 60px;
-  padding-bottom: 30px;
-  padding-left: 50px;
+  padding: 31px 60px 30px 50px;
   background-color: $color-primary;
   background-image: url("../../img/about-mobile@1x.png") no-repeat 18px center $color-primary;
   background-size: cover;
@@ -13,7 +10,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 135px 75px 28px 75px;
+    padding: 133px 75px 28px 75px;
     background: none;
     background-color: $color-primary;
 
@@ -42,8 +39,8 @@
     &::before {
       width: 630px;
       height: 665px;
-      bottom: 0;
-      right: 40px;
+      top: 80px;
+      right: 60px;
       background-image: url("../../img/about-desktop@1x.png");
     }
 
@@ -119,7 +116,7 @@
     font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 53px;
+      margin-bottom: 52px;
       font-size: 21px;
       line-height: 25px;
     }
