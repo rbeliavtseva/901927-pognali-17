@@ -18,13 +18,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px 35px;
+    padding: 0 40px 40px;
 
     &::after {
       border-radius: 60px 60px 0 0;
       top: -48px;
       min-height: 48px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 58px 40px 60px;
   }
 }
 
@@ -53,12 +57,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    margin-right: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 46px;
   }
 }
 
 .footer__copyright {
   position: relative;
-  margin-left: 2px;
 
   &::before {
     content: "";

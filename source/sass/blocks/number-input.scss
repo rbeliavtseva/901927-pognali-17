@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
-    min-width: 50%;
+    min-width: calc(50% - 25px);
     flex-direction: row;
     align-items: center;
   }
@@ -26,6 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: inline-block;
     min-width: 185px;
   }
 }
@@ -55,7 +56,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  margin-top: 9px;
+  margin-top: 8px;
   border: 1px solid $input-border;
   border-radius: 4px;
   overflow: hidden;

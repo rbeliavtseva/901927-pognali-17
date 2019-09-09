@@ -15,11 +15,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: $background--light;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  @media (min-width: 1450px) {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .no-br {
@@ -29,8 +37,10 @@ img {
 }
 
 .br-desktop {
-  @media (max-width: $desktop-width) {
-    display: none;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }
 

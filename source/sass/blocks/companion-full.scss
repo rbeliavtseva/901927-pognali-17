@@ -3,19 +3,14 @@
   padding: 15px 20px 22px 19px;
   background-color: $color-white;
   border-radius: 20px;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     min-width: 688px;
-    margin-bottom: 40px;
     padding: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
     min-width: 950px;
   }
 
@@ -113,6 +108,9 @@
 
 .companion-full__title {
   position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-bottom: 17px;
   font-family: "Blogger Sans", "Arial", sans-serif;
@@ -120,6 +118,30 @@
   line-height: 18px;
   color: $color-grey;
   text-transform: lowercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: calc(100% + 20px);
+    background-color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: calc(50% - 1px);
+    z-index: -2;
+    display: block;
+    width: 700px;
+    height: 1px;
+    background-color: #edeff6;
+  }
 
   &--level {
     margin-bottom: 9px;

@@ -121,6 +121,7 @@
 
   @media (min-width: $desktop-width) {
     &--big {
+      padding-top: 15px;
       color: $color-white;
 
       &::after {
@@ -158,7 +159,7 @@
     }
 
     &--big {
-      padding-left: 28px;
+      // padding-left: 28px;
     }
   }
 

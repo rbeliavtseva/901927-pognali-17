@@ -6,7 +6,7 @@
   background-color: $background--light;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px 75px;
+    padding: 0 40px 115px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,18 +16,42 @@
 
 .companions-wide__list {
   @include reset-list;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.companions-wide__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .companions-wide__show-more-btn {
-  margin-left: 25px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 64px;
+    margin-bottom: 67px;
   }
 }

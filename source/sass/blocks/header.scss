@@ -1,7 +1,6 @@
 .header {
   position: relative;
   background-color: $button-text;
-  padding: 27px 25px 0;
 
   @media (min-width: $desktop-width) {
     padding: 47px 60px 53px 60px;
@@ -9,13 +8,28 @@
 }
 
 .header__wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
+  display: none;
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    width: 60%;
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    width: 950px;
+  }
+
+  &--js {
+    position: relative;
+    display: flex;
+    padding: 27px 25px 0;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 45px 40px 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 }
 
@@ -27,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 0;
-    margin-right: 40px;
+    margin-right: 145px;
   }
 }
 
@@ -39,19 +53,19 @@
     display: flex;
     align-items: center;
     margin-left: 40px;
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -105px;
-    display: block;
-    width: 60px;
-    height: 2px;
-    border-radius: 1px;
-    background-color: $color-white;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -105px;
+      display: block;
+      width: 60px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $color-white;
+    }
   }
 }
 
