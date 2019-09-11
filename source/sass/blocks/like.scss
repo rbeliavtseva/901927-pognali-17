@@ -1,7 +1,12 @@
 .like {
   position: relative;
-  left: -20px;
-  margin-bottom: 18px;
+  left: -40px;
+  display: flex;
+  align-items: center;
+
+   @media (min-width: $tablet-width) {
+    left: auto;
+  }
 }
 
 .like__input {

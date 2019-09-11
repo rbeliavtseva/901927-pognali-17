@@ -1285,92 +1285,89 @@
             <h2 class="visually-hidden">Каталог попутчиков</h2>
             <ul class="companions-wide__list">
               <li class="companions-wide__item companion-full">
-                <a class="companion-full__profile-link" href="#">
-                  <picture>
-                    <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                    <img class="companion-full__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
-                  </picture>
-                </a>
-                <h3 class="companion-full__name companion-full__name--offline">
-                  <a class="companion-full__profile-link" href="#">Таня <br class="no-br">Фирсова</a>
-                </h3>
-                <div class="like companion-full__like">
-                  <input class="like__input" type="checkbox" name="like-firsova" value="like" id="like-firsova" checked="">
-                  <label class="like__label" for="like-firsova">1,5 м</label>
-                </div>
-                <ul class="companion-full__tags-list tags-list tags-list--small">
-                  <li class="tags-list__tag">#ЗОЖ</li>
-                  <li class="tags-list__tag">#ПП</li>
-                  <li class="tags-list__tag">#Фитнес</li>
-                  <li class="tags-list__tag">#пляж</li>
-                  <li class="tags-list__tag">#авокадо</li>
-                  <li class="tags-list__tag">#смузи</li>
-                </ul>
-                <div class="companion-full__countries-wrap">
-                  <p class="companion-full__title">Хочет посетить:</p>
-                  <ul class="companion-full__countries-list">
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--sri-lanka"></use>
-                      </svg>
-                      <span class="companion-full__text">Шри Ланка</span>
-                    </li>
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--thailand"></use>
-                      </svg>
-                      <span class="companion-full__text">Таиланд</span>
-                    </li>
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--seychelles"></use>
-                      </svg>
-                      <span class="companion-full__text">Сейшелы</span>
-                    </li>
+                <div class="companion-full__aligner">
+                  <a class="companion-full__image-link" href="#">
+                    <picture>
+                      <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                      <img class="companion-full__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
+                    </picture>
+                  </a>
+                  <h3 class="companion-full__name companion-full__name--offline">
+                    <a class="companion-full__profile-text-link" href="#">Таня <br class="no-br">Фирсова</a>
+                  </h3>
+                  <div class="companion-full__btn-wrap">
+                    <a class="button button--rounder companion-full__button" href="#">Позвать!</a>
+                    <div class="like companion-full__like">
+                      <input class="like__input" type="checkbox" name="like-firsova" value="like" id="like-firsova" checked="">
+                      <label class="like__label" for="like-firsova">1,5 м</label>
+                    </div>
+                  </div>
+                  <ul class="companion-full__tags-list tags-list tags-list--small">
+                    <li class="tags-list__tag">ЗОЖ</li>
+                    <li class="tags-list__tag">ПП</li>
+                    <li class="tags-list__tag">Фитнес</li>
+                    <li class="tags-list__tag">пляж</li>
+                    <li class="tags-list__tag">авокадо</li>
+                    <li class="tags-list__tag">смузи</li>
                   </ul>
                 </div>
-                <div class="companion-full__container">
-                  <div class="companion-full__transport-wrap">
-                    <p class="companion-full__title companion-full__title--transport">Транспорт:</p>
-                    <ul class="companion-full__icons-list transport-list transport-list--catalog">
-                      <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
-                          <use xlink:href="#icon-plane"></use>
-                        </svg>
-                        <span class="visually-hidden">Самолет</span>
+                <div class="companion-full__inner">
+                  <div class="companion-full__countries-wrap">
+                    <p class="companion-full__title">Хочет посетить:</p>
+                    <ul class="companion-full__countries-list">
+                      <li class="companion-full__country-item companion-full__country-item--sri-lanka">
+                        Шри Ланка
                       </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bus" width="13" height="16">
-                          <use xlink:href="#icon-bus"></use>
-                        </svg>
-                        <span class="visually-hidden">Автобус</span>
+                      <li class="companion-full__country-item companion-full__country-item--thailand">
+                        Таиланд
                       </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
-                          <use xlink:href="#icon-bike"></use>
-                        </svg>
-                        <span class="visually-hidden">Велосипед</span>
-                      </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
-                          <use xlink:href="#icon-run"></use>
-                        </svg>
-                        <span class="visually-hidden">Пешком</span>
+                      <li class="companion-full__country-item companion-full__country-item--seychelles">
+                        Сейшелы
                       </li>
                     </ul>
                   </div>
-                  <div class="companion-full__level-wrap">
-                    <p class="companion-full__title companion-full__title--level">Левел:</p>
-                    <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small">
-                        <span class="level__number level__number--small">99</span>
-                        <span class="level__text level__text--small">level</span>
+                  <div class="companion-full__container">
+                    <div class="companion-full__transport-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Транспорт:</p>
+                      <ul class="companion-full__icons-list transport-list transport-list--catalog">
+                        <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
+                            <use xlink:href="#icon-plane"></use>
+                          </svg>
+                          <span class="visually-hidden">Самолет</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bus" width="13" height="16">
+                            <use xlink:href="#icon-bus"></use>
+                          </svg>
+                          <span class="visually-hidden">Автобус</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
+                            <use xlink:href="#icon-bike"></use>
+                          </svg>
+                          <span class="visually-hidden">Велосипед</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
+                            <use xlink:href="#icon-run"></use>
+                          </svg>
+                          <span class="visually-hidden">Пешком</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="companion-full__level-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Левел:</p>
+                      <div class="companion-full__level level level--small">
+                        <div class="level__circle level__circle--small level__circle--99">
+                          <span class="level__number level__number--small">99</span>
+                          <span class="level__text level__text--small">level</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a class="button button--rounder" href="#">Позвать!</a>
               </li>
               <li class="companions-wide__item companion-full">
                 <picture>
@@ -1442,7 +1439,7 @@
                   <div class="companion-full__level-wrap">
                     <p class="companion-full__title companion-full__title--level">Левел:</p>
                     <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small">
+                      <div class="level__circle level__circle--small level__circle--80">
                         <span class="level__number level__number--small">80</span>
                         <span class="level__text level__text--small">level</span>
                       </div>
@@ -1527,7 +1524,7 @@
                   <div class="companion-full__level-wrap">
                     <p class="companion-full__title companion-full__title--level">Левел:</p>
                     <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small">
+                      <div class="level__circle level__circle--small level__circle--25">
                         <span class="level__number level__number--small">25</span>
                         <span class="level__text level__text--small">level</span>
                       </div>
@@ -1605,7 +1602,7 @@
                   <div class="companion-full__level-wrap">
                     <p class="companion-full__title companion-full__title--level">Левел:</p>
                     <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small">
+                      <div class="level__circle level__circle--small level__circle--50">
                         <span class="level__number level__number--small">50</span>
                         <span class="level__text level__text--small">level</span>
                       </div>

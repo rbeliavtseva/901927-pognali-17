@@ -1,11 +1,13 @@
 .about {
   padding: 31px 60px 30px 50px;
   background-color: $color-primary;
-  background-image: url("../../img/about-mobile@1x.png") no-repeat 18px center $color-primary;
+  background-image: url("../../img/about-mobile@1x.png");
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../../img/about-mobile@2x.png") no-repeat 18px center $color-primary;
+    background: url("../../img/about-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-position: 18px center;
     background-size: cover;
   }
 
