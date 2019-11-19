@@ -3,7 +3,7 @@
   width: 25px;
   height: 11px;
   position: relative;
-  top: 5px;
+  top: -3px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -76,8 +76,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 0;
-    right: 50%;
+    top: -4px;
+    right: calc(50% - 12px);
   }
 
   @media (min-width: $desktop-width) {

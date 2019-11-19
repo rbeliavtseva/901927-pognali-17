@@ -1,13 +1,12 @@
 .main {
   flex-grow: 1;
   background-color: $button-text;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 47px;
-  }
 }
 
 .main__title {
+  position: relative;
+  z-index: 100;
+  top: 28px;
   padding-bottom: 10px;
   margin: 0;
   display: inline-block;
@@ -22,30 +21,33 @@
     content: "";
     position: absolute;
     z-index: 100;
-    bottom: -2px;
+    bottom: -4px;
     left: 0;
     display: block;
     height: 5px;
     width: 100%;
     background-color: $color-tertiary;
     border-radius: 2px;
-
-    @media (min-width: $tablet-width) {
-      height: 8px;
-      border-radius: 4px;
-      bottom: -4px;
-    }
   }
 
   @media (min-width: $tablet-width) {
+    top: 55px;
     margin-left: 0;
     padding-bottom: 62px;
     font-size: 60px;
     line-height: 70px;
+
+    &::after {
+      height: 8px;
+      border-radius: 4px;
+      bottom: -8px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 130px;
+    &::after {
+      bottom: -10px;
+    }
   }
 }
 
@@ -53,7 +55,10 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline-block;
+    position: relative;
+    top: 55px;
+
   }
 }
 
@@ -70,7 +75,7 @@
     left: 0;
     min-height: 30px;
     width: 100%;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 25px 25px;
     background-color: inherit;
   }
 
@@ -92,6 +97,10 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 105px 0 125px;
+  }
 }
 
 .main__wrapper {
@@ -100,7 +109,7 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 77px 60px;
+    padding: 77px 60px 125px;
     background-color: $background--light;
   }
 }
@@ -190,7 +199,7 @@
 
     @media (min-width: $desktop-width) {
       position: absolute;
-      right: 60px;
+      right: 120px;
       top: 50px;
       display: flex;
     }

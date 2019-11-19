@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   padding: 9px 0 12px;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
@@ -43,7 +43,9 @@
 
 .calendar__heading {
   width: 30px;
-  height: 30px;
+  height: 32px;
+  padding-left: 4px;
+  padding-bottom: 2px;
   color: $color-grey;
   font-weight: normal;
 
@@ -54,8 +56,8 @@
   @media (min-width: $tablet-width) {
     width: 77px;
     height: 65px;
-    padding-bottom: 2px;
-    padding-left: 6px;
+    padding-bottom: 4px;
+    padding-left: 5px;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 2px;
@@ -80,7 +82,7 @@
 
 .calendar__cell {
   width: 30px;
-  height: 30px;
+  height: 31px;
   border: 1px solid $border;
   text-align: center;
   vertical-align: middle;
@@ -114,11 +116,17 @@
   }
 
   &--active {
-    border: 2px solid $calendar-border;
+    // border: 2px solid $calendar-border;
+    box-shadow: inset 0px 0px 0px 2px $calendar-border;
 
     @media (min-width: $tablet-width) {
-      border: 4px solid $calendar-border;
+      // border: 4px solid $calendar-border;
+      box-shadow: inset 0px 0px 0px 4px $calendar-border;
     }
+  }
+
+  &--chosen {
+    background-color: $tooltip;
   }
 
   &--unavailible {
@@ -127,6 +135,15 @@
 
     @media (min-width: $tablet-width) {
       color: $color-primary--light;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 0px 0px 2px $calendar-border;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0px 0px 0px 4px $calendar-border;
     }
   }
 }

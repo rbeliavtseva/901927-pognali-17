@@ -9,13 +9,19 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 3px;
   }
 }
 
 .site-list__item {
-  &:not(:last-child) {
-    @media (min-width: $desktop-width) {
-      margin-right: 38px;
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    &:last-child {
+      margin-right: auto;
     }
   }
 }
@@ -54,6 +60,10 @@
     font-size: 20px;
     line-height: 30px;
     white-space: nowrap;
+
+    &--white {
+      padding: 0;
+    }
   }
 }
 
@@ -62,6 +72,7 @@
     position: relative;
     display: inline-block;
     transition: transform 0.3s;
+    padding: 0 4px;
 
     &::before {
       position: absolute;

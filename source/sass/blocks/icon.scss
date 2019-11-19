@@ -5,7 +5,7 @@
   height: 33px;
   border: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 43px;
     height: 43px;
   }
@@ -17,6 +17,9 @@
 }
 
 .icon__label {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
   position: relative;
   cursor: pointer;
 
@@ -24,8 +27,6 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 33px;
     height: 33px;
     border-radius: 50%;
@@ -36,8 +37,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 7px;
-    left: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0.15;
   }
 
@@ -53,8 +55,6 @@
     &::after {
       width: 13px;
       height: 16px;
-      left: 10px;
-      top: 8px;
       background-image: url("../../img/bus.svg");
     }
   }
@@ -75,7 +75,10 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+
     &::before {
       width: 43px;
       height: 43px;
@@ -85,8 +88,6 @@
       &::after {
         width: 19px;
         height: 21px;
-        top: 10px;
-        left: 10px;
       }
     }
 
@@ -94,8 +95,6 @@
       &::after {
         width: 17px;
         height: 21px;
-        top: 10px;
-        left: 13px;
       }
     }
 
@@ -103,8 +102,6 @@
       &::after {
         width: 24px;
         height: 21px;
-        top: 10px;
-        left: 10px;
       }
     }
 
@@ -112,8 +109,6 @@
       &::after {
         width: 20px;
         height: 21px;
-        top: 10px;
-        left: 11px;
       }
     }
   }
