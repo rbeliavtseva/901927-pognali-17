@@ -23,6 +23,10 @@ img {
   height: auto;
 }
 
+.body-index {
+  background-color: $color-white;
+}
+
 .container {
   @media (min-width: 1450px) {
     width: $desktop-width;

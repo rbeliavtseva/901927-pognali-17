@@ -44,12 +44,17 @@
 }
 
 .navigation__button-close {
+  display: none;
   top: 10px;
 
   @media (min-width: $tablet-width) {
     position: relative;
     top: 25px;
     right: calc(50% - 10px);
+  }
+
+  &--js {
+    display: block;
   }
 }
 
