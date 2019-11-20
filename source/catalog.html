@@ -1295,7 +1295,7 @@
                   </a>
                   <h3 class="companion-full__name">
                     <a class="companion-full__profile-text-link" href="#">Таня <br class="no-br">Фирсова</a>
-                    <span class="companion-full__status">online</span>
+                    <span class="companion-full__status">offline</span>
                   </h3>
                   <div class="companion-full__btn-wrap">
                     <a class="button button--rounder companion-full__button" href="#">Позвать!</a>
@@ -1372,246 +1372,255 @@
                 </div>
               </li>
               <li class="companions-wide__item companion-full">
-                <picture>
-                  <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img class="companion-full__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
-                </picture>
-                <h3 class="companion-full__name companion-full__name--offline">
-                  <a class="companion-full__profile-link" href="#">Петя <br class="no-br">Демин</a>
-                </h3>
-                <div class="like companion-full__like">
-                  <input class="like__input" type="checkbox" name="like-demin" value="like" id="like-demin">
-                  <label class="like__label" for="like-demin">150</label>
-                </div>
-                <ul class="companion-full__tags-list tags-list tags-list--small">
-                  <li class="tags-list__tag tags-list__tag--small">#бургер</li>
-                  <li class="tags-list__tag tags-list__tag--small">#бар</li>
-                  <li class="tags-list__tag tags-list__tag--small">#футбол</li>
-                  <li class="tags-list__tag tags-list__tag--small">#концерт</li>
-                  <li class="tags-list__tag tags-list__tag--small">#крафт</li>
-                </ul>
-                <div class="companion-full__countries-wrap companion-full__countries-wrap--mb">
-                  <p class="companion-full__title">Хочет посетить:</p>
-                  <ul class="companion-full__countries-list">
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--belgium"></use>
-                      </svg>
-                      <span class="companion-full__text">Бельгия</span>
-                    </li>
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--czech"></use>
-                      </svg>
-                      <span class="companion-full__text">Чехия</span>
-                    </li>
+                <div class="companion-full__aligner">
+                  <a class="companion-full__image-link" href="#">
+                    <picture>
+                      <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                      <img class="companion-full__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
+                    </picture>
+                  </a>
+                  <h3 class="companion-full__name">
+                    <a class="companion-full__profile-text-link" href="#">Петя <br class="no-br">Демин</a>
+                    <span class="companion-full__status">offline</span>
+                  </h3>
+                  <div class="companion-full__btn-wrap">
+                    <a class="button button--rounder companion-full__button" href="#">Позвать!</a>
+                    <div class="like-btn companion-full__like-btn">
+                      <input class="like-btn__input" type="checkbox" name="like-demin" value="like" id="like-demin">
+                      <label class="like-btn__label" for="like-demin">like</label>
+                      <span class="like-btn__count">150</span>
+                    </div>
+                  </div>
+                  <ul class="companion-full__tags-list tags-list tags-list--small">
+                    <li class="tags-list__tag">бургер</li>
+                    <li class="tags-list__tag">бар</li>
+                    <li class="tags-list__tag">футбол</li>
+                    <li class="tags-list__tag">концерт</li>
+                    <li class="tags-list__tag">крафт</li>
                   </ul>
                 </div>
-                <div class="companion-full__container">
-                  <div class="companion-full__transport-wrap">
-                    <p class="companion-full__title">Транспорт:</p>
-                    <ul class="companion-full__icons-list transport-list transport-list--catalog">
-                      <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
-                          <use xlink:href="#icon-plane"></use>
-                        </svg>
-                        <span class="visually-hidden">Самолет</span>
+                <div class="companion-full__inner">
+                  <div class="companion-full__countries-wrap">
+                    <p class="companion-full__title">Хочет посетить:</p>
+                    <ul class="companion-full__countries-list">
+                      <li class="companion-full__country-item companion-full__country-item--belgium">
+                        Бельгия
                       </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bus" width="13" height="16">
-                          <use xlink:href="#icon-bus"></use>
-                        </svg>
-                        <span class="visually-hidden">Автобус</span>
-                      </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
-                          <use xlink:href="#icon-bike"></use>
-                        </svg>
-                        <span class="visually-hidden">Велосипед</span>
-                      </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
-                          <use xlink:href="#icon-run"></use>
-                        </svg>
-                        <span class="visually-hidden">Пешком</span>
+                      <li class="companion-full__country-item companion-full__country-item--czech">
+                        Чехия
                       </li>
                     </ul>
                   </div>
-                  <div class="companion-full__level-wrap">
-                    <p class="companion-full__title companion-full__title--level">Левел:</p>
-                    <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small level__circle--80">
-                        <span class="level__number level__number--small">80</span>
-                        <span class="level__text level__text--small">level</span>
+                  <div class="companion-full__container">
+                    <div class="companion-full__transport-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Транспорт:</p>
+                      <ul class="companion-full__icons-list transport-list transport-list--catalog">
+                        <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
+                            <use xlink:href="#icon-plane"></use>
+                          </svg>
+                          <span class="visually-hidden">Самолет</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bus transport-list__icon--active" width="13" height="16">
+                            <use xlink:href="#icon-bus"></use>
+                          </svg>
+                          <span class="visually-hidden">Автобус</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
+                            <use xlink:href="#icon-bike"></use>
+                          </svg>
+                          <span class="visually-hidden">Велосипед</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--run transport-list__icon--active" width="15" height="17">
+                            <use xlink:href="#icon-run"></use>
+                          </svg>
+                          <span class="visually-hidden">Пешком</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="companion-full__level-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Левел:</p>
+                      <div class="companion-full__level level level--small">
+                        <div class="level__circle level__circle--small level__circle--80">
+                          <span class="level__number level__number--small">80</span>
+                          <span class="level__text level__text--small">level</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a class="button button--rounder" href="#">Позвать!</a>
               </li>
               <li class="companions-wide__item companion-full">
-                <picture>
-                  <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                  <img class="companion-full__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
-                </picture>
-                <h3 class="companion-full__name companion-full__name--offline">
-                  <a class="companion-full__profile-link" href="#">Марк <br class="no-br">Смолов</a>
-                </h3>
-                <div class="like companion-full__like">
-                  <input class="like__input" type="checkbox" name="like-smolov" value="like" id="like-smolov">
-                  <label class="like__label" for="like-smolov">1700</label>
-                </div>
-                <ul class="companion-full__tags-list tags-list tags-list--small">
-                  <li class="tags-list__tag tags-list__tag--small">#рэп</li>
-                  <li class="tags-list__tag tags-list__tag--small">#тату</li>
-                  <li class="tags-list__tag tags-list__tag--small">#хайпбист</li>
-                  <li class="tags-list__tag tags-list__tag--small">#кроссовки</li>
-                  <li class="tags-list__tag tags-list__tag--small">#суприм</li>
-                </ul>
-                <div class="companion-full__countries-wrap companion-full__countries-wrap--mb">
-                  <p class="companion-full__title">Хочет посетить:</p>
-                  <ul class="companion-full__countries-list">
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--usa"></use>
-                      </svg>
-                      <span class="companion-full__text">США</span>
-                    </li>
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--australia"></use>
-                      </svg>
-                      <span class="companion-full__text">Австралия</span>
-                    </li>
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--dominica"></use>
-                      </svg>
-                      <span class="companion-full__text">Доминикана</span>
-                    </li>
+                <div class="companion-full__aligner">
+                  <a class="companion-full__image-link" href="#">
+                    <picture>
+                      <source media="(min-width: 1439px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                      <img class="companion-full__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
+                    </picture>
+                  </a>
+                  <h3 class="companion-full__name">
+                    <a class="companion-full__profile-text-link" href="#">Марк <br class="no-br">Смолов</a>
+                    <span class="companion-full__status">offline</span>
+                  </h3>
+                  <div class="companion-full__btn-wrap">
+                    <a class="button button--rounder companion-full__button" href="#">Позвать!</a>
+                    <div class="like-btn companion-full__like-btn">
+                      <input class="like-btn__input" type="checkbox" name="like-smolov" value="like" id="like-smolov">
+                      <label class="like-btn__label" for="like-smolov">like</label>
+                      <span class="like-btn__count">150</span>
+                    </div>
+                  </div>
+                  <ul class="companion-full__tags-list tags-list tags-list--small">
+                    <li class="tags-list__tag">рэп</li>
+                    <li class="tags-list__tag">тату</li>
+                    <li class="tags-list__tag">хайпбист</li>
+                    <li class="tags-list__tag">сникерсы</li>
+                    <li class="tags-list__tag">суприм</li>
                   </ul>
                 </div>
-                <div class="companion-full__container">
-                  <div class="companion-full__transport-wrap">
-                    <p class="companion-full__title">Транспорт:</p>
-                    <ul class="companion-full__icons-list transport-list transport-list--catalog">
-                      <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
-                          <use xlink:href="#icon-plane"></use>
-                        </svg>
-                        <span class="visually-hidden">Самолет</span>
+                <div class="companion-full__inner">
+                  <div class="companion-full__countries-wrap">
+                    <p class="companion-full__title">Хочет посетить:</p>
+                    <ul class="companion-full__countries-list">
+                      <li class="companion-full__country-item companion-full__country-item--usa">
+                        США
                       </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bus" width="13" height="16">
-                          <use xlink:href="#icon-bus"></use>
-                        </svg>
-                        <span class="visually-hidden">Автобус</span>
+                      <li class="companion-full__country-item companion-full__country-item--australia">
+                        Австралия
                       </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
-                          <use xlink:href="#icon-bike"></use>
-                        </svg>
-                        <span class="visually-hidden">Велосипед</span>
-                      </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
-                          <use xlink:href="#icon-run"></use>
-                        </svg>
-                        <span class="visually-hidden">Пешком</span>
+                      <li class="companion-full__country-item companion-full__country-item--dominica">
+                        Доминикана
                       </li>
                     </ul>
                   </div>
-                  <div class="companion-full__level-wrap">
-                    <p class="companion-full__title companion-full__title--level">Левел:</p>
-                    <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small level__circle--25">
-                        <span class="level__number level__number--small">25</span>
-                        <span class="level__text level__text--small">level</span>
+                  <div class="companion-full__container">
+                    <div class="companion-full__transport-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Транспорт:</p>
+                      <ul class="companion-full__icons-list transport-list transport-list--catalog">
+                        <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
+                            <use xlink:href="#icon-plane"></use>
+                          </svg>
+                          <span class="visually-hidden">Самолет</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bus" width="13" height="16">
+                            <use xlink:href="#icon-bus"></use>
+                          </svg>
+                          <span class="visually-hidden">Автобус</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bike transport-list__icon--active" width="19" height="17">
+                            <use xlink:href="#icon-bike"></use>
+                          </svg>
+                          <span class="visually-hidden">Велосипед</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
+                            <use xlink:href="#icon-run"></use>
+                          </svg>
+                          <span class="visually-hidden">Пешком</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="companion-full__level-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Левел:</p>
+                      <div class="companion-full__level level level--small">
+                        <div class="level__circle level__circle--small level__circle--25">
+                          <span class="level__number level__number--small">25</span>
+                          <span class="level__text level__text--small">level</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a class="button button--rounder" href="#">Позвать!</a>
               </li>
               <li class="companions-wide__item companion-full">
-                <picture>
-                  <source media="(min-width: 1439px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                  <img class="companion-full__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
-                </picture>
-                <h3 class="companion-full__name">
-                  <a class="companion-full__profile-link" href="#">Лариса <br class="no-br">Роговая</a>
-                </h3>
-                <div class="like companion-full__like">
-                  <input class="like__input" type="checkbox" name="like-rogovaya" value="like" id="like-rogovaya">
-                  <label class="like__label" for="like-rogovaya">23</label>
-                </div>
-                <ul class="companion-full__tags-list tags-list tags-list--small">
-                  <li class="tags-list__tag tags-list__tag--small">#образование</li>
-                  <li class="tags-list__tag tags-list__tag--small">#карьера</li>
-                  <li class="tags-list__tag tags-list__tag--small">#учеба</li>
-                  <li class="tags-list__tag tags-list__tag--small">#линкедин</li>
-                </ul>
-                <div class="companion-full__countries-wrap companion-full__countries-wrap--mb">
-                  <p class="companion-full__title">Хочет посетить:</p>
-                  <ul class="companion-full__countries-list">
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--united-kingdom"></use>
-                      </svg>
-                      <span class="companion-full__text">Великобритания</span>
-                    </li>
-                    <li class="companion-full__country-item">
-                      <svg class="companion-full__icon" width="26" height="18">
-                        <use xlink:href="#icon-flag--germany"></use>
-                      </svg>
-                      <span class="companion-full__text">Германия</span>
-                    </li>
+                <div class="companion-full__aligner">
+                  <a class="companion-full__image-link" href="#">
+                    <picture>
+                      <source media="(min-width: 1439px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                      <img class="companion-full__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
+                    </picture>
+                  </a>
+                  <h3 class="companion-full__name">
+                    <a class="companion-full__profile-text-link" href="#">Лариса <br class="no-br">Роговая</a>
+                    <span class="companion-full__status companion-full__status--online">online</span>
+                  </h3>
+                  <div class="companion-full__btn-wrap">
+                    <a class="button button--rounder companion-full__button" href="#">Позвать!</a>
+                    <div class="like-btn companion-full__like-btn">
+                      <input class="like-btn__input" type="checkbox" name="like-smolov" value="like" id="like-smolov">
+                      <label class="like-btn__label" for="like-smolov">like</label>
+                      <span class="like-btn__count">23</span>
+                    </div>
+                  </div>
+                  <ul class="companion-full__tags-list tags-list tags-list--small">
+                    <li class="tags-list__tag">образование</li>
+                    <li class="tags-list__tag">карьера</li>
+                    <li class="tags-list__tag">учеба</li>
+                    <li class="tags-list__tag">линкедин</li>
                   </ul>
                 </div>
-                <div class="companion-full__container">
-                  <div class="companion-full__transport-wrap">
-                    <p class="companion-full__title">Транспорт:</p>
-                    <ul class="companion-full__icons-list transport-list transport-list--catalog">
-                      <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
-                          <use xlink:href="#icon-plane"></use>
-                        </svg>
-                        <span class="visually-hidden">Самолет</span>
+                <div class="companion-full__inner">
+                  <div class="companion-full__countries-wrap">
+                    <p class="companion-full__title">Хочет посетить:</p>
+                    <ul class="companion-full__countries-list">
+                      <li class="companion-full__country-item companion-full__country-item--united-kingdom">
+                        Великобритания
                       </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bus" width="13" height="16">
-                          <use xlink:href="#icon-bus"></use>
-                        </svg>
-                        <span class="visually-hidden">Автобус</span>
-                      </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
-                          <use xlink:href="#icon-bike"></use>
-                        </svg>
-                        <span class="visually-hidden">Велосипед</span>
-                      </li>
-                      <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
-                        <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
-                          <use xlink:href="#icon-run"></use>
-                        </svg>
-                        <span class="visually-hidden">Пешком</span>
+                      <li class="companion-full__country-item companion-full__country-item--germany">
+                        Германия
                       </li>
                     </ul>
                   </div>
-                  <div class="companion-full__level-wrap">
-                    <p class="companion-full__title companion-full__title--level">Левел:</p>
-                    <div class="companion-full__level level level--small">
-                      <div class="level__circle level__circle--small level__circle--50">
-                        <span class="level__number level__number--small">50</span>
-                        <span class="level__text level__text--small">level</span>
+                  <div class="companion-full__container">
+                    <div class="companion-full__transport-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Транспорт:</p>
+                      <ul class="companion-full__icons-list transport-list transport-list--catalog">
+                        <li class="transport-list__icon-item transport-list__icon-item--plane transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--plane transport-list__icon--active" width="14" height="16">
+                            <use xlink:href="#icon-plane"></use>
+                          </svg>
+                          <span class="visually-hidden">Самолет</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--bus transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bus  transport-list__icon--active" width="13" height="16">
+                            <use xlink:href="#icon-bus"></use>
+                          </svg>
+                          <span class="visually-hidden">Автобус</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--cycle transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--bike" width="19" height="17">
+                            <use xlink:href="#icon-bike"></use>
+                          </svg>
+                          <span class="visually-hidden">Велосипед</span>
+                        </li>
+                        <li class="transport-list__icon-item transport-list__icon-item--run transport-list__icon-item--catalog">
+                          <svg class="transport-list__icon transport-list__icon--run" width="15" height="17">
+                            <use xlink:href="#icon-run"></use>
+                          </svg>
+                          <span class="visually-hidden">Пешком</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="companion-full__level-wrap">
+                      <p class="companion-full__title companion-full__title--hidden">Левел:</p>
+                      <div class="companion-full__level level level--small">
+                        <div class="level__circle level__circle--small level__circle--50">
+                          <span class="level__number level__number--small">50</span>
+                          <span class="level__text level__text--small">level</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a class="button button--rounder" href="#">Позвать!</a>
               </li>
             </ul>
             <a class="companions-wide__show-more-btn button button--transparent-light" href="#">Показать еще</a>
