@@ -72,7 +72,6 @@
   }
 }
 
-
 .companion-full__profile-text-link {
   max-width: 90%;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
@@ -312,6 +311,48 @@
   &--seychelles {
     &::before {
       background-image: url("../../img/flag-seychelles.svg");
+    }
+  }
+
+  &--belgium {
+    &::before {
+      background-image: url("../../img/flag-belgium.svg");
+    }
+  }
+
+  &--czech {
+    &::before {
+      background-image: url("../../img/flag-czech.svg");
+    }
+  }
+
+  &--usa {
+    &::before {
+      background-image: url("../../img/flag-usa.svg");
+    }
+  }
+
+  &--australia {
+    &::before {
+      background-image: url("../../img/flag-australia.svg");
+    }
+  }
+
+  &--dominica {
+    &::before {
+      background-image: url("../../img/flag-dominica.svg");
+    }
+  }
+
+  &--united-kingdom {
+    &::before {
+      background-image: url("../../img/flag-united-kingdom.svg");
+    }
+  }
+
+  &--germany {
+    &::before {
+      background-image: url("../../img/flag-germany.svg");
     }
   }
 
