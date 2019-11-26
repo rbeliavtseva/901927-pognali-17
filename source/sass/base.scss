@@ -83,3 +83,13 @@ img {
     background-color: $error-background;
   }
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.display-none {
+  display: none;
+}

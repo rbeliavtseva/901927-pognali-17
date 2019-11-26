@@ -32,11 +32,16 @@
       top: 8px;
       right: 0;
     }
+
+    @media (min-width: $tablet-width) {
+      top: 50px;
+    }
   }
 
   &--close {
     width: 19px;
     height: 19px;
+    top: 10px;
     opacity: 0.1;
 
     &::before {
@@ -65,6 +70,10 @@
       transform: rotate(-45deg);
     }
 
+    @media (min-width: $tablet-width) {
+      top: 25px;
+    }
+
     &:hover,
     &:focus {
       opacity: 0.4;
@@ -75,9 +84,39 @@
     }
   }
 
+  &--no-js {
+    display: none;
+  }
+
+  &--sticky {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 25px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: $color-grey--light;
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 25px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: $color-grey--light;
+      top: 8px;
+      right: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    top: -4px;
-    right: calc(50% - 12px);
+    position: absolute;
+    right: calc(50% - 10px);
   }
 
   @media (min-width: $desktop-width) {
