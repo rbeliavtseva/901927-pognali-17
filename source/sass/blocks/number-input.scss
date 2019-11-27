@@ -49,6 +49,11 @@
     order: 3;
     color: $color-primary--light;
   }
+
+  &--fix {
+    position: relative;
+    left: 8px;
+  }
 }
 
 .number-input__wrapper {
