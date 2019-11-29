@@ -34,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 7px;
+    margin-bottom: 44px;
   }
 }
 
@@ -140,6 +141,10 @@
   @media (min-width: $desktop-width) {
     flex-grow: 1;
 
+    &--fix {
+      min-width: calc(50% + 10px);
+    }
+
     &::before {
       display: none;
     }
@@ -166,6 +171,13 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--fix {
+      min-width: calc(60% - 10px);
+      margin-left: 21px;
+    }
   }
 }
 
