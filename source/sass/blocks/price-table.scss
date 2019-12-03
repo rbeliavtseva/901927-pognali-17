@@ -1,6 +1,7 @@
 .price-table {
   position: relative;
   display: block;
+  z-index: 1;
   padding-right: 50px;
   border-collapse: collapse;
   color: $color-grey;
@@ -36,6 +37,10 @@
     &--business {
       padding: 0;
       padding-bottom: 50px;
+
+      &::after {
+        display: none;
+      }
     }
   }
 

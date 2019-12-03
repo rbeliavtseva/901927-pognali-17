@@ -10,6 +10,10 @@
   background-color: $color-white;
   cursor: pointer;
 
+  &--form {
+    padding: 1px 6px 3px 9px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 11px 14px;
     font-family: "Blogger Sans Bold", "Arial", sans-serif;
@@ -56,8 +60,12 @@
     }
   }
 
-  &--active-blue {
-    color: $color-white;
-    background-color: $color-primary--light;
+  &--active-form {
+    background-color: $background--light;
+
+    @media (min-width: $tablet-width) {
+      color: $color-white;
+      background-color: $color-primary--light;
+    }
   }
 }

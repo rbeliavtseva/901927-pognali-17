@@ -87,6 +87,26 @@
     }
   }
 
+  &--dropdown {
+    color: $color-white;
+    background-color: $color-primary--light;
+    border: none;
+    border-radius: 4px 4px 0 0;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &:hover,
+    &:focus {
+      border: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 370px;
     height: 70px;

@@ -114,8 +114,23 @@
   &--country {
     margin-bottom: 15px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      top: 11px;
+      left: -15px;
+      border-radius: 50%;
+      background-color: $color-primary--light;
+    }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 32px;
+
+      &::before {
+        display: none;
+      }
     }
 
     @media (min-width: $desktop-width) {

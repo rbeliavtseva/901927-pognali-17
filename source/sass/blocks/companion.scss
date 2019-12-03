@@ -10,7 +10,6 @@
     width: 285px;
     min-height: 483px;
     border-radius: 20px;
-    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,12 +30,26 @@
   }
 }
 
-.companion__image {
+.companion__picture-container {
+  overflow: hidden;
   border-radius: 10px 10px 0 0;
+  max-width: 270px;
+  max-height: 270px;
 
   @media (min-width: $tablet-width) {
+    max-width: 285px;
+    max-height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.companion:hover .companion__image {
+  transform: scale(1.2);
+}
+
+.companion__image {
+  @media (min-width: $tablet-width) {
     width: 285px;
-    border-radius: 0;
   }
 }
 
@@ -78,7 +91,6 @@
   position: relative;
   margin: 0;
   margin-bottom: 15px;
-  color: $color-primary--light;
   font-size: 21px;
   line-height: 21px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
@@ -123,6 +135,20 @@
   }
 }
 
+.companion__link {
+  color: $color-primary--light;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .companion__countries-list {
   @include reset-list;
   display: flex;
@@ -140,9 +166,14 @@
 }
 
 .companion__country-item {
+  position: relative;
   &:not(:last-child) {
     margin-right: 19px;
   }
+}
+
+.companion__country-item:hover .tooltip {
+  visibility: visible;
 }
 
 .companion__icon-flag {

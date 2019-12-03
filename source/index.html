@@ -328,11 +328,14 @@
             </div>
             <ul class="companions__list">
               <li class="companions__item companion">
-                <picture>
-                  <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                  <img class="companion__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова">
-                </picture>
+                <div class="companion__picture-container">
+                  <picture>
+                    <source media="(min-width: 1439px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <img class="companion__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова">
+                  </picture>
+                </div>
+
                 <div class="companion__wrap">
                   <div class="companion__level level">
                     <div class="level__circle level__circle--99">
@@ -346,21 +349,26 @@
                         <use xlink:href="#icon-flag--sri-lanka"></use>
                       </svg>
                       <span class="visually-hidden">Шри-Ланка</span>
+                      <span class="tooltip">Шри-Ланка</span>
                     </li>
                     <li class="companion__country-item">
                       <svg class="companion__icon-flag" width="35" height="24">
                         <use xlink:href="#icon-flag--thailand"></use>
                       </svg>
                       <span class="visually-hidden">Тайланд</span>
+                      <span class="tooltip">Тайланд</span>
                     </li>
                     <li class="companion__country-item">
                       <svg class="companion__icon-flag" width="35" height="24">
                         <use xlink:href="#icon-flag--seychelles"></use>
                       </svg>
                       <span class="visually-hidden">Сейшельские острова</span>
+                      <span class="tooltip">Сейшельские острова</span>
                     </li>
                   </ul>
-                  <h3 class="companion__name companion__name--offline">Таня Фирсова</h3>
+                  <h3 class="companion__name companion__name--offline">
+                    <a class="companion__link" href="#">Таня Фирсова</a>
+                  </h3>
                   <ul class="companion__tags-list tags-list">
                     <li class="tags-list__tag">ЗОЖ</li>
                     <li class="tags-list__tag">ПП</li>
@@ -399,11 +407,13 @@
               </li>
 
               <li class="companions__item companion">
-                <picture>
-                  <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img class="companion__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
-                </picture>
+                <div class="companion__picture-container">
+                  <picture>
+                    <source media="(min-width: 1439px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img class="companion__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин">
+                  </picture>
+                </div>
                 <div class="companion__wrap">
                   <div class="companion__level level">
                     <div class="level__circle level__circle--80">
@@ -417,15 +427,19 @@
                         <use xlink:href="#icon-flag--belgium"></use>
                       </svg>
                       <span class="visually-hidden">Бельгия</span>
+                      <span class="tooltip">Бельгия</span>
                     </li>
                     <li class="companion__country-item">
                       <svg class="companion__icon-flag" width="35" height="24">
                         <use xlink:href="#icon-flag--czech"></use>
                       </svg>
                       <span class="visually-hidden">Чехия</span>
+                      <span class="tooltip">Чехия</span>
                     </li>
                   </ul>
-                  <h3 class="companion__name">Петя Демин</h3>
+                  <h3 class="companion__name">
+                    <a class="companion__link" href="#">Петя Демин</a>
+                  </h3>
                   <ul class="companion__tags-list tags-list">
                     <li class="tags-list__tag">бургер</li>
                     <li class="tags-list__tag">бар</li>
