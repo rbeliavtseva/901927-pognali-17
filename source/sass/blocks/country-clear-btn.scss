@@ -75,10 +75,12 @@
 
     &::before {
       width: 22px;
+      height: 2px;
     }
 
     &::after {
       width: 22px;
+      height: 2px;
     }
 
     &:hover,
@@ -89,9 +91,19 @@
     &:active {
       opacity: 0.05;
     }
+
+    &--dropdown {
+      position: absolute;
+      left: 325px;
+      top: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     right: 3px;
+
+    &--dropdown {
+      left: 687px;
+    }
   }
 }

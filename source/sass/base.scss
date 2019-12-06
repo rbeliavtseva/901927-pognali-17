@@ -98,6 +98,7 @@ img {
   &::after {
     content: "";
     position: absolute;
+    z-index: 10;
     width: 2px;
     height: 281px;
     top: 13px;
@@ -106,6 +107,20 @@ img {
   }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    &::after {
+      width: 3px;
+      height: 275px;
+      top: 42px;
+      left: auto;
+      right: -27px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 255px;
+      top: 32px;
+      right: 193px;
+    }
   }
 }

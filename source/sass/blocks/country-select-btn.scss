@@ -120,6 +120,7 @@
       height: 13px;
       top: 23px;
       right: 29px;
+      border-width: 0 2px 2px 0;
     }
 
     &--add {
@@ -132,5 +133,9 @@
 
   @media (min-width: $desktop-width) {
     width: 730px;
+
+    &--dropdown {
+      padding-top: 26px;
+    }
   }
 }
