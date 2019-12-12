@@ -143,6 +143,10 @@
     line-height: 30px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px 9px 21px;
+  }
+
   &:hover,
   &:focus {
     background-color: $color-secondary--dark;
@@ -404,8 +408,7 @@
 }
 
 .button--collapse {
-  position: relative;
-  padding: 7px 15px 5px 35px;
+  padding: 5px 15px 5px 40px;
   border-radius: 20px;
   font-size: 17px;
   line-height: 30px;
@@ -414,62 +417,10 @@
   color: $button-text;
   background-color: $collapse-button;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 15px;
-    height: 1px;
-    border-radius: 3px;
-    background-color: currentColor;
-    top: 21px;
-    left: 83px;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 15px;
-    height: 1px;
-    border-radius: 3px;
-    background-color: currentColor;
-    top: 21px;
-    left: 83px;
-    transform: rotate(-45deg);
-  }
-
   @media (min-width: $tablet-width) {
-    padding: 35px 30px 35px 115px;
+    padding: 35px 65px 35px 100px;
     font-size: 20px;
     line-height: 30px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 25px;
-      height: 3px;
-      border-radius: 3px;
-      background-color: currentColor;
-      top: 49px;
-      left: 195px;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 25px;
-      height: 3px;
-      border-radius: 3px;
-      background-color: currentColor;
-      top: 49px;
-      left: 195px;
-      transform: rotate(-45deg);
-    }
   }
 
   &:hover,

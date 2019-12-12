@@ -180,6 +180,7 @@
   @media (min-width: $desktop-width) {
     &--big {
       padding-top: 15px;
+      padding-bottom: 2px;
       color: $color-white;
 
       &::after {

@@ -23,8 +23,9 @@
       content: "";
       display: block;
       position: absolute;
-      top: 9px;
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 12px;
       height: 12px;
       background-image: url("../../img/close.svg");
@@ -38,7 +39,9 @@
     &::before {
       width: 27px;
       height: 5px;
-      left: 150px;
+      left: auto;
+      right: -92px;
+      top: calc(50% - 3px);
     }
 
     &--close {

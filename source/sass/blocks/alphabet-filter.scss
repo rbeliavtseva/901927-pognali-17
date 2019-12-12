@@ -1,6 +1,4 @@
 .alphabet-filter {
-  padding: 0 26px 0 25px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -42,7 +40,10 @@
 
 .alphabet-filter__countries-list {
   @include reset-list;
-  margin-bottom: 20px;
+
+  &--tablet {
+    display: none;
+  }
 
   &--form {
     padding: 50px 20px 10px;
@@ -54,7 +55,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: none;
     margin-bottom: 0;
+    padding-top: 9px;
+
+    &--tablet {
+      display: block;
+    }
 
     &--form {
       padding: 30px 0 0 25px;
@@ -72,7 +79,7 @@
 
 .alphabet-filter__letters-table {
   border-collapse: collapse;
-  margin-bottom: 22px;
+  margin-bottom: 63px;
 
   &--form {
     margin-bottom: 0;
@@ -122,7 +129,7 @@
 
 .alphabet-filter__cell {
   padding: 0;
-  min-width: 43px;
+  min-width: 44px;
   height: 41px;
   border: 1px solid $input-border;
   text-align: center;

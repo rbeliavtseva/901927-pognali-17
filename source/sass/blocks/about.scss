@@ -39,9 +39,10 @@
     padding: 127px 75px 102px 130px;
 
     &::before {
+      z-index: 10;
       width: 630px;
       height: 665px;
-      top: 80px;
+      top: 83px;
       right: 60px;
       background-image: url("../../img/about-desktop@1x.png");
     }
