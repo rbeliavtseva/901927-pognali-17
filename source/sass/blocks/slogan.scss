@@ -1,5 +1,6 @@
 .slogan {
   margin: 0;
+  z-index: 2;
   padding: 39px 40px 12px 40px;
   color: $color-white;
   font-size: 36px;
@@ -14,8 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    order: -1;
     width: 480px;
-    padding: 0 0 105px 68px;
+    padding: 0 0 105px 78px;
     margin: 0;
     font-size: 60px;
     line-height: 70px;

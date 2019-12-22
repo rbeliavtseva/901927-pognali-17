@@ -3,7 +3,11 @@
   background-color: $button-text;
 
   @media (min-width: $desktop-width) {
-    padding: 47px 60px 100px 60px;
+    padding: 47px 60px 55px 60px;
+
+    &--index {
+      padding-bottom: 70px;
+    }
   }
 }
 

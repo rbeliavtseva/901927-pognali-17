@@ -1,20 +1,26 @@
 .reviews {
+  width: 100%;
   padding: 6px 116px 50px 51px;
   background-color: $button-text;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding: 90px 0 209px 75px;
+    padding: 87px 0 209px 75px;
     background-color: transparent;
     margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 13px 25px 0 0;
+    order: -1;
+    width: auto;
+    padding: 13px 36px 0 0;
     margin-right: 0;
   }
 }
 
 .reviews__item {
+  position: relative;
+  z-index: 2;
   margin: 0;
   min-width: 155px;
 

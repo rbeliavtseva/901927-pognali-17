@@ -66,9 +66,9 @@
 
   @media (min-width: $tablet-width) {
     cursor: pointer;
-    position: relative;
-    top: -2px;
-    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
     background-color: transparent;
     width: 17px;
     height: 17px;

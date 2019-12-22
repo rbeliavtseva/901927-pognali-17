@@ -108,19 +108,18 @@ img {
 
   @media (min-width: $tablet-width) {
     &::after {
-      width: 3px;
-      height: 275px;
-      top: 42px;
-      left: auto;
-      right: -27px;
+     display: none;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
+      display: block;
       height: 255px;
+      width: 3px;
       top: 32px;
-      right: 193px;
+      right: 225px;
+      left: auto;
     }
   }
 }

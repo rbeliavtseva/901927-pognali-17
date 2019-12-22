@@ -293,7 +293,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
+    top: calc(50% + 2px);
     transform: translateY(-50%);
     right: -30px;
     width: 32px;

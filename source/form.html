@@ -324,328 +324,332 @@
               </div>
               <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="POST">
                 <div class="create-plan__step" id="step1">
-                  <div class="create-plan__title-wrap">
-                    <ul class="create-plan__nav">
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link create-plan__nav-link--active" href="#">Даты</a>
-                      </li>
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link" href="#">Маршрут</a>
-                      </li>
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link" href="#">Развлечения</a>
-                      </li>
-                    </ul>
-                    <div class="create-plan__text-wrap">
-                      <h3 class="create-plan__step-title">Шаг 1. <br class="no-br-desktop">Даты пребывания</h3>
-                      <p class="create-plan__description">
-                        Укажите предпочтительное количество попутчиков, которых<br>
-                        вы хотели бы позвать в поездку и ее предполагаемую длительность.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="create-plan__input-fields-wrap">
-                    <div class="create-plan__field-wrap number-input">
-                      <label class="number-input__label" for="people">Ищу попутчиков:</label>
-                      <span class="number-input__units number-input__units--fix">чел.</span>
-                      <div class="number-input__wrapper">
-                        <button class="number-input__button count-btn count-btn--minus" type="button">
-                          <span class="visually-hidden">-</span>
-                        </button>
-                        <input class="number-input__input" type="text" id="people" name="people" value="2">
-                        <button class="number-input__button count-btn count-btn--plus" type="button">
-                          <span class="visually-hidden">+</span>
-                        </button>
+                  <div class="create-plan__container">
+                    <div class="create-plan__title-wrap">
+                      <ul class="create-plan__nav">
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link create-plan__nav-link--active" href="#">Даты</a>
+                        </li>
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link" href="#">Маршрут</a>
+                        </li>
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link" href="#">Развлечения</a>
+                        </li>
+                      </ul>
+                      <div class="create-plan__text-wrap">
+                        <h3 class="create-plan__step-title">Шаг 1. <br class="no-br-desktop">Даты пребывания</h3>
+                        <p class="create-plan__description">
+                          Укажите предпочтительное количество попутчиков, которых<br>
+                          вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                        </p>
                       </div>
                     </div>
-                    <div class="create-plan__field-wrap number-input">
-                      <label class="number-input__label" for="days">Длительность:</label>
-                      <span class="number-input__units">дн.</span>
-                      <div class="number-input__wrapper">
-                        <button class="number-input__button number-input__button--minus count-btn count-btn--minus" type="button">
-                          <span class="visually-hidden">-</span>
-                        </button>
-                        <input class="number-input__input" type="text" id="days" name="days" value="2">
-                        <button class="number-input__button number-input__button--plus count-btn count-btn--plus" type="button">
-                          <span class="visually-hidden">+</span>
-                        </button>
+                    <div class="create-plan__input-fields-wrap">
+                      <div class="create-plan__field-wrap number-input">
+                        <label class="number-input__label" for="people">Ищу попутчиков:</label>
+                        <span class="number-input__units number-input__units--fix">чел.</span>
+                        <div class="number-input__wrapper">
+                          <button class="number-input__button count-btn count-btn--minus" type="button">
+                            <span class="visually-hidden">-</span>
+                          </button>
+                          <input class="number-input__input" type="text" id="people" name="people" value="2">
+                          <button class="number-input__button count-btn count-btn--plus" type="button">
+                            <span class="visually-hidden">+</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="create-plan__field-wrap number-input">
+                        <label class="number-input__label" for="days">Длительность:</label>
+                        <span class="number-input__units">дн.</span>
+                        <div class="number-input__wrapper">
+                          <button class="number-input__button number-input__button--minus count-btn count-btn--minus" type="button">
+                            <span class="visually-hidden">-</span>
+                          </button>
+                          <input class="number-input__input" type="text" id="days" name="days" value="2">
+                          <button class="number-input__button number-input__button--plus count-btn count-btn--plus" type="button">
+                            <span class="visually-hidden">+</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="create-plan__field-wrap create-plan__field-wrap--checkbox checkbox checkbox--bordered">
+                        <input class="checkbox__input" type="checkbox" name="kids" value="yes" id="kids" checked="">
+                        <label class="checkbox__label checkbox__label--bordered" for="kids">Можно с детьми</label>
                       </div>
                     </div>
-                    <div class="create-plan__field-wrap create-plan__field-wrap--checkbox checkbox checkbox--bordered">
-                      <input class="checkbox__input" type="checkbox" name="kids" value="yes" id="kids" checked="">
-                      <label class="checkbox__label checkbox__label--bordered" for="kids">Можно с детьми</label>
+                    <div class="create-plan__calendar calendar">
+                      <div class="calendar__title-wrap">
+                        <button class="calendar__button calendar-btn calendar-btn--back" type="button">
+                          <span class="visually-hidden">Назад</span>
+                        </button>
+                        <span class="calendar__title">Март 2019</span>
+                        <button class="calendar__button calendar-btn calendar-btn--forward" type="button">
+                          <span class="visually-hidden">Вперед</span>
+                        </button>
+                      </div>
+                      <table class="calendar__table">
+                        <tbody class="calendar__tbody">
+                          <tr class="calendar__days-row">
+                            <th class="calendar__heading">П<span class="calendar__month-text">н</span></th>
+                            <th class="calendar__heading">В<span class="calendar__month-text">т</span></th>
+                            <th class="calendar__heading">С<span class="calendar__month-text">р</span></th>
+                            <th class="calendar__heading">Ч<span class="calendar__month-text">т</span></th>
+                            <th class="calendar__heading">П<span class="calendar__month-text">т</span></th>
+                            <th class="calendar__heading">С<span class="calendar__month-text">б</span></th>
+                            <th class="calendar__heading">В<span class="calendar__month-text">с</span></th>
+                          </tr>
+                          <tr>
+                            <td class="calendar__cell">23</td>
+                            <td class="calendar__cell">24</td>
+                            <td class="calendar__cell">25</td>
+                            <td class="calendar__cell">26</td>
+                            <td class="calendar__cell">27</td>
+                            <td class="calendar__cell">28</td>
+                            <td class="calendar__cell">1 <span class="calendar__full-text">мар</span></td>
+                          </tr>
+                          <tr>
+                            <td class="calendar__cell">2</td>
+                            <td class="calendar__cell">3</td>
+                            <td class="calendar__cell">4</td>
+                            <td class="calendar__cell">5</td>
+                            <td class="calendar__cell">6</td>
+                            <td class="calendar__cell">7</td>
+                            <td class="calendar__cell">8</td>
+                          </tr>
+                          <tr>
+                            <td class="calendar__cell">9</td>
+                            <td class="calendar__cell">10</td>
+                            <td class="calendar__cell">11</td>
+                            <td class="calendar__cell">12</td>
+                            <td class="calendar__cell">13</td>
+                            <td class="calendar__cell">14</td>
+                            <td class="calendar__cell">15</td>
+                          </tr>
+                          <tr>
+                            <td class="calendar__cell">16</td>
+                            <td class="calendar__cell">17</td>
+                            <td class="calendar__cell">18</td>
+                            <td class="calendar__cell">19</td>
+                            <td class="calendar__cell">20</td>
+                            <td class="calendar__cell">21</td>
+                            <td class="calendar__cell">22</td>
+                          </tr>
+                          <tr>
+                            <td class="calendar__cell">23</td>
+                            <td class="calendar__cell">24</td>
+                            <td class="calendar__cell">25</td>
+                            <td class="calendar__cell calendar__cell--selected calendar__cell--active">26
+                              <span class="calendar__full-text calendar__full-text--dates">Заезд</span>
+                            </td>
+                            <td class="calendar__cell calendar__cell--selected">27</td>
+                            <td class="calendar__cell calendar__cell--selected">28
+                              <span class="calendar__full-text calendar__full-text--dates">Выезд</span>
+                            </td>
+                            <td class="calendar__cell calendar__cell--unavailible">29</td>
+                          </tr>
+                          <tr>
+                            <td class="calendar__cell calendar__cell--unavailible">30</td>
+                            <td class="calendar__cell calendar__cell--unavailible">31</td>
+                            <td class="calendar__cell calendar__cell--unavailible">1 <span class="calendar__full-text">апр</span></td>
+                            <td class="calendar__cell calendar__cell--unavailible">2</td>
+                            <td class="calendar__cell calendar__cell--unavailible">3</td>
+                            <td class="calendar__cell calendar__cell--unavailible">4</td>
+                            <td class="calendar__cell calendar__cell--unavailible">5</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </div>
-                  <div class="create-plan__calendar calendar">
-                    <div class="calendar__title-wrap">
-                      <button class="calendar__button calendar-btn calendar-btn--back" type="button">
-                        <span class="visually-hidden">Назад</span>
-                      </button>
-                      <span class="calendar__title">Март 2019</span>
-                      <button class="calendar__button calendar-btn calendar-btn--forward" type="button">
-                        <span class="visually-hidden">Вперед</span>
-                      </button>
-                    </div>
-                    <table class="calendar__table">
-                      <tbody class="calendar__tbody">
-                        <tr class="calendar__days-row">
-                          <th class="calendar__heading">П<span class="calendar__month-text">н</span></th>
-                          <th class="calendar__heading">В<span class="calendar__month-text">т</span></th>
-                          <th class="calendar__heading">С<span class="calendar__month-text">р</span></th>
-                          <th class="calendar__heading">Ч<span class="calendar__month-text">т</span></th>
-                          <th class="calendar__heading">П<span class="calendar__month-text">т</span></th>
-                          <th class="calendar__heading">С<span class="calendar__month-text">б</span></th>
-                          <th class="calendar__heading">В<span class="calendar__month-text">с</span></th>
-                        </tr>
-                        <tr>
-                          <td class="calendar__cell">23</td>
-                          <td class="calendar__cell">24</td>
-                          <td class="calendar__cell">25</td>
-                          <td class="calendar__cell">26</td>
-                          <td class="calendar__cell">27</td>
-                          <td class="calendar__cell">28</td>
-                          <td class="calendar__cell">1 <span class="calendar__full-text">мар</span></td>
-                        </tr>
-                        <tr>
-                          <td class="calendar__cell">2</td>
-                          <td class="calendar__cell">3</td>
-                          <td class="calendar__cell">4</td>
-                          <td class="calendar__cell">5</td>
-                          <td class="calendar__cell">6</td>
-                          <td class="calendar__cell">7</td>
-                          <td class="calendar__cell">8</td>
-                        </tr>
-                        <tr>
-                          <td class="calendar__cell">9</td>
-                          <td class="calendar__cell">10</td>
-                          <td class="calendar__cell">11</td>
-                          <td class="calendar__cell">12</td>
-                          <td class="calendar__cell">13</td>
-                          <td class="calendar__cell">14</td>
-                          <td class="calendar__cell">15</td>
-                        </tr>
-                        <tr>
-                          <td class="calendar__cell">16</td>
-                          <td class="calendar__cell">17</td>
-                          <td class="calendar__cell">18</td>
-                          <td class="calendar__cell">19</td>
-                          <td class="calendar__cell">20</td>
-                          <td class="calendar__cell">21</td>
-                          <td class="calendar__cell">22</td>
-                        </tr>
-                        <tr>
-                          <td class="calendar__cell">23</td>
-                          <td class="calendar__cell">24</td>
-                          <td class="calendar__cell">25</td>
-                          <td class="calendar__cell calendar__cell--selected calendar__cell--active">26
-                            <span class="calendar__full-text calendar__full-text--dates">Заезд</span>
-                          </td>
-                          <td class="calendar__cell calendar__cell--selected">27</td>
-                          <td class="calendar__cell calendar__cell--selected">28
-                            <span class="calendar__full-text calendar__full-text--dates">Выезд</span>
-                          </td>
-                          <td class="calendar__cell calendar__cell--unavailible">29</td>
-                        </tr>
-                        <tr>
-                          <td class="calendar__cell calendar__cell--unavailible">30</td>
-                          <td class="calendar__cell calendar__cell--unavailible">31</td>
-                          <td class="calendar__cell calendar__cell--unavailible">1 <span class="calendar__full-text">апр</span></td>
-                          <td class="calendar__cell calendar__cell--unavailible">2</td>
-                          <td class="calendar__cell calendar__cell--unavailible">3</td>
-                          <td class="calendar__cell calendar__cell--unavailible">4</td>
-                          <td class="calendar__cell calendar__cell--unavailible">5</td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
                   <a class="button create-plan__button button--rounder-wide" href="#step2">Следующий шаг</a>
                 </div>
                 <div class="create-plan__step" id="step2">
-                  <div class="create-plan__title-wrap">
-                    <ul class="create-plan__nav">
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link" href="#">Даты</a>
-                      </li>
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link create-plan__nav-link--active" href="#">Маршрут</a>
-                      </li>
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link" href="#">Развлечения</a>
-                      </li>
-                    </ul>
-                    <div class="create-plan__text-wrap">
-                      <h3 class="create-plan__step-title">Шаг 2. <br class="no-br-desktop">Маршрут</h3>
-                      <p class="create-plan__description">
-                        Укажите страны, которые вы хотели по посетить. <br class="no-br-mobile">Это может быть одна или сразу несколько.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="create-plan__country-select-wrap">
-                    <div class="create-plan__country-select create-plan__country-select--filled">
-                      <div class="create-plan__country-option">
-                        <button class="create-plan__country-select-button country-select-btn country-select-btn--filled" type="button">Босния и Герцеговина</button>
-                        <div class="create-plan__country-flag">
-                          <svg class="create-plan__icon-flag" width="35" height="24">
-                            <use xlink:href="#icon-flag--bosnia"></use>
-                          </svg>
-                          <span class="visually-hidden">Флаг Боснии и Герцеговины</span>
-                        </div>
+                  <div class="create-plan__container">
+                    <div class="create-plan__title-wrap">
+                      <ul class="create-plan__nav">
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link" href="#">Даты</a>
+                        </li>
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link create-plan__nav-link--active" href="#">Маршрут</a>
+                        </li>
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link" href="#">Развлечения</a>
+                        </li>
+                      </ul>
+                      <div class="create-plan__text-wrap">
+                        <h3 class="create-plan__step-title">Шаг 2. <br class="no-br-desktop">Маршрут</h3>
+                        <p class="create-plan__description">
+                          Укажите страны, которые вы хотели по посетить. <br class="no-br-mobile">Это может быть одна или сразу несколько.
+                        </p>
                       </div>
-                      <button class="create-plan__country-clear-button country-clear-btn" type="button">
-                        <span class="visually-hidden">Сбросить</span>
-                      </button>
                     </div>
-                    <div class="create-plan__country-select create-plan__country-select--filled">
-                      <div class="create-plan__country-option">
-                        <button class="create-plan__country-select-button country-select-btn" type="button">Чехия</button>
-                        <div class="create-plan__country-flag">
-                          <svg class="create-plan__icon-flag" width="35" height="24">
-                            <use xlink:href="#icon-flag--czech"></use>
-                          </svg>
-                          <span class="visually-hidden">Флаг Чехии</span>
+                    <div class="create-plan__country-select-wrap">
+                      <div class="create-plan__country-select create-plan__country-select--filled">
+                        <div class="create-plan__country-option">
+                          <button class="create-plan__country-select-button country-select-btn country-select-btn--filled" type="button">Босния и Герцеговина</button>
+                          <div class="create-plan__country-flag">
+                            <svg class="create-plan__icon-flag" width="35" height="24">
+                              <use xlink:href="#icon-flag--bosnia"></use>
+                            </svg>
+                            <span class="visually-hidden">Флаг Боснии и Герцеговины</span>
+                          </div>
                         </div>
-                      </div>
-                      <button class="create-plan__country-clear-button country-clear-btn" type="button">
-                        <span class="visually-hidden">Сбросить</span>
-                      </button>
-                    </div>
-                    <div class="create-plan__country-dropdown-wrap">
-                      <div class="create-plan__country-select create-plan__country-select--choose">
-                        <button class="create-plan__country-select-button country-select-btn" type="button">Выберите страну</button>
                         <button class="create-plan__country-clear-button country-clear-btn" type="button">
                           <span class="visually-hidden">Сбросить</span>
                         </button>
                       </div>
-                      <div class="create-plan__select-dropdown">
-                        <div class="create-plan__country-select-button country-select-btn country-select-btn--dropdown">Выберите страну</div>
-                        <button class="create-plan__country-clear-button country-clear-btn country-clear-btn--dropdown" type="button">
-                          <span class="visually-hidden">Закрыть</span>
-                        </button>
-                        <div class="create-plan__alphabet alphabet-filter alphabet-filter--form">
-                          <div class="alphabet-filter__table-container">
-                            <table class="alphabet-filter__letters-table alphabet-filter__letters-table--form">
-                              <tbody class="alphabet-filter__tbody">
-                                <tr>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form letter-btn--active-form" type="button">А</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Б</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">В</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Г</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Д</button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Е</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">З</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">И</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">К</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Л</button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">М</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Н</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">О</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">П</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Р</button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">С</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Т</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">У</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ф</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Х</button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ч</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ш</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Э</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ю</button>
-                                  </td>
-                                  <td class="alphabet-filter__cell alphabet-filter__cell--form">
-                                    <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Я</button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                      <div class="create-plan__country-select create-plan__country-select--filled">
+                        <div class="create-plan__country-option">
+                          <button class="create-plan__country-select-button country-select-btn" type="button">Чехия</button>
+                          <div class="create-plan__country-flag">
+                            <svg class="create-plan__icon-flag" width="35" height="24">
+                              <use xlink:href="#icon-flag--czech"></use>
+                            </svg>
+                            <span class="visually-hidden">Флаг Чехии</span>
                           </div>
-                          <ul class="alphabet-filter__countries-list alphabet-filter__countries-list--form">
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Афганистан</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Албания</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Алжир</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Андорра</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Аргентина</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Армения</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Австралия</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Австрия</a>
-                            </li>
-                            <li class="alphabet-filter__countries-item">
-                              <a class="alphabet-filter__link" href="#">Азербайджан</a>
-                            </li>
-                          </ul>
+                        </div>
+                        <button class="create-plan__country-clear-button country-clear-btn" type="button">
+                          <span class="visually-hidden">Сбросить</span>
+                        </button>
+                      </div>
+                      <div class="create-plan__country-dropdown-wrap">
+                        <div class="create-plan__country-select create-plan__country-select--choose">
+                          <button class="create-plan__country-select-button country-select-btn" type="button">Выберите страну</button>
+                          <button class="create-plan__country-clear-button country-clear-btn" type="button">
+                            <span class="visually-hidden">Сбросить</span>
+                          </button>
+                        </div>
+                        <div class="create-plan__select-dropdown">
+                          <div class="create-plan__country-select-button country-select-btn country-select-btn--dropdown">Выберите страну</div>
+                          <button class="create-plan__country-clear-button country-clear-btn country-clear-btn--dropdown" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                          <div class="create-plan__alphabet alphabet-filter alphabet-filter--form">
+                            <div class="alphabet-filter__table-container">
+                              <table class="alphabet-filter__letters-table alphabet-filter__letters-table--form">
+                                <tbody class="alphabet-filter__tbody">
+                                  <tr>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form letter-btn--active-form" type="button">А</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Б</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">В</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Г</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Д</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Е</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">З</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">И</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">К</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Л</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">М</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Н</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">О</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">П</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Р</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">С</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Т</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">У</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ф</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Х</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ч</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ш</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Э</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Ю</button>
+                                    </td>
+                                    <td class="alphabet-filter__cell alphabet-filter__cell--form">
+                                      <button class="alphabet-filter__button letter-btn letter-btn--form" type="button">Я</button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <ul class="alphabet-filter__countries-list alphabet-filter__countries-list--form">
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Афганистан</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Албания</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Алжир</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Андорра</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Аргентина</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Армения</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Австралия</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Австрия</a>
+                              </li>
+                              <li class="alphabet-filter__countries-item">
+                                <a class="alphabet-filter__link" href="#">Азербайджан</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
+                      <button class="create-plan__country-select create-plan__country-select--add country-select-btn country-select-btn--add" type="button">Добавить страну</button>
                     </div>
-                    <button class="create-plan__country-select create-plan__country-select--add country-select-btn country-select-btn--add" type="button">Добавить страну</button>
                   </div>
                   <div class="create-plan__buttons-group">
                     <a class="button create-plan__button button--rounder-wide" href="#step3">Следующий шаг</a>
@@ -653,46 +657,48 @@
                   </div>
                 </div>
                 <div class="create-plan__step" id="step3">
-                  <div class="create-plan__title-wrap">
-                    <ul class="create-plan__nav">
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link" href="#">Даты</a>
-                      </li>
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link" href="#">Маршрут</a>
-                      </li>
-                      <li class="create-plan__nav-item">
-                        <a class="create-plan__nav-link create-plan__nav-link--active" href="#">Развлечения</a>
-                      </li>
-                    </ul>
-                    <div class="create-plan__text-wrap">
-                      <h3 class="create-plan__step-title">Шаг 3. <br class="no-br-desktop">Развлечения</h3>
-                      <p class="create-plan__description">
-                        Наконец, расскажите о своих планах времяпровождения.<br class="br-desktop">
-                        Можно писать в свободной форме и ставить тэги.
-                      </p>
+                  <div class="create-plan__container">
+                    <div class="create-plan__title-wrap">
+                      <ul class="create-plan__nav">
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link" href="#">Даты</a>
+                        </li>
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link" href="#">Маршрут</a>
+                        </li>
+                        <li class="create-plan__nav-item">
+                          <a class="create-plan__nav-link create-plan__nav-link--active" href="#">Развлечения</a>
+                        </li>
+                      </ul>
+                      <div class="create-plan__text-wrap">
+                        <h3 class="create-plan__step-title">Шаг 3. <br class="no-br-desktop">Развлечения</h3>
+                        <p class="create-plan__description">
+                          Наконец, расскажите о своих планах времяпровождения.<br class="br-desktop">
+                          Можно писать в свободной форме и ставить тэги.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="create-plan__country-wrap textfield plans-decorative-line">
-                    <label class="textfield__label textfield__label--country" for="country-1">
-                      <span class="textfield__label-text">Босния и Герцеговина</span>
-                      <svg class="textfield__label-icon" width="35" height="24">
-                        <use xlink:href="#icon-flag--bosnia"></use>
-                      </svg>
-                    </label>
-                    <div class="textfield__textarea-wrap">
-                      <textarea class="textfield__textarea" id="country-1" rows="9" cols="10" name="country-1" placeholder="План действий"></textarea>
+                    <div class="create-plan__country-wrap textfield plans-decorative-line">
+                      <label class="textfield__label textfield__label--country" for="country-1">
+                        <span class="textfield__label-text">Босния и Герцеговина</span>
+                        <svg class="textfield__label-icon" width="35" height="24">
+                          <use xlink:href="#icon-flag--bosnia"></use>
+                        </svg>
+                      </label>
+                      <div class="textfield__textarea-wrap">
+                        <textarea class="textfield__textarea" id="country-1" rows="9" cols="10" name="country-1" placeholder="План действий"></textarea>
+                      </div>
                     </div>
-                  </div>
-                  <div class="create-plan__country-wrap textfield">
-                    <label class="textfield__label textfield__label--country" for="country-2">
-                      <span class="textfield__label-text">Чехия</span>
-                      <svg class="textfield__label-icon" width="35" height="24">
-                        <use xlink:href="#icon-flag--czech"></use>
-                      </svg>
-                    </label>
-                    <div class="textfield__textarea-wrap">
-                      <textarea class="textfield__textarea" id="country-2" name="country-2" rows="9" cols="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    <div class="create-plan__country-wrap textfield">
+                      <label class="textfield__label textfield__label--country" for="country-2">
+                        <span class="textfield__label-text">Чехия</span>
+                        <svg class="textfield__label-icon" width="35" height="24">
+                          <use xlink:href="#icon-flag--czech"></use>
+                        </svg>
+                      </label>
+                      <div class="textfield__textarea-wrap">
+                        <textarea class="textfield__textarea" id="country-2" name="country-2" rows="9" cols="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      </div>
                     </div>
                   </div>
                   <div class="create-plan__buttons-group">

@@ -6,8 +6,13 @@
 .textfield__textarea-wrap {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 2px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 270px;
+    padding: 0;
   }
 }
 
@@ -126,12 +131,12 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 29px;
+      margin-bottom: 26px;
 
       &::before {
-        left: auto;
+        left: calc(100% - 120px);
         z-index: 1;
-        right: -33px;
+        right: auto;
         top: 50%;
         transform: translateY(-50%);
         width: 15px;
@@ -146,7 +151,7 @@
       &::before {
         content: "";
         z-index: 10;
-        right: 187px;
+        left: calc(100% - 234px);
       }
     }
   }
@@ -169,11 +174,11 @@
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
-    margin: 3px 2px 0 0;
+    margin: 7px 2px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    left: -85px;
+    left: -116px;
     top: 1px;
     margin: 5px 0 0 0;
   }
