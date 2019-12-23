@@ -27,6 +27,14 @@
       flex-grow: 1;
       width: auto;
       padding-left: 6px;
+      padding-right: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--small {
+      margin-top: 18px;
+      padding-right: 0;
     }
   }
 }

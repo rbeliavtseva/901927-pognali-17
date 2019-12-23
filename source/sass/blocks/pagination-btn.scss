@@ -54,6 +54,12 @@
       padding-right: 0;
       border-radius: 0;
     }
+
+    &--forward {
+      &::before {
+        left: 15px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +76,7 @@
     }
 
     &--back {
-      padding-left: -10px;
+      padding-left: 13px;
     }
   }
 
