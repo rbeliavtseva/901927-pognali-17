@@ -49,6 +49,7 @@
   padding: 23px 25px 20px 26px;
   background-color: $color-white;
   border-radius: 10px;
+  overflow: hidden;
 
   &::before {
     counter-increment: section;
@@ -128,13 +129,14 @@
 
     &::before {
       content: "";
-      display: block;
       position: absolute;
       top: -20px;
-      left: 0;
+      left: -100px;
+      z-index: 1;
+      display: block;
+      width: 1400px;
       height: 1px;
-      width: 100%;
-      background-color: $border;
+      background-color: $background--light;
     }
   }
 
