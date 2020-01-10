@@ -72,6 +72,10 @@
   padding: 10px 0;
   border-top: 1px solid rgba($color-black, 0.05);
 
+  &:first-child {
+    padding-top: 8px;
+  }
+
   &--business {
     padding: 8px 0;
 
@@ -130,8 +134,8 @@
     counter-increment: section;
     content: counters(section, ".") " ";
     position: absolute;
-    top: 2px;
-    right: -45px;
+    top: 4px;
+    right: -44px;
     width: 34px;
     height: 34px;
     padding: 10px;
