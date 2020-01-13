@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 484px;
+    min-height: 483px;
   }
 
   &:not(:last-child) {
@@ -25,7 +25,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 58px;
+      margin-right: 60px;
     }
   }
 }
@@ -58,12 +58,12 @@
   left: 17px;
 
   @media (min-width: $tablet-width) {
-    top: -253px;
+    top: -251px;
     left: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -248px;
+    top: -249px;
     left: 23px;
 
     &--big {
@@ -80,8 +80,12 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    top: -15px;
+  }
+
   @media (min-width: $desktop-width) {
-    top: -10px;
+    top: -13px;
     padding: 0 26px;
   }
 }
@@ -94,14 +98,14 @@
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
   }
 }
 
@@ -127,7 +131,7 @@
     &::before {
       width: 7px;
       height: 7px;
-      left: 10px;
+      left: -22px;
     }
   }
 
@@ -161,7 +165,7 @@
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,10 +198,11 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
+    padding: 0;
   }
 }

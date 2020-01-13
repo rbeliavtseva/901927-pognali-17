@@ -25,7 +25,7 @@
 
 .button--bordered {
   position: relative;
-  padding: 20px 32px 18px 20px;
+  padding: 19px 32px 19px 20px;
   border: 3px solid $color-primary;
 
   &::after {
@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 28px 37px 24px 32px;
+    padding: 26px 37px 25px 32px;
     font-size: 24px;
     line-height: 24px;
 
@@ -55,8 +55,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 325px;
-    padding-left: 34px;
-    padding-top: 26px;
+    padding-left: 33px;
+    padding-top: 25px;
   }
 
   &:hover,
@@ -131,7 +131,8 @@
 
 .button--rounded {
   min-width: 189px;
-  padding: 7px 20px 3px 20px;
+  // padding: 7px 20px 3px 20px;
+  padding: 5px 22px 5px 20px;
   border-radius: 25px;
   font-size: 17px;
   line-height: 30px;
@@ -145,7 +146,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 9px 20px 9px 21px;
+    padding: 10px 20px;
   }
 
   &:hover,
@@ -192,6 +193,11 @@
 
   @media (min-width: $desktop-width) {
     min-width: 274px;
+    padding-left: 33px;
+
+    &::after {
+      right: 31px;
+    }
   }
 
   &:hover,
@@ -214,7 +220,7 @@
     display: block;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: calc(50% + 2px);
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
@@ -234,6 +240,7 @@
     padding-top: 24px;
     font-size: 24px;
     line-height: 24px;
+    padding: 23px 31px 24px 36px;
   }
 }
 

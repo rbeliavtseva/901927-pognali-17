@@ -40,7 +40,7 @@
 }
 
 .steps__item {
-  padding: 2px 21px 42px 25px;
+  padding: 1px 21px 43px 24px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -50,7 +50,7 @@
   @media (min-width: $tablet-width) {
     min-height: 140px;
     width: 50%;
-    padding: 30px 34px 60px 34px;
+    padding: 30px 34px 60px 33px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -90,7 +90,7 @@
   &::after {
     position: absolute;
     display: block;
-    top: 2px;
+    top: 1px;
     right: 21px;
     font-family: inherit;
     color: $color-white;
@@ -98,7 +98,7 @@
     content: counters(section, ".") " ";
 
     @media (min-width: $tablet-width) {
-      left: 34px;
+      left: 33px;
       top: 90px;
       font-size: 30px;
     }
@@ -168,7 +168,6 @@
 
   &:last-child {
     padding-bottom: 23px;
-    padding-left: 17px;
     border-radius: 0 0 10px 10px;
     background-color: $color-secondary;
 

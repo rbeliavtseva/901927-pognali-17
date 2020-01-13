@@ -5,10 +5,10 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    height: 580px;
+    height: 570px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     height: 516px;
   }
 }

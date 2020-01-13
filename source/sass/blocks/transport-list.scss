@@ -60,30 +60,17 @@
   transform: translate(-50%, -50%);
   opacity: 0.15;
 
-  @media (min-width: $tablet-max-width) and (max-width: $tablet-max-width) {
-    &--plane {
-      width: 19px;
-      height: 21px;
-      top: calc(50% - 5px);
-      left: calc(50% - 2px);
-    }
-
-    &--bus {
-      width: 17px;
-      height: 21px;
-      top: calc(50% - 6px);
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+     &--bus {
+      left: calc(50% + 2px);
     }
 
     &--bike {
-      width: 24px;
-      height: 21px;
-      top: calc(50% - 9px);
+      left: calc(50% + 1px);
     }
 
     &--run {
-      width: 20px;
-      height: 21px;
-      top: calc(50% - 8px);
+      left: calc(50% - 1px);
     }
   }
 
@@ -116,6 +103,10 @@
 
     &--bike {
       left: calc(50% + 2px);
+    }
+
+    &--run {
+      left: calc(50% + 1px);
     }
   }
 

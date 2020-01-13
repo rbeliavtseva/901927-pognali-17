@@ -36,7 +36,8 @@
       z-index: 10;
       width: 90px;
       height: 90px;
-      top: -32px;
+      top: 50%;
+      transform: translateY(-50%);
       left: -2px;
     }
   }
@@ -44,7 +45,9 @@
 
 .address__icon {
   position: absolute;
-  left: 15px;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: $color-secondary;
 
   @media (min-width: $tablet-width) {
@@ -57,7 +60,8 @@
     z-index: 11;
     width: 28px;
     height: 43px;
-    left: 28px;
+    left: 29px;
+    top: calc(50% + 3px);
   }
 }
 

@@ -1,5 +1,5 @@
 .about {
-  padding: 31px 60px 30px 50px;
+  padding: 31px 60px 30px 49px;
   background-color: $color-primary;
   background-image: url("../../img/about-mobile@1x.png");
   background-size: cover;
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 135px 75px 28px 75px;
+    padding: 135px 75px 29px 75px;
     background: none;
     background-color: $color-primary;
 
@@ -36,13 +36,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 127px 75px 102px 130px;
+    padding: 128px 75px 102px 131px;
 
     &::before {
       z-index: 10;
       width: 630px;
       height: 665px;
-      top: 83px;
+      top: 85px;
       right: 60px;
       background-image: url("../../img/about-desktop@1x.png");
     }
@@ -58,7 +58,7 @@
 
 .about__title {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   color: $color-tertiary;
   font-size: 24px;
   line-height: 24px;

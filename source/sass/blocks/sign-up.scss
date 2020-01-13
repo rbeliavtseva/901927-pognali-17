@@ -1,14 +1,14 @@
 .sign-up {
-  padding: 102px 25px 30px;
+  padding: 100px 25px 28px;
   text-align: center;
   background-color: $color-primary;
 
   @media (min-width: $tablet-width) {
-    padding: 133px 75px 56px;
+    padding: 132px 75px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 164px 75px 66px;
+    padding: 163px 75px 65px;
   }
 }
 
@@ -16,10 +16,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,14 +29,14 @@
 
 .sign-up__prompt {
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   color: $color-tertiary;
   font-size: 24px;
   line-height: 24px;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 59px;
     margin-left: 3px;
     font-size: 45px;
     line-height: 45px;

@@ -77,13 +77,17 @@
 
   &--blue {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 1px);
     left: 50%;
     transform: translate(-50%, -50%);
     fill: $color-primary--light;
   }
 
   @media (min-width: $tablet-width) {
+    &--blue {
+      top: 50%;
+    }
+
     &--facebook {
       width: 14px;
       height: 28px;

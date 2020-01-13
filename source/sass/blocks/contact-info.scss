@@ -55,7 +55,8 @@
       content: "";
       display: block;
       position: absolute;
-      top: -13px;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
       width: 45px;
       height: 45px;
@@ -67,17 +68,19 @@
       &::after {
         width: 67px;
         height: 67px;
-        top: -20px;
         left: 50px;
       }
     }
 
     @media (min-width: $desktop-width) {
+      &:last-child {
+        padding-right: 3px;
+      }
+
       &::after {
         width: 90px;
         height: 90px;
-        top: -30px;
-        left: -3px;
+        left: -2px;
       }
     }
   }
@@ -187,12 +190,14 @@
     width: 27px;
     height: 27px;
     left: 71px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   @media (min-width: $desktop-width) {
     width: 36px;
     height: 36px;
-    left: 25px;
+    left: 26px;
   }
 }
 
