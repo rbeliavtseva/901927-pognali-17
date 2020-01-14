@@ -113,7 +113,7 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     vertical-align: middle;
-    padding: 27px 34px 30px 33px;
+    padding: 28px 34px 29px 33px;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
@@ -280,11 +280,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 30px;
+    padding: 28px 0 30px;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
     color: $color-primary--light;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
   }
 }
 
@@ -378,8 +382,7 @@
 
 .button--blue {
   min-height: 40px;
-  padding: 13px;
-  padding-top: 11px;
+  padding: 12px 13px 11px 12px;
   border-radius: 20px;
   text-transform: uppercase;
   color: $button-text;
@@ -401,7 +404,7 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     vertical-align: middle;
-    padding: 15px 15px 15px 19px;
+    padding: 14px 15px 15px 18px;
     border-radius: 0 0 10px 10px;
   }
 

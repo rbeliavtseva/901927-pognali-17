@@ -88,6 +88,7 @@
       &::after {
         width: 19px;
         height: 21px;
+        left: calc(50% - 3px);
       }
     }
 
@@ -95,6 +96,7 @@
       &::after {
         width: 17px;
         height: 21px;
+        left: calc(50% - 1px);
       }
     }
 
@@ -102,6 +104,7 @@
       &::after {
         width: 24px;
         height: 21px;
+        left: calc(50% - 1px);
       }
     }
 
@@ -109,6 +112,7 @@
       &::after {
         width: 20px;
         height: 21px;
+        left: calc(50% - 2px);
       }
     }
   }

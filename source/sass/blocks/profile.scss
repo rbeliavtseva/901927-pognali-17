@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    padding: 60px 60px 110px 125px;
+    padding: 60px 60px 111px 125px;
   }
 }
 
@@ -104,7 +104,8 @@
 }
 
 .profile__transport-wrap {
-  padding: 9px 15px 12px;
+  position: relative;
+  padding: 14px 15px 12px;
   min-height: 63px;
   border: 1px solid $input-border;
   border-radius: 10px;
@@ -179,7 +180,7 @@
   }
 
   &--tags {
-    top: 9px;
+    top: 10px;
 
     @media (min-width: $tablet-width) {
       top: 104px;
@@ -193,15 +194,17 @@
   }
 
   &--transport {
-    top: -21px;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: normal;
 
     @media (min-width: $tablet-width) {
+      position: relative;
       top: 78px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 23px;
+      left: auto;
+      transform: none;
     }
   }
 }
