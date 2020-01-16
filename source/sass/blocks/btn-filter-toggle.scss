@@ -35,12 +35,13 @@
   @media (min-width: $tablet-width) {
     width: auto;
     height: auto;
+    left: 36px;
 
     &::before {
       width: 27px;
       height: 5px;
       left: auto;
-      right: -92px;
+      right: -47px;
       top: calc(50% - 3px);
     }
 

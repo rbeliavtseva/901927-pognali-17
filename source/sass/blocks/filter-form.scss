@@ -1,14 +1,14 @@
 .filter-form {
-  padding: 22px 20px 22px 21px;
+  padding: 24px 20px 22px 20px;
   background-color: $color-secondary;
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 35px 37px 34px;
+    padding: 36px 35px 38px 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 41px 47px 48px;
+    padding: 45px 41px 47px 47px;
   }
 }
 
@@ -16,7 +16,7 @@
   width: 120px;
   padding-left: 5px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   color: $color-primary--light;
   font-family: "Blogger Sans Bold", "Arial", sans-serif;
   font-size: 22px;

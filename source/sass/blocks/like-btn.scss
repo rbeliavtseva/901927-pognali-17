@@ -1,11 +1,16 @@
 .like-btn {
   position: relative;
-  left: -40px;
+  left: -38px;
+  top: 2px;
   display: flex;
   align-items: center;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 }
 

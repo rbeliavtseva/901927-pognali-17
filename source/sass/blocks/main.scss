@@ -65,7 +65,10 @@
     display: inline-block;
     position: relative;
     top: 55px;
-    right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 49px;
   }
 }
 
@@ -116,7 +119,7 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 77px 60px 125px;
+    padding: 77px 60px 137px;
     background-color: $background--light;
   }
 }

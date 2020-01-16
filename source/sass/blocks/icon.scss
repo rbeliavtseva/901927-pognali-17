@@ -9,6 +9,14 @@
     width: 43px;
     height: 43px;
   }
+
+  &--form {
+    width: 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 43px;
+    }
+  }
 }
 
 .icon__input {
@@ -48,6 +56,7 @@
       width: 14px;
       height: 16px;
       background-image: url("../../img/plane.svg");
+      left: calc(50% - 2px);
     }
   }
 

@@ -1,7 +1,7 @@
 .companion-full {
   position: relative;
   margin-bottom: 10px;
-  padding: 15px 20px 62px;
+  padding: 13px 20px 62px 18px;
   border-radius: 20px;
   background-color: $color-white;
   overflow: hidden;
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 35px 25px 14px 35px;
+    padding: 34px 25px 14px 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +67,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    padding-left: 3px;
+    padding: 3px 0 0 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 2px;
   }
 }
 
@@ -102,13 +106,13 @@
 
 .companion-full__status {
   position: relative;
-  top: 8px;
+  top: 10px;
   left: -2px;
   display: inline-block;
   vertical-align: top;
-  min-width: 7px;
-  width: 7px;
-  height: 7px;
+  min-width: 6px;
+  width: 6px;
+  height: 6px;
   margin-left: 10px;
   border-radius: 50%;
   background-color: $offline;
@@ -147,6 +151,7 @@
   width: 70px;
   height: 70px;
   margin-right: 16px;
+  margin-top: 2px;
   border-radius: 50%;
   overflow: hidden;
 
@@ -199,7 +204,7 @@
   font-weight: normal;
 
   @media (min-width: $tablet-width) {
-    margin-top: 21px;
+    margin-top: 22px;
     margin-left: 48px;
   }
 
@@ -232,15 +237,29 @@
     background-color: $background--light;
   }
 
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: calc(50% + 1px);
+    }
+  }
+
   &--hidden {
     @media (min-width: $tablet-width) {
       display: none;
     }
   }
+
+  &--mt-18 {
+    margin-top: 18px;
+  }
+
+  &--mt-15 {
+    margin-top: 15px;
+  }
 }
 
 .companion-full__countries-wrap {
-  padding-left: 6px;
+  padding-left: 8px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -280,13 +299,18 @@
 }
 
 .companion-full__country-item {
+  position: relative;
+  margin-bottom: 10px;
+
   &::before {
     content: "";
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    position: absolute;
+    top: calc(50% - 1px);
+    transform: translateY(-50%);
+    left: -1px;
     width: 26px;
     height: 18px;
-    margin-right: 14px;
     border-radius: 2px;
     background-size: cover;
 
@@ -294,11 +318,12 @@
       width: 35px;
       height: 24px;
       margin-right: 5px;
+      top: 50%;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 13px;
-      margin-top: 2px;
+      margin-right: 0;
+      margin-top: -1px;
     }
   }
 
@@ -306,9 +331,15 @@
     margin-top: 10px;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:not(:last-child) {
     @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       margin-right: 29px;
     }
@@ -332,6 +363,8 @@
   }
 
   &--thailand {
+    margin-bottom: 9px;
+
     &::before {
       background-image: url("../../img/flag-thailand.svg");
     }
@@ -350,6 +383,8 @@
   }
 
   &--czech {
+    margin-bottom: 5px;
+
     &::before {
       background-image: url("../../img/flag-czech.svg");
     }
@@ -394,35 +429,22 @@
   }
 }
 
-.companion-full__container {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 6px;
-  margin-bottom: 14px;
+.companion-full__country-name {
+  padding-left: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-
-  @media (min-width: $tablet-max-width) and (max-width: $tablet-max-width) {
-    position: absolute;
-    top: 37px;
-    right: 25px;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: auto;
-    align-items: center;
+    padding-left: 54px;
   }
 }
 
 .companion-full__tags-list {
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
-    margin-top: 22px;
+    margin-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -456,7 +478,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     position: absolute;
-    top: 37px;
+    top: 32px;
     right: 25px;
     flex-direction: column;
     align-items: center;
@@ -469,10 +491,14 @@
 }
 
 .companion-full__transport-wrap {
-  padding-left: 8px;
+  padding-left: 2px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
   }
 }
 
