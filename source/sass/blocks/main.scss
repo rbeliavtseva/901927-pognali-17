@@ -5,6 +5,10 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     background-color: $color-primary;
+
+    &--catalog {
+      background-color: $button-text;
+    }
   }
 }
 
@@ -102,7 +106,7 @@
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 105px 0 74px;
+    padding: 66px 105px 0 74px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

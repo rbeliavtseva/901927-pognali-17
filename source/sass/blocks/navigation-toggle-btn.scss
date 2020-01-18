@@ -34,7 +34,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      top: 50px;
+      top: calc(50px + 11px);
     }
   }
 
@@ -116,7 +116,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: calc(50% - 10px);
+    right: calc(50% - 12px);
   }
 
   @media (min-width: $desktop-width) {

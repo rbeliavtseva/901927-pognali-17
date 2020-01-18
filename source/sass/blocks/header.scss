@@ -3,7 +3,7 @@
   background-color: $button-text;
 
   @media (min-width: $desktop-width) {
-    padding: 48px 60px 54px 60px;
+    padding: 45px 60px 54px 60px;
 
     &--index {
       padding-bottom: 70px;
@@ -18,7 +18,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 40px 0 40px;
+    padding: 38px 40px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +30,10 @@
 
   &--no-js {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 }
 
@@ -42,6 +46,16 @@
   @media (min-width: $desktop-width) {
     flex-grow: 0;
     margin-right: 141px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
   }
 }
 
@@ -71,4 +85,17 @@
 
 .header__button {
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    order: 2;
+    padding-left: 17px;
+    padding-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
