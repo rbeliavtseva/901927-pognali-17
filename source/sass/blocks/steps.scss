@@ -3,8 +3,10 @@
   padding: 0 25px;
   padding-bottom: 39px;
   align-self: stretch;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 19%, $color-primary 19%, $color-primary 100%);
 
   @media (min-width: $tablet-width) {
+    background-image: none;
     padding: 0 40px;
   }
 
