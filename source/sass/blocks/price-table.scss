@@ -116,10 +116,15 @@
     }
 
     &--business {
-      padding: 10px 25px 15px;
+      padding: 10px 25px 15px 24px;
 
       &:first-child {
+        padding-top: 11px;
         padding-bottom: 15px;
+      }
+
+      &:nth-child(2) {
+        padding-top: 11px;
       }
 
       &:last-child {
@@ -145,6 +150,10 @@
 
     &--business {
       padding: 10px 0 15px;
+
+      &:first-child {
+        padding-top: 11px;
+      }
 
       &:nth-child(2) {
         padding-top: 10px;

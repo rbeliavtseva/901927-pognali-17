@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  // display: none;
 
   &--open {
     position: absolute;
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 32px 0 34px;
+    padding: 47px 32px 0 34px;
   }
 }
 
