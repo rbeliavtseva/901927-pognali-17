@@ -252,6 +252,7 @@
     content: "";
     display: block;
     position: absolute;
+    z-index: -2;
     bottom: -30px;
     left: 0;
     min-height: 30px;
