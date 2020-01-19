@@ -18,6 +18,10 @@
     background-image: url("../../img/dots.svg");
   }
 
+  &--open {
+    display: none;
+  }
+
   &--close {
     &::before {
       content: "";
@@ -35,14 +39,13 @@
   @media (min-width: $tablet-width) {
     width: auto;
     height: auto;
-    left: 36px;
 
     &::before {
       width: 27px;
       height: 5px;
       left: auto;
-      right: -47px;
-      top: calc(50% - 3px);
+      right: -90px;
+      top: calc(50% - 1px);
     }
 
     &--close {

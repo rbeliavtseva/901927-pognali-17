@@ -1,7 +1,8 @@
 .navigation {
   display: none;
 
-  &--no-js {
+  &--no-js,
+  &--open {
     display: block;
     padding: 28px 25px 40px 27px;
     background-color: $color-white;
@@ -45,6 +46,10 @@
 }
 
 .navigation__button {
+  &--sticky {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 25%;
     order: 2;
@@ -52,6 +57,10 @@
     padding-right: 19px;
     padding-top: 10px;
     padding-bottom: 9px;
+
+    &--sticky {
+      display: block;
+    }
   }
 }
 
@@ -78,6 +87,10 @@
     padding: 0 57px;
     width: 100%;
   }
+
+  &--sticky {
+    display: none;
+  }
 }
 
 .navigation__contact-info {
@@ -89,6 +102,10 @@
     order: 4;
     margin: 155px 0 153px 5px;
   }
+
+  &--sticky {
+    display: none;
+  }
 }
 
 .navigation__social {
@@ -98,5 +115,9 @@
     order: 5;
     justify-content: flex-start;
     padding: 0 57px 0 83px;
+  }
+
+  &--sticky {
+    display: none;
   }
 }
