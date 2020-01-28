@@ -37,7 +37,18 @@
     position: absolute;
     left: calc(100% - 30px);
     top: 10px;
+    color: $color-white;
+    opacity: 0.3;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
 
     &::before {
       content: "";
@@ -96,6 +107,15 @@
       position: absolute;
       left: 325px;
       top: 25px;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
   }
 

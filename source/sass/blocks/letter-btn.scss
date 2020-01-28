@@ -12,6 +12,15 @@
 
   &--form {
     padding: 1px 6px 3px 9px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $input-border--hover;
+    }
+
+    &:active {
+      background-color: $background--light;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -29,6 +38,11 @@
       font-size: 20px;
       line-height: 18px;
       letter-spacing: 2px;
+
+      &:active {
+        color: $color-white;
+        background-color: $color-primary--light;
+      }
     }
   }
 
@@ -36,16 +50,6 @@
     &--form {
       border: 1px solid $input-border;
       border-radius: 4px;
-
-      &:hover,
-      &:focus {
-        border: 1px solid $input-border--hover;
-      }
-
-      &:active {
-        color: $color-white;
-        background-color: $color-primary--light;
-      }
     }
   }
 
