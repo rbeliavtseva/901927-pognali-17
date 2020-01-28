@@ -47,7 +47,7 @@
   @media (min-width: $desktop-width) {
     width: 66.3%;
     margin-right: 0;
-    padding: 45px 30px 47px calc(30% + 57px);
+    padding: 45px 30px 47px 342px;
     border-right: 1px solid;
     border-image: linear-gradient(to bottom, transparent, $background--light, transparent) 1 100%;
   }
@@ -161,6 +161,7 @@
     left: 0;
     width: 190px;
     height: 190px;
+    margin-top: 0;
     border-radius: 20px;
   }
 
@@ -180,7 +181,7 @@
 .companion-full__btn-wrap {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
     order: 1;
