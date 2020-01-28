@@ -12,6 +12,8 @@
   }
 
   &--minus {
+    left: 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -31,6 +33,8 @@
   }
 
   &--plus {
+    right: 0;
+
     &::before {
       content: "";
       position: absolute;
