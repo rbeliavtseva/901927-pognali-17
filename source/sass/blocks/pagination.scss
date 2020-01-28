@@ -53,6 +53,24 @@
   &:focus {
     color: rgba($button-text, 0.6);
   }
+
+  &:active {
+    color: $button-text;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ffd74b;
+    }
+  }
 }
 
 .pagination__buttons-wrapper {
