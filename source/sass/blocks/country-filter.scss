@@ -144,6 +144,15 @@
   text-decoration: none;
   opacity: 0.3;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
   &--active {
     opacity: 1;
   }

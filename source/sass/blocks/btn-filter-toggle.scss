@@ -18,6 +18,15 @@
     background-image: url("../../img/dots.svg");
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--open {
     display: none;
   }
