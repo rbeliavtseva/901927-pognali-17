@@ -183,6 +183,8 @@
 .contact-info__icon {
   position: absolute;
   z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
   left: 14px;
   fill: $color-secondary;
 
@@ -190,8 +192,6 @@
     width: 27px;
     height: 27px;
     left: 71px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   @media (min-width: $desktop-width) {
