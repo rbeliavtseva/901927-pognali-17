@@ -632,8 +632,8 @@
             </div>
             <a class="contacts__button button button--bordered" href="https://yandex.ru/maps/-/CCw360pk">Проложить маршрут</a>
           </div>
-          <div class="contacts__map" id="map">
-            <a class="map">
+          <div class="contacts__map map">
+            <a class="map__link">
               <picture>
                 <source media="(min-width: 1439px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
@@ -697,7 +697,7 @@
       var mapCenter = {lat: 59.936226, lng: 30.320942};
       var office = {lat: 59.938706, lng: 30.323047};
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
+        map = new google.maps.Map(document.querySelector('.contacts__map'), {
           center: mapCenter,
           zoom: 16,
           disableDefaultUI: true
